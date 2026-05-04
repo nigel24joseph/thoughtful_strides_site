@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,14 +7,14 @@
   <meta name="description" content="Book an appointment or get in touch. Reach out by phone, email, or via the contact form." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
-    <a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="individuals.html">Individuals</a></li>
@@ -82,9 +82,9 @@
           </div>
           <div class="contact-detail-text">
             <strong>Hours</strong>
-            <span>Monday & Friday 9:00AM â€“ 6:30PM<br />
-            Tuesday â€“ Thursday 9:00AM â€“ 8:00PM<br />
-            Saturday 9:00AM â€“ 2:00PM</span>
+            <span>Monday & Friday 9:00AM – 6:30PM<br />
+            Tuesday – Thursday 9:00AM – 8:00PM<br />
+            Saturday 9:00AM – 2:00PM</span>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@
         <div class="form-group">
           <label for="reason">Reason for enquiry</label>
           <select id="reason" name="reason">
-            <option value="">Please selectâ€¦</option>
+            <option value="">Please select…</option>
             <option>Book an appointment</option>
             <option>Medicare / fees enquiry</option>
             <option>Telehealth information</option>
@@ -126,7 +126,7 @@
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell us a little about what you're looking forâ€¦"></textarea>
+          <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for…"></textarea>
         </div>
         <button type="submit" class="form-submit">Send Message</button>
       </form>
@@ -137,8 +137,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Thoughtful <span class="footer-logo-span">Strides</span></a>
-        <p>Registered Psychologist offering evidence-based therapy for individuals in Melbourne and via Telehealth across Australia.</p>
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based therapy for individuals in Narre Warren and via Telehealth across Australia.</p>
       </div>
       <div class="footer-col">
         <h4>Menu</h4>
@@ -164,10 +164,16 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
-      <span>AHPRA Registered Psychologist</span>
+      <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
 
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,14 +7,14 @@
   <meta name="description" content="Individual counselling for anxiety, low mood, life transitions, relationships, and personal growth. A space to talk openly at a pace that feels right for you." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
-    <a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="individuals.html">Individuals</a></li>
@@ -38,11 +38,11 @@
   <!-- BODY COPY -->
   <section class="services-body">
     <h2>Clinical Supervision</h2>
-    <p class="bio-body">I provide clinical supervision for experienced practitioners working with trauma and complex presentations. This is a space for in-depth clinical reflection, refinement of therapeutic interventions, and thoughtful exploration of the nuances that arise in complex work.</p>
+    <p class="bio-body">I provide clinical supervision for counsellors working with trauma and complex presentations. This is a space for in-depth clinical reflection, refinement of therapeutic interventions, and thoughtful exploration of the nuances that arise in complex work.</p>
     <p class="bio-body">Supervision is informed by a strong grounding in how trauma impacts the brain, nervous system, and enduring patterns of responding. The focus is on sharpening formulation, enhancing precision in intervention, and working effectively with complexity, risk, and therapeutic process.</p>
     <p class="bio-body">This space supports critical thinking, professional accountability, and ongoing development at a senior level. It also provides an opportunity to reflect on the impact of the work, maintain clarity in clinical decision-making, and sustain high-quality, consistent practice over time.</p>
     <h2>Beginning Practitioners</h2>
-    <p class="bio-body">I offer clinical supervision for early-career practitioners seeking to build confidence and develop a strong foundation in trauma-informed practice. Supervision provides a structured and supportive space to reflect on your work, ask questions, and grow your clinical skills.</p>
+    <p class="bio-body">I offer clinical supervision for early-career counsellors seeking to build confidence and develop a strong foundation in trauma-informed practice. Supervision provides a structured and supportive space to reflect on your work, ask questions, and grow your clinical skills.</p>
     <p class="bio-body">The focus is on helping you understand client presentations, develop clear formulations, and apply practical, evidence-based interventions. You will be supported to build confidence in your decision-making, manage uncertainty, and navigate the challenges that can arise in therapeutic work.</p>
     <p class="bio-body">Supervision is collaborative and tailored to your level of experience, helping you develop a clear, consistent approach while also supporting your growth as a practitioner.</p>
     <div style="clear: both;"></div>
@@ -59,8 +59,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Thoughtful <span class="footer-logo-span">Strides</span></a>
-        <p>Registered Psychologist offering evidence-based therapy for individuals in Melbourne and via Telehealth across Australia.</p>
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based therapy for individuals in Narre Warren and via Telehealth across Australia.</p>
       </div>
       <div class="footer-col">
         <h4>Menu</h4>
@@ -86,10 +86,16 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
-      <span>AHPRA Registered Psychologist</span>
+      <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
 
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
 
