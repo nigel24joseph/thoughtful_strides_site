@@ -12,6 +12,7 @@
   --sage: #6e7349;
   --sage-light: #7d9b8a;
   --sage-pale: #edf4f0;
+  --white: #ffffff;
   --warm-white: #faf8f5;
   --warm-cream: #f3ede3;
   --text-dark: #2a2620;
@@ -635,7 +636,7 @@ section { padding: 5rem 5%; }
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: start;
-  background: var(--warm-white);
+  background: var(--white);
 }
 
 .contact-info .section-title { margin-bottom: 1.5rem; }
@@ -750,6 +751,7 @@ footer {
   background: var(--warm-white);
   color: var(--text-mid);
   padding: 3rem 5%;
+  border-top:1px solid rgba(0,0,0,0.1);
 }
 
 .footer-inner {
