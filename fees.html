@@ -16,9 +16,17 @@
     <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="individuals.html">Individuals</a></li>
-      <li><a href="couples.html">Couples</a></li>
-      <li><a href="supervision.html">Supervision</a></li>
+      <li class="services-desktop"><a href="individuals.html">Individuals</a></li>
+      <li class="services-desktop"><a href="couples.html">Couples</a></li>
+      <li class="services-desktop"><a href="supervision.html">Supervision</a></li>
+      <li class="has-dropdown services-mobile">
+        <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="individuals.html">Individuals</a></li>
+          <li><a href="couples.html">Couples</a></li>
+          <li><a href="supervision.html">Supervision</a></li>
+        </ul>
+      </li>
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="fees.html" class="active">Fees</a></li>
       <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
@@ -40,7 +48,7 @@
     <div class="fees-grid">
       <div class="fee-card">
         <div class="fee-card-image">
-          <img src="images/individuals.png" alt="Individual therapy session" />
+          <img src="images/Individual.jpg" alt="Individual therapy session" /> -->
         </div>
         <div class="fee-card-body">
           <div class="fee-card-header">
@@ -52,7 +60,7 @@
       </div>
       <div class="fee-card">
         <div class="fee-card-image">
-          <img src="images/couples.png" alt="Couples therapy session" />
+          <img src="images/Couples.jpg" alt="Couples therapy session" /> 
         </div>
         <div class="fee-card-body">
           <div class="fee-card-header">
@@ -70,7 +78,10 @@
     <p class="bio-body">Payment of fees for in-person sessions are after the session. Telehealth sessions require payment before the session via direct deposit.</p>
     <p class="bio-body">Payment methods include &ndash; Cash, EFTPOS, Visa Card, Master Card, Direct Deposit</p>
 
-    <h3 class="fees-info-heading">Private Health Insurance</h3>
+    <div class="fee-card-header">
+  <h3>Private Health Insurance</h3>
+</div>
+    <!-- <h3 class="fee-card-header">Private Health Insurance</h3> -->
     <p class="bio-body">If you have Private Health Insurance with any of the following providers that covers Counselling, you may be eligible for a rebate. Please speak with your relevant health fund provider.</p>
 
     <div class="fees-insurance-grid">
@@ -82,26 +93,12 @@
           <li>HCF Insurance</li>
           <li>Medibank Private</li>
         </ul>
+
       </div>
       <div>
-        <p class="credentials-title">Australian Regional Health Group (ARHG)</p>
-        <ul class="bullet-list">
-          <li>AIA Health</li>
-          <li>Australian Defence Force</li>
-          <li>Doctor's Health</li>
-          <li>Emergency Services Health</li>
-          <li>GMHBA</li>
-          <li>HBF</li>
-          <li>Mildura Health</li>
-          <li>Nurses &amp; Midwives Health</li>
-          <li>Phoenix Health</li>
-          <li>Police Health</li>
-          <li>see-u by HBF</li>
-          <li>St Luke's Health</li>
-          <li>Teachers Health</li>
-          <li>Teachers Union Health</li>
-          <li>Unihealth</li>
-          <li>Westfund</li>
+       <ul class="bullet-list">
+        <li>Australian Regional Health Group (ARHG)</li>
+          <p class="bio-body" >AIA Health, Australian Defence Force, Doctor's Health, Emergency Services Health, GMHBA, HBF, Mildura Health, Nurses &amp; Midwives Health, Phoenix Health, Police Health,see-u by HBF, St Luke's Health, Teachers Health, Teachers Union Health, Unihealth, Westfund</p>
         </ul>
       </div>
     </div>
@@ -149,6 +146,12 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelector('.services-toggle').addEventListener('click', function (e) {
+      if (window.innerWidth <= 850) {
+        e.preventDefault();
+        this.closest('.services-mobile').classList.toggle('mobile-open');
+      }
     });
   </script>
 

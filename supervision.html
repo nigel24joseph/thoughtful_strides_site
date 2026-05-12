@@ -17,9 +17,17 @@
     <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="individuals.html">Individuals</a></li>
-      <li><a href="couples.html">Couples</a></li>
-      <li><a href="supervision.html" class="active">Supervision</a></li>
+      <li class="services-desktop"><a href="individuals.html">Individuals</a></li>
+      <li class="services-desktop"><a href="couples.html">Couples</a></li>
+      <li class="services-desktop"><a href="supervision.html" class="active">Supervision</a></li>
+      <li class="has-dropdown services-mobile">
+        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="individuals.html">Individuals</a></li>
+          <li><a href="couples.html">Couples</a></li>
+          <li><a href="supervision.html" class="active">Supervision</a></li>
+        </ul>
+      </li>
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="fees.html">Fees</a></li>
       <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
@@ -32,20 +40,25 @@
   <!-- PAGE HEADER -->
   <div class="page-header">
     <p class="page-header-label">Services</p>
-    <h1><em>Supervision</em></h1>
+    <h1>Clinical<em> Supervision</em></h1>
+    <p>A place to reflect and develop your skills.</p>
+
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <h2>Clinical Supervision</h2>
+    
+   <!-- <h3 class="fees-info-heading">Clinical Supervision</h3> -->
     <p class="bio-body">I provide clinical supervision for counsellors working with trauma and complex presentations. This is a space for in-depth clinical reflection, refinement of therapeutic interventions, and thoughtful exploration of the nuances that arise in complex work.</p>
     <p class="bio-body">Supervision is informed by a strong grounding in how trauma impacts the brain, nervous system, and enduring patterns of responding. The focus is on sharpening formulation, enhancing precision in intervention, and working effectively with complexity, risk, and therapeutic process.</p>
     <p class="bio-body">This space supports critical thinking, professional accountability, and ongoing development at a senior level. It also provides an opportunity to reflect on the impact of the work, maintain clarity in clinical decision-making, and sustain high-quality, consistent practice over time.</p>
-    <h2>Beginning Practitioners</h2>
+    <h3 class="fees-info-heading">Beginning Practitioners</h3>
     <p class="bio-body">I offer clinical supervision for early-career counsellors seeking to build confidence and develop a strong foundation in trauma-informed practice. Supervision provides a structured and supportive space to reflect on your work, ask questions, and grow your clinical skills.</p>
     <p class="bio-body">The focus is on helping you understand client presentations, develop clear formulations, and apply practical, evidence-based interventions. You will be supported to build confidence in your decision-making, manage uncertainty, and navigate the challenges that can arise in therapeutic work.</p>
     <p class="bio-body">Supervision is collaborative and tailored to your level of experience, helping you develop a clear, consistent approach while also supporting your growth as a practitioner.</p>
     <div style="clear: both;"></div>
+    <h4 class="fees-info-heading">Fees: $150 for a 60 minute session</h4>
+    
   </section>
 
   <!-- CTA BAND -->
@@ -91,6 +104,12 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelector('.services-toggle').addEventListener('click', function (e) {
+      if (window.innerWidth <= 850) {
+        e.preventDefault();
+        this.closest('.services-mobile').classList.toggle('mobile-open');
+      }
     });
   </script>
 </body>

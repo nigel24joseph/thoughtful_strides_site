@@ -17,9 +17,17 @@
     <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="individuals.html" class="active">Individuals</a></li>
-      <li><a href="couples.html">Couples</a></li>
-      <li><a href="supervision.html">Supervision</a></li>
+      <li class="services-desktop"><a href="individuals.html" class="active">Individuals</a></li>
+      <li class="services-desktop"><a href="couples.html">Couples</a></li>
+      <li class="services-desktop"><a href="supervision.html">Supervision</a></li>
+      <li class="has-dropdown services-mobile">
+        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="individuals.html" class="active">Individuals</a></li>
+          <li><a href="couples.html">Couples</a></li>
+          <li><a href="supervision.html">Supervision</a></li>
+        </ul>
+      </li>
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="fees.html">Fees</a></li>
       <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
@@ -32,16 +40,16 @@
   <!-- PAGE HEADER -->
   <div class="page-header">
     <p class="page-header-label">Services</p>
-    <h1>Support for <em>individuals</em></h1>
+    <h1>Support for <em>Individuals</em></h1>
     <p>Compassionate support for life's challenges.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
     <div class="services-image">
-      <img src="images/individuals.png" alt="A calm, comfortable counselling space" />
+      <img src="images/Individual.jpg" alt="A calm, comfortable counselling space" />
     </div>
-    <p class="section-body">People come to counselling for many different reasons. Often, it's a sense that something isn't quite working or feeling the way it used to. This might include:</p>
+    <p class="bio-body">People come to counselling for many different reasons. Often, it's a sense that something isn't quite working or feeling the way it used to. This might include:</p>
     <ul class="bullet-list">
       <li>Feeling overwhelmed, stuck, or unsure how to move forward</li>
       <li>Ongoing stress or difficulty coping with day-to-day life</li>
@@ -102,6 +110,12 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelector('.services-toggle').addEventListener('click', function (e) {
+      if (window.innerWidth <= 850) {
+        e.preventDefault();
+        this.closest('.services-mobile').classList.toggle('mobile-open');
+      }
     });
   </script>
 </body>

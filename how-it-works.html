@@ -16,9 +16,17 @@
     <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="individuals.html">Individuals</a></li>
-      <li><a href="couples.html">Couples</a></li>
-      <li><a href="supervision.html">Supervision</a></li>
+      <li class="services-desktop"><a href="individuals.html">Individuals</a></li>
+      <li class="services-desktop"><a href="couples.html">Couples</a></li>
+      <li class="services-desktop"><a href="supervision.html">Supervision</a></li>
+      <li class="has-dropdown services-mobile">
+        <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="individuals.html">Individuals</a></li>
+          <li><a href="couples.html">Couples</a></li>
+          <li><a href="supervision.html">Supervision</a></li>
+        </ul>
+      </li>
       <li><a href="how-it-works.html" class="active">How It Works</a></li>
       <li><a href="fees.html">Fees</a></li>
       <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
@@ -30,7 +38,7 @@
 
   <!-- PAGE HEADER -->
   <div class="page-header">
-    <h1>How it <em>Works</em></h1>
+    <h1>How It <em>Works</em></h1>
   </div>
 
   <section style="background: var(--warm-cream);">
@@ -42,12 +50,12 @@
     <div class="services-grid">
       <div class="service-card">
         <h3>1. Get in Touch</h3>
-        <p>Reach out via the contact form, phone, or email. A GP referral is not required.</p>
+        <p>Reach out via the contact form, phone, or email.</p>
         <a href="book-now.html" class="service-link">Contact me</a>
       </div>
       <div class="service-card">
         <h3>2. Discovery Call</h3>
-        <p>A brief 15-minute call to discuss your concerns and goals and confirm we're the right fit for your needs.</p>
+        <p>A brief 15-minute call to discuss your concerns and goals and how we can support you.</p>
         
       </div>
       <div class="service-card">
@@ -57,7 +65,7 @@
       </div>
       <div class="service-card">
         <h3>4. Ongoing Support</h3>
-        <p>We develop a personalised treatment plan and work together at a pace that suits you.</p>
+        <p>We develop plan of how we will work together at a pace that suits you.</p>
       </div>
     </div>
   </section>
@@ -104,6 +112,12 @@
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelector('.services-toggle').addEventListener('click', function (e) {
+      if (window.innerWidth <= 850) {
+        e.preventDefault();
+        this.closest('.services-mobile').classList.toggle('mobile-open');
+      }
     });
   </script>
 
