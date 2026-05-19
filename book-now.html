@@ -45,6 +45,8 @@
     </button>
   </nav>
 
+  <main>
+
   <!-- PAGE HEADER -->
   <div class="page-header">
     <p class="page-header-label">Contact</p>
@@ -108,26 +110,30 @@
 
     <!-- CONTACT FORM (Netlify) -->
     <div class="contact-form">
-      <h3>Send a message</h3>
-      <form name="contact" method="POST" netlify>
+      <h2>Send a message</h2>
+      <form name="contact" method="POST" action="/success" netlify novalidate>
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First name</label>
-            <input type="text" id="fname" name="first-name" required />
+            <input type="text" id="fname" name="first-name" />
+            <span class="field-error" id="fname-error"></span>
           </div>
           <div class="form-group">
             <label for="lname">Last name</label>
-            <input type="text" id="lname" name="last-name" required />
+            <input type="text" id="lname" name="last-name" />
+            <span class="field-error" id="lname-error"></span>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" />
+          <span class="field-error" id="email-error"></span>
         </div>
         <div class="form-group">
           <label for="phone">Phone number</label>
           <input type="tel" id="phone" name="phone" />
+          <span class="field-error" id="phone-error"></span>
         </div>
         <div class="form-group">
           <label for="reason">Reason for enquiry</label>
@@ -149,6 +155,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
@@ -165,15 +173,6 @@
           <li><a href="book-now.html">Book Now</a></li>
         </ul>
       </div>
-      <!--<div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="https://www.lifeline.org.au" target="_blank" rel="noopener">Crisis Support</a></li>
-          <li><a href="https://www.psychology.org.au" target="_blank" rel="noopener">Find a Psychologist</a></li>
-        </ul>
-      </div>-->
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
@@ -193,6 +192,7 @@
       }
     });
   </script>
+  <script src="form-validation.js"></script>
 </body>
 </html>
 
