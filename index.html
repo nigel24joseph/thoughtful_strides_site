@@ -45,17 +45,17 @@
     </button>
   </nav>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero">
-    <img src="images/Nigel.jpg" alt="" class="hero-bg-img" aria-hidden="true" />
+    <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist at Thoughtful Strides" class="hero-bg-img" aria-hidden="true" />
     <div class="hero-text">
-      <!-- <p class="section-label">Counselling and Psychotherapy &mdash; Narre Warren, VIC & Telehealth</p> -->
-      <p class="section-label" style="font-weight: 500; color: var(--sage);">Counselling and Psychotherapy &mdash; Narre Warren, VIC & Telehealth</p>
+      <p class="section-label">Counselling and Psychotherapy &mdash; Narre Warren, VIC & Telehealth</p>
       <h1>A safe space to <br><em>feel heard, understood</em><br>and supported</h1>
       <p>Evidence-based therapy tailored to your needs. Supporting individuals through anxiety, depression, trauma, and life transitions — in a warm, non-judgemental environment.</p>
       <div class="hero-btns">
         <a href="#contact" class="btn-primary">Book an Appointment</a>
-        <!-- <a href="#services" class="btn-secondary">Learn More</a> -->
       </div>
     </div>
   </section>
@@ -65,8 +65,8 @@
     <div class="intro-grid">
       <div class="intro-panels">
         <div>
-          <h3 class="intro-panel-title">Areas I can help with</h3>
-          <ul class=area-list >
+          <h2 class="intro-panel-title">Areas I can help with</h2>
+          <ul class="area-list">
             <li>Anxiety &amp; Depression</li>
             <li>Stress &amp; Burnout</li>
             <li>Self Esteem &amp; Confidence</li>
@@ -85,17 +85,17 @@
           </ul>
         </div>
         <div>
-          <h3 class="intro-panel-title">My Approach</h3>
+          <h2 class="intro-panel-title">My Approach</h2>
           <ul class="intro-list intro-approach">
-            <li><strong style="color: var(--sage);">Cognitive Behaviour Therapy (CBT)</strong> Helps you identify and change unhelpful thought patterns that affect how you feel and behave.</li>
-            <li><strong style="color: var(--sage);">Acceptance and Commitment Therapy (ACT)</strong> Teaches you to accept difficult emotions rather than fight them and focus on what truly matters to you.</li>
-            <li><strong style="color: var(--sage);">Eye Movement Desensitisation and Reprocessing (EMDR)</strong> A proven technique that helps your brain process and heal from traumatic memories.</li>
-            <li><strong style="color: var(--sage);">Schema Therapy</strong> Explores deep-rooted patterns formed in childhood that may be driving current struggles.</li>
-            <li><strong style="color: var(--sage);">Person Centred Therapy</strong> A warm, non-judgmental space where you lead the conversation and set the pace of your healing.</li>
-            <li><strong style="color: var(--sage);">Solution Focused Therapy</strong> Focuses on your strengths and practical steps forward, rather than dwelling on the past.</li>
-            <li><strong style="color: var(--sage);">Positive Psychology</strong> Draws on your existing strengths and resources to build resilience and a greater sense of wellbeing.</li>
-            <li><strong style="color: var(--sage);">Motivational Interviewing</strong> Helps you explore your own reasons for change and build the confidence to make it happen.</li>
-            <li><strong style="color: var(--sage);">Radical Exposure Tapping (RET)</strong> Combines gentle tapping techniques with guided exposure to reduce the intensity of distressing feelings and process traumatic memories.</li>
+            <li><strong>Cognitive Behaviour Therapy (CBT)</strong> Helps you identify and change unhelpful thought patterns that affect how you feel and behave.</li>
+            <li><strong>Acceptance and Commitment Therapy (ACT)</strong> Teaches you to accept difficult emotions rather than fight them and focus on what truly matters to you.</li>
+            <li><strong>Eye Movement Desensitisation and Reprocessing (EMDR)</strong> A proven technique that helps your brain process and heal from traumatic memories.</li>
+            <li><strong>Schema Therapy</strong> Explores deep-rooted patterns formed in childhood that may be driving current struggles.</li>
+            <li><strong>Person Centred Therapy</strong> A warm, non-judgmental space where you lead the conversation and set the pace of your healing.</li>
+            <li><strong>Solution Focused Therapy</strong> Focuses on your strengths and practical steps forward, rather than dwelling on the past.</li>
+            <li><strong>Positive Psychology</strong> Draws on your existing strengths and resources to build resilience and a greater sense of wellbeing.</li>
+            <li><strong>Motivational Interviewing</strong> Helps you explore your own reasons for change and build the confidence to make it happen.</li>
+            <li><strong>Radical Exposure Tapping (RET)</strong> Combines gentle tapping techniques with guided exposure to reduce the intensity of distressing feelings and process traumatic memories.</li>
           </ul>
         </div>
       </div>
@@ -104,7 +104,7 @@
         <p class="section-body">Therapy often brings up important questions, insights, and at times uncomfortable feelings. It can highlight patterns that feel stuck or repetitive, as well as a growing awareness that something needs to change. For many, the decision to seek support comes from a sense that things could be different — more manageable, more clear, or more aligned with the life they want.</p>
         <p class="section-body">Through a collaborative and practical process, therapy supports greater understanding and new ways of responding. Reaching out can feel like a significant step, especially when there is uncertainty about what to expect.</p>
         <p class="section-body"><i> If you've started to wonder whether things could feel different, that may be enough to begin. You don't need to have everything figured out to reach out — often, the first conversation is where things start to become clearer. </i></p>
-        <blockquote class="pull-quote" style="color: var(--accent);">When you are ready, you are welcome to reach out — you don't have to do this alone.</blockquote>
+        <blockquote class="pull-quote">When you are ready, you are welcome to reach out — you don't have to do this alone.</blockquote>
       </div>
     </div>
   </section>
@@ -205,25 +205,29 @@
     <!-- CONTACT FORM (Netlify) -->
     <div class="contact-form">
       <h3>Send a message</h3>
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="POST" action="/success" netlify novalidate>
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First name</label>
-            <input type="text" id="fname" name="first-name" required />
+            <input type="text" id="fname" name="first-name" />
+            <span class="field-error" id="fname-error"></span>
           </div>
           <div class="form-group">
             <label for="lname">Last name</label>
-            <input type="text" id="lname" name="last-name" required />
+            <input type="text" id="lname" name="last-name" />
+            <span class="field-error" id="lname-error"></span>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" />
+          <span class="field-error" id="email-error"></span>
         </div>
         <div class="form-group">
           <label for="phone">Phone number</label>
           <input type="tel" id="phone" name="phone" />
+          <span class="field-error" id="phone-error"></span>
         </div>
         <div class="form-group">
           <label for="reason">Reason for enquiry</label>
@@ -245,6 +249,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
@@ -261,15 +267,6 @@
           <li><a href="book-now.html">Book Now</a></li>
         </ul>
       </div>
-      <!--<div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="https://www.lifeline.org.au" target="_blank" rel="noopener">Crisis Support</a></li>
-          <li><a href="https://www.psychology.org.au" target="_blank" rel="noopener">Find a Psychologist</a></li>
-        </ul>
-      </div>-->
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
@@ -288,17 +285,7 @@
       }
     });
   </script>
-
-  <!-- GA4 placeholder -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  -->
+  <script src="form-validation.js"></script>
 
 </body>
 </html>
