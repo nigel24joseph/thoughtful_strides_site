@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -20,12 +20,14 @@
   </script>
 
   <script>
-  gtag('event', 'conversion', {
-    'event_category': 'Form',
-    'event_label': 'Contact Form Submission',
-    'value': 1
-  });
-</script>
+    window.addEventListener('load', function() {
+      gtag('event', 'conversion', {
+        'event_category': 'Form',
+        'event_label': 'Contact Form Submission',
+        'value': 1
+      });
+    });
+  </script>
 
 </head>
 <body>
@@ -87,7 +89,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based therapy for individuals in Narre Warren and via Telehealth across Australia.</p>
+        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals  & Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
         <ul class="footer-nav">
           <li><a href="about.html">About</a></li>
           <li><a href="individuals.html">Individuals</a></li>
@@ -116,7 +118,7 @@
       }
     });
   </script>
-  <script src="form-validation.js"></script>
+ 
 
 </body>
 </html>
