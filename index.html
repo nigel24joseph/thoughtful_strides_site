@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thoughtful Strides | Trauma Therapy & Couples Counselling in Narre Warren</title>
-  <link rel="canonical" href="https://thoughtfulstrides.com.au/index.html" />
+  <link rel="canonical" href="https://thoughtfulstrides.com.au/" />
   <meta name="description" content="Compassionate Trauma & PTSD Therapy and Couples Counselling in Narre Warren. PACFA registered. Telehealth available. No waitlist. Book today." />
   
   <meta property="og:title" content="Trauma Therapy & Couples Counselling in Narre Warren | Thoughtful Strides" />
@@ -249,21 +249,21 @@
   <nav>
     <a href="#" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="services-desktop"><a href="individuals.html">Individuals</a></li>
-      <li class="services-desktop"><a href="couples.html">Couples</a></li>
-      <li class="services-desktop"><a href="supervision.html">Supervision</a></li>
+      <li><a href="/about">About</a></li>
+      <li class="services-desktop"><a href="/individuals">Individuals</a></li>
+      <li class="services-desktop"><a href="/couples">Couples</a></li>
+      <li class="services-desktop"><a href="/supervision">Supervision</a></li>
       <li class="has-dropdown services-mobile">
         <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
-          <li><a href="individuals.html">Individuals</a></li>
-          <li><a href="couples.html">Couples</a></li>
-          <li><a href="supervision.html">Supervision</a></li>
+          <li><a href="/individuals">Individuals</a></li>
+          <li><a href="/couples">Couples</a></li>
+          <li><a href="/supervision">Supervision</a></li>
         </ul>
       </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
+      <li><a href="/how-it-works">How It Works</a></li>
+      <li><a href="/fees">Fees</a></li>
+      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -484,7 +484,7 @@
       <div class="step">
         <div class="step-num">1</div>
         <h3>Get in Touch</h3>
-         <p>Reach out via the <a href="book-now.html">contact form</a>, <br>call <a href="tel:+61479171121">0479 171 121</a>, or send an email. There is no obligation and everything you share is completely confidential.</p>
+         <p>Reach out via the <a href="/book-now">contact form</a>, <br>call <a href="tel:+61479171121">0479 171 121</a>, or send an email. There is no obligation and everything you share is completely confidential.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
@@ -508,7 +508,7 @@
   <div class="cta-band">
     <h2>Ready to take the first step?</h2>
     <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <a href="/book-now" class="btn-white">Book an Appointment</a>
   </div>
 
   <!-- CONTACT -->
@@ -632,13 +632,13 @@
         <a href="#" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
         <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals  & Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
         <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="individuals.html">Individuals</a></li>
-          <li><a href="couples.html">Couples</a></li>
-          <li><a href="supervision.html">Supervision</a></li>
-          <li><a href="how-it-works.html">How It Works</a></li>
-          <li><a href="fees.html">Fees</a></li>
-          <li><a href="book-now.html">Book Now</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="individuals">Individuals</a></li>
+          <li><a href="couples">Couples</a></li>
+          <li><a href="supervision">Supervision</a></li>
+          <li><a href="how-it-works">How It Works</a></li>
+          <li><a href="fees">Fees</a></li>
+          <li><a href="book-now">Book Now</a></li>
         </ul>
       </div>
     </div>
@@ -647,8 +647,18 @@
       <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
-
-  
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelector('.services-toggle').addEventListener('click', function (e) {
+      if (window.innerWidth <= 850) {
+        e.preventDefault();
+        this.closest('.services-mobile').classList.toggle('mobile-open');
+      }
+    });
+  </script>
+  <script src="form-validation.js"></script>
 </body>
 </html>
 
