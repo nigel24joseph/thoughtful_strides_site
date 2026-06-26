@@ -181,41 +181,6 @@
       </div>
       <br>
 
-      <script>
-  function openPDF(src, title) {
-    document.getElementById('pdfModalFrame').src = src + '#toolbar=0&navpanes=0&scrollbar=0';
-    document.getElementById('pdfModalTitle').textContent = title;
-    document.getElementById('pdfModal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closePDF() {
-    document.getElementById('pdfModal').classList.remove('open');
-    document.getElementById('pdfModalFrame').src = '';
-    document.body.style.overflow = '';
-  }
-  document.getElementById('pdfModal').addEventListener('click', function(e) {
-    if (e.target === this) closePDF();
-  });
-// document.getElementById('pdfModal').addEventListener('contextmenu', function(e) {
-//   e.preventDefault();
-// });
-
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closePDF();
-  });
-</script>
-
-      <!-- PDF MODAL -->
-<div class="pdf-modal-overlay" id="pdfModal">
-  <div class="pdf-modal">
-    <div class="pdf-modal-header">
-      <span class="pdf-modal-title" id="pdfModalTitle"></span>
-      <button class="pdf-modal-close" onclick="closePDF()" aria-label="Close">&times;</button>
-    </div>
-    <iframe id="pdfModalFrame" src="" title="Certificate viewer"></iframe>
-  </div>
-</div>
 
 <p class="credentials-title">Qualifications</p>
 <div class="credentials">
@@ -224,7 +189,6 @@
    
     <div class="credential-text">
       <strong>Master of Social Science (Human Services - Counselling)</strong>
-      <button class="pdf-view-btn" onclick="openPDF('documents/Masters_Social_Science_Counselling.pdf', 'Master of Social Science (Human Services - Counselling)')">View certificate</button>
     </div>
   </div>
   <div class="credential">
@@ -238,14 +202,12 @@
     <div class="credential-dot"></div>
     <div class="credential-text">
       <strong>Diploma of Professional Counselling</strong>
-      <button class="pdf-view-btn" onclick="openPDF('documents/Diploma_Professional_Counselling.pdf', 'Diploma of Professional Counselling')">View certificate</button>
     </div>
   </div>
   <div class="credential">
     <div class="credential-dot"></div>
     <div class="credential-text">
       <strong>Diploma of Alcohol and Other Drug Work</strong>
-      <button class="pdf-view-btn" onclick="openPDF('documents/Diploma_AOD_Work.pdf', 'Diploma of Alcohol and Other Drug Work')">View certificate</button>
     </div>
   </div>
   <div class="credential">
