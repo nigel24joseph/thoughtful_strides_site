@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thoughtful Strides | Trauma Therapy in Narre Warren</title>
-  <!-- <meta name="description" content="Experienced Counsellor and Psychotherapist offering evidence-based therapy for individuals. Book your appointment today." /> -->
+  <title>Thoughtful Strides | Trauma Therapy & Couples Counselling in Narre Warren</title>
   <link rel="canonical" href="https://thoughtfulstrides.com.au/index.html" />
-  <meta name="description" content="Compassionate counselling and psychotherapy for Individuals and Couples in Narre Warren for anxiety, depression, trauma, PTSD, and relationship issues. PACFA registered. Telehealth available across Australia. Book today." />
+  <meta name="description" content="Compassionate Trauma & PTSD Therapy and Couples Counselling in Narre Warren. PACFA registered. Telehealth available. No waitlist. Book today." />
   
-<meta property="og:title" content="Counselling & Psychotherapy in Narre Warren | Thoughtful Strides" />
-<meta property="og:description" content="Compassionate counselling and psychotherapy for individuals and couples in Narre Warren. PACFA registered. Telehealth available across Australia." />
-<meta property="og:url" content="https://thoughtfulstrides.com.au/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
-
-
+  <meta property="og:title" content="Trauma Therapy & Couples Counselling in Narre Warren | Thoughtful Strides" />
+  <meta property="og:description" content="Compassionate Trauma & PTSD Therapy and Couples Counselling in Narre Warren. PACFA registered. Telehealth available. No waitlist. Book today." />
+  <meta property="og:url" content="https://thoughtfulstrides.com.au/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -33,14 +30,19 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Thoughtful Strides",
-  "description": "PACFA registered Counsellor and Psychotherapist offering evidence-based counselling and psychotherapy for individuals and couples in Narre Warren and via Telehealth across Australia.",
+  "@id": "https://thoughtfulstrides.com.au/#business",
+  "name": "Thoughtful Strides Counselling and Psychotherapy",
+  "sameAs": [
+    "https://www.pacfa.org.au/portal/TherapistProfile?Id=8362",
+    "https://my.aasw.asn.au/s/social-worker-detail-page?swId=SW-00074673"
+  ],
+  "description": "Compassionate Trauma & PTSD Therapy and Couples Counselling in Narre Warren. PACFA registered. Telehealth available. No waitlist. Book today.",
   "url": "https://thoughtfulstrides.com.au/",
   "telephone": "+61479171121",
   "email": "nigel.joseph@thoughtfulstrides.com.au",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "26-28 Verdun Drive",
+    "streetAddress": "Suite 4, 26-28 Verdun Drive",
     "addressLocality": "Narre Warren",
     "addressRegion": "VIC",
     "postalCode": "3805",
@@ -51,29 +53,72 @@
     "latitude": -38.0276,
     "longitude": 145.2974
   },
-  "openingHoursSpecification": [
+ "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
       "opens": "09:00",
       "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "00:00"
     }
   ],
   "availableService": [
-    { "@type": "Service", "name": "Individual Counselling" },
-    { "@type": "Service", "name": "Couples Counselling" },
-    { "@type": "Service", "name": "Clinical Supervision" },
-    { "@type": "Service", "name": "Telehealth Counselling" }
+    {
+      "@type": "Service",
+      "name": "Trauma Therapy",
+      "description": "Evidence-based trauma therapy for individuals experiencing PTSD, complex trauma, anxiety, depression, and grief."
+    },
+    {
+      "@type": "Service",
+      "name": "EMDR Therapy",
+      "description": "Eye Movement Desensitisation and Reprocessing, recognised by the World Health Organisation as a first-line treatment for trauma and PTSD."
+    },
+    {
+      "@type": "Service",
+      "name": "Schema Therapy",
+      "description": "Addresses deep-rooted beliefs and patterns formed by early negative experiences, supporting lasting change for individuals and couples."
+    },
+    {
+      "@type": "Service",
+      "name": "Couples Counselling",
+      "description": "Relationship therapy to help couples improve communication, rebuild trust, and reconnect emotionally."
+    },
+    {
+      "@type": "Service",
+      "name": "Clinical Supervision",
+      "description": "Professional clinical supervision for counsellors and psychotherapists."
+    },
+    {
+      "@type": "Service",
+      "name": "Telehealth Counselling",
+      "description": "Online counselling and psychotherapy sessions available to clients across Victoria and Australia."
+    }
   ],
   "areaServed": [
     "Narre Warren","Berwick","Cranbourne","Hallam",
     "Endeavour Hills","Hampton Park","Clyde","Officer",
-    "Pakenham","Lynbrook"
+    "Pakenham","Lynbrook","Melbourne"
   ],
   "priceRange": "$$",
   "currenciesAccepted": "AUD",
   "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-  "hasCredential": "PACFA Registered Counsellor and Psychotherapist"
+  "hasCredential": "PACFA Clinical Registration 33251",
+  "employee": {
+    "@type": "Person",
+    "name": "Nigel Joseph",
+    "jobTitle": "Trauma Therapist and Couples Counsellor",
+    "hasCredential": [
+      "PACFA Clinical Registration 33251",
+      "Australian Association of Social Workers (AASW) Member",
+      "Master of Counselling",
+      "Master of Social Work"
+    ]
+  }
 }
 </script>
 
@@ -84,18 +129,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What areas do you serve?",
+      "name": "What is trauma?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thoughtful Strides is located at 26-28 Verdun Drive, Narre Warren, and welcomes clients from Narre Warren, Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park, Clyde, Officer, Pakenham, Lynbrook, and surrounding suburbs. Telehealth sessions are also available to clients across Victoria and Australia."
+        "text": "Trauma is not defined by the event itself. It is what happens inside you when your nervous system is overwhelmed beyond its capacity to cope. When an experience leaves you feeling unsafe, helpless, or utterly alone and your nervous system cannot fully process and recover from it, that is trauma."
       }
     },
     {
       "@type": "Question",
-      "name": "What issues can you help with?",
+      "name": "What is the difference between 'big T' and 'little t' trauma?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thoughtful Strides offers trauma therapy, EMDR, and counselling for anxiety, depression, PTSD, complex trauma, panic attacks, stress and burnout, grief and loss, self-esteem, emotional regulation, life transitions, anger management, men's issues, couples counselling, relationship issues, family conflict, workplace issues, addiction, abuse, and domestic violence."
+        "text": "Big T traumas are acute events most people recognise as traumatic, accidents, assault, abuse, natural disasters, war, or sudden loss. Small t traumas are less visible but equally real — childhood emotional neglect, chronic criticism, bullying, or relationship breakdowns. Both leave lasting imprints on the nervous system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can childhood experiences cause trauma in adulthood?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Early relational experiences shape the nervous system, our sense of self, and how safe we feel in the world. Adverse childhood experiences become encoded in the body and nervous system, shaping how we respond to the world long into adulthood."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can trauma cause anxiety and depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and very commonly does. Anxiety that has no obvious cause, depression that does not shift no matter what you try, or a persistent sense that something is wrong, these are frequently the downstream effects of unresolved trauma. Addressing the underlying trauma is often why people find lasting relief when other approaches have not worked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does trauma affect relationships and couples?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unresolved trauma moves into our closest connections. Arguments that escalate too quickly, silences that go on too long, or feeling fundamentally unseen by your partner are often trauma responses playing out between two people. Couples therapy creates space to understand what is happening beneath the surface and find a way back to each other."
       }
     },
     {
@@ -103,7 +172,23 @@
       "name": "What is EMDR therapy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eye Movement Desensitisation and Reprocessing (EMDR) is an evidence-based therapy widely recognised as an effective treatment for trauma, complex trauma, and PTSD. It helps the brain process traumatic memories so they can be recalled without the same emotional intensity, supporting lasting recovery rather than simply managing symptoms."
+        "text": "Eye Movement Desensitisation and Reprocessing (EMDR) is an evidence-based therapy recognised by the World Health Organisation, the American Psychological Association, and Australia's National Centre of Excellence in Posttraumatic Mental Health (Phoenix Australia) as one of the most effective treatments for trauma and PTSD. It helps the nervous system process and release traumatic memories so they no longer carry the same emotional intensity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Schema Therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Schema Therapy, developed by Dr Jeffrey Young, addresses the deep beliefs and patterns formed when core emotional needs for safety, connection, and belonging were not met in childhood. It helps people understand the root causes of long-standing struggles in how they feel about themselves and how they relate to others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What therapies does Nigel use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nigel draws on a range of evidence-based approaches tailored to each individual or couple, including EMDR, Schema Therapy, Cognitive Behaviour Therapy (CBT), Acceptance and Commitment Therapy (ACT), Radical Exposure Tapping (RET), Person Centred Therapy, Solution Focused Therapy, Positive Psychology, and Motivational Interviewing."
       }
     },
     {
@@ -111,7 +196,15 @@
       "name": "Do you offer couples counselling in Narre Warren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Thoughtful Strides offers couples counselling and relationship therapy in Narre Warren and via Telehealth. Support is available for couples experiencing conflict, communication difficulties, loss of connection, trust issues, and the impact of major life transitions."
+        "text": "Yes. Thoughtful Strides offers couples counselling and relationship therapy in Narre Warren and via Telehealth. Support is available for couples experiencing conflict, communication difficulties, loss of connection, trust issues, and the impact of trauma on the relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thoughtful Strides is located at 26-28 Verdun Drive, Narre Warren, and welcomes clients from Narre Warren, Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park, Clyde, Officer, Pakenham, Lynbrook, and surrounding suburbs. Telehealth sessions are available to clients across Victoria and Australia."
       }
     },
     {
@@ -132,14 +225,6 @@
     },
     {
       "@type": "Question",
-      "name": "What therapy approaches do you use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nigel draws on a range of evidence-based approaches including EMDR, Cognitive Behaviour Therapy (CBT), Acceptance and Commitment Therapy (ACT), Schema Therapy, Radical Exposure Tapping (RET), Person Centred Therapy, Solution Focused Therapy, Positive Psychology, and Motivational Interviewing."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Do you accept private health insurance?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -151,18 +236,15 @@
       "name": "Are you PACFA registered?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Nigel Joseph holds PACFA Clinical Registration 33251 and is also a member of the Australian Association of Social Workers (AASW). PACFA is Australia's peak body for counsellors and psychotherapists, and registration ensures practitioners meet rigorous standards of training, supervision, and ethical practice."
+        "text": "Yes. Nigel Joseph holds PACFA Clinical Registration 33251 and is also a member of the Australian Association of Social Workers (AASW). PACFA is Australia's peak body for counsellors and psychotherapists, ensuring practitioners meet rigorous standards of training, supervision, and ethical practice."
       }
     }
   ]
 }
 </script>
 
-
-
 </head>
 <body>
-
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
@@ -194,19 +276,13 @@
   <section class="hero">
     <img src="images/Nigel.webp" alt="Nigel Joseph, Trauma Therapist at Thoughtful Strides" class="hero-bg-img" aria-hidden="true" />
     <div class="hero-text">
-      <!-- <p class="section-label">Counselling and Psychotherapy &mdash; Narre Warren, VIC & Telehealth</p> -->
-      <p class="section-label">A safe place to feel heard, understood and supported</p>
-      <!-- <h1>A safe space to <br><em>feel heard, understood</em><br>and supported</h1> -->
-      <!-- <h1 style="white-space: nowrap;"><em>Counselling & Psychotherapy  in Narre Warren</em></h1> -->
-      <!-- <h1 ><em>Counselling & Psychotherapy in </em>Narre Warren & Telehealth</h1> -->
-      <h1>Trauma Therapy & Counselling in Narre Warren</h1>
+      <p class="section-label">Feel heard. Feel understood. Feel better.</p>
+      <h1>Trauma Therapy & Couples Counselling in Narre Warren</h1>
 
-      <!-- <p>Evidence-based therapy tailored to your needs. Supporting individuals through anxiety, depression, trauma, and life transitions — in a warm, non-judgemental environment.</p> -->
       <h2 class="intro-panel-title">Individuals:</h2>
-      <p>Helping people recover from trauma, complex trauma, PTSD, grief, anxiety, and difficult life experiences through compassionate, evidence-based therapy, including EMDR.</p>
+      <p>Trauma therapy gets to the root of what is driving your distress so that instead of just managing how you feel and getting by, you learn practical strategies to manage day to day while working towards deeper lasting change.</p>
       <h2 class="intro-panel-title">Couples:</h2>
-      <p>Helping couples strengthen communication, rebuild trust, navigate conflict, and reconnect emotionally through supportive and collaborative relationship counselling.</p>
-      
+      <p>Couples therapy helps you improve how you communicate, work through disagreements without damaging the relationship, and rebuild the trust and emotional connection that makes a partnership feel secure, close, and fulfilling.</p>
       
       <div class="hero-btns">
         <a href="#contact" class="btn-primary">Book an Appointment</a>
@@ -215,83 +291,182 @@
   </section>
 
   <!-- Introduction -->
-  <section class="introduction">
-    <div class="intro-grid">
-      <div class="intro-panels">
-        <div>
-          <h2 class="intro-panel-title">Areas I can help with</h2>
-          <ul class="area-list">
-            <li>Anxiety &amp; Depression</li>
-            <li>Panic Attacks</li>
-            <li>Stress &amp; Burnout</li>
-            <li>Self Esteem &amp; Confidence</li>
-            <li>Emotional Regulation</li>
-            <li>Grief &amp; Loss</li>
-            <li>Life Transitions</li>
-            <li>Anger Management</li>
-            <li>Men&#39;s Issues</li>
-            <li>Couples Counselling</li>
-            <li>Relationship Issues</li>
-            <li>Family Conflict</li>
-            <li>Workplace &amp; Career Issues</li>
-            <li>Addiction &amp; Substance Use</li>
-            <li>Abuse</li>
-            <li>Trauma</li>
-            <li>Domestic Violence</li>
-            <li>Post Traumatic Stress Disorder (PTSD)</li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="intro-panel-title">My Approach</h2>
-          <ul class="intro-list intro-approach">
-            <li><strong>Eye Movement Desensitisation and Reprocessing (EMDR)</strong> An evidence-based therapy that helps the brain process and heal from traumatic memories, reducing their intensity and impact over time. Widely recognised as one of the most effective treatments for trauma and PTSD.</li>
-            <li><strong>Radical Exposure Tapping (RET)</strong> Combines gentle tapping techniques with guided exposure to reduce the intensity of distressing feelings and help process traumatic memories in a way that feels manageable.</li>
-            <li><strong>Schema Therapy</strong> Explores deep-rooted patterns formed in childhood that may be driving current struggles — in relationships, in how you see yourself, and in how you respond to the world.</li>
-            <li><strong>Cognitive Behaviour Therapy (CBT)</strong>Helps you identify and change unhelpful thought patterns that affect how you feel and behave, building more adaptive ways of responding to life's challenges.</li>
-            <li><strong>Acceptance and Commitment Therapy (ACT)</strong>Teaches you to accept difficult emotions rather than fight them, and to focus your energy on what truly matters to you — creating a life aligned with your values.</li>
-            <li><strong>Person Centred Therapy</strong> A warm, non-judgemental space where you lead the conversation and set the pace of your healing. No agenda, no rush — just genuine listening and support.</li>
-            <li><strong>Solution Focused Therapy</strong>Focuses on your strengths and practical steps forward rather than dwelling on the past. Particularly useful when you want clear, actionable progress.</li>
-            <li><strong>Positive Psychology</strong>Draws on your existing strengths and resources to build resilience, meaning, and a greater sense of wellbeing over time.</li>
-            <li><strong>Motivational Interviewing</strong>Helps you explore your own reasons for change and build the confidence to make it happen — on your terms, in your own time.</li>
-          </ul>
-        </div>
+
+
+<section class="introduction">
+  <div class="intro-grid">
+
+    <!-- FULL WIDTH FAQ CONTENT AT TOP -->
+    
+    <div class="content">
+      <!-- <p class="section-body"><b>Nigel Joseph</b> provides Trauma Therapy, EMDR, and Couples Counselling in Narre Warren and via Telehealth across Australia.</p> -->
+      
+      <blockquote class="pull-quote"><b> Nigel Joseph</b> provides Trauma Therapy, EMDR, and Couples Counselling in Narre Warren and via Telehealth across Australia.</blockquote>
+      <br>
+
+<div class="fee-card-header">
+        <h2>What is Trauma?</h2>
       </div>
-      <div class="content">
-        <p class="section-body">With 20 years of experience, Nigel Joseph provides trauma therapy, EMDR, and counselling in Narre Warren and via Telehealth across Australia. Whether you're based locally in Melbourne's southeast or connecting remotely, support is available at a pace that feels right for you.</p>
-        <p class="section-body">At times, it can be hard to make sense of what's happening or to find a clear way forward. Therapy offers a space to pause, reflect, and begin to understand the patterns shaping your thoughts, emotions, and relationships. This work is informed by a deep understanding of how the brain and nervous system respond to life experiences — and how those responses can continue to influence the way we think, feel, and relate to others over time.</p>
-        <p class="section-body">Trauma can show up in many different ways. Sometimes it's flashbacks, nightmares, or feeling constantly on edge. Other times it's a persistent sense of numbness, disconnection, or difficulty trusting others. You may not always recognise your experiences as trauma — but if something from your past is affecting how you feel and function today, therapy can help you change your relationship with it so it no longer holds the same power over your life.</p>
-        <p class="section-body">For couples, relationship difficulties often develop gradually. The pressures of work, finances, parenting, and major life changes can take their toll — and before long you may find yourselves having the same arguments, feeling misunderstood, or wondering how things became so difficult. Couples counselling provides a space to slow things down, understand what's happening between you, and find a way forward together.</p>
-        <p class="section-body"><i> If you've started to wonder whether things could feel different, that may be enough to begin. You don't need to have everything figured out to reach out — often, the first conversation is where things start to become clearer.</i></p>
-        <!-- <blockquote class="pull-quote">When you are ready, you are welcome to reach out — you don't have to do this alone.</blockquote> -->
-        <blockquote class="pull-quote">You've already taken one step by being here. The next one is easier than you think</blockquote>
+      <p class="section-body">Trauma is not defined by the event itself; it is what happens to you when your nervous system is overwhelmed beyond its capacity to cope. It is not about what happened to you, but what happened inside you. When an experience leaves you feeling unsafe, helpless, or utterly alone and your nervous system cannot fully process and recover from it, that is trauma (van der Kolk, 2014).</p>
+
+      <div class="fee-card-header">
+        <h2>What is the difference between <i>'big T'</i> and <i>'little t'</i> trauma?</h2>
       </div>
+      <p class="section-body"><b><i>Big T traumas</i></b> are the experiences most people associate with accidents, assault, abuse, natural disasters, war, or sudden loss. These are big events that threaten safety or survival and can leave a lasting imprint on the nervous system (Herman, 1992).
+        <br><br><b><i>Small t traumas</i></b> are less visible but equally real. Childhood emotional neglect, chronic criticism or shaming, bullying, relationship breakdowns, or years of feeling like you didn't quite belong. They rarely involve a single dramatic moment, which is why they so often go unrecognised even by the person carrying them (Levine, 1997).</p>
+
+      <div class="fee-card-header">
+        <h2>Can childhood experiences cause trauma in adulthood?</h2>
+      </div>
+      <p class="section-body">Yes. Early relational experiences shape the nervous system, our sense of self, and how safe we feel in the world. What happened or didn't happen in childhood has a profound effect on adult mental health, relationships, and how we cope with stress. Van der Kolk (2014) demonstrates extensively how early adverse experiences become encoded in the body and nervous system, shaping how we respond to the world long into adulthood.</p>
+
+      <div class="fee-card-header">
+        <h2>How does trauma affect relationships and couples?</h2>
+      </div>
+      <p class="section-body">Unresolved trauma doesn't stay contained to the individual; it moves into our closest connections. The arguments that escalate too quickly, the silences that go on too long, the feeling of being fundamentally unseen by the person who is supposed to know you best are often trauma responses playing out between two people (van der Kolk, 2014). When we feel threatened or emotionally overwhelmed, we react from old survival patterns, not from our best selves. Couples therapy creates space to stop, reflect and understand what is actually happening beneath the surface, finding a way back to each other.</p>
+      <div class="fee-card-header">
+        <h2>What therapies work for trauma?</h2>
+      </div>
+      <p class="section-body">Several approaches have strong evidence for trauma treatment. <br>
+      <b><i>EMDR</i></b> is recognised by the World Health Organisation, the American Psychological Association, and Australia's National Centre of Excellence in Posttraumatic Mental Health (Phoenix Australia) as one of the most effective evidence-based treatments for trauma and PTSD.
+      <br><b><i>Schema Therapy</i></b> addresses the deep beliefs and patterns formed by early negative experience. 
+      <br> <br>Nigel is highly skilled in both approaches, alongside a range of other modalities, tailoring therapy to the unique needs of each individual or couple he works with.</p>
+
+
+
+      <!-- <p class="section-body"><i>If you've started to wonder whether things could feel different, that may be enough to begin. You don't need to have everything figured out to reach out — often, the first conversation is where things start to become clearer.</i></p> -->
+      <blockquote class="pull-quote"> Reaching out is the first step towards making a difference to how you feel.</blockquote>
     </div>
-  </section>
+
+    <!-- TWO COLUMNS BELOW -->
+    <div class="intro-panels">
+      <div>
+        <h2 class="intro-panel-title">Areas I can help with</h2>
+        <ul class="area-list">
+          <li>Anxiety &amp; Depression</li>
+          <li>Panic Attacks</li>
+          <li>Stress &amp; Burnout</li>
+          <li>Self Esteem &amp; Confidence</li>
+          <li>Emotional Regulation</li>
+          <li>Grief &amp; Loss</li>
+          <li>Life Transitions</li>
+          <li>Anger Management</li>
+          <li>Men&#39;s Issues</li>
+          <li>Couples Counselling</li>
+          <li>Relationship Issues</li>
+          <li>Family Conflict</li>
+          <li>Workplace &amp; Career Issues</li>
+          <li>Addiction &amp; Substance Use</li>
+          <li>Abuse</li>
+          <li>Trauma</li>
+          <li>Domestic Violence</li>
+          <li>Post Traumatic Stress Disorder (PTSD)</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="intro-panel-title">My Approach</h2>
+       
+       
 
 
+<ul class="intro-list intro-approach">
 
+  <li>
+    <span class="ts-tip">
+      <strong>Eye Movement Desensitisation and Reprocessing (EMDR)</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">An evidence-based therapy that helps the brain process and heal from traumatic memories, reducing their emotional intensity over time. Recognised by the WHO and APA as one of the most effective treatments for trauma and PTSD.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Radical Exposure Tapping (RET)</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Combines gentle tapping techniques with guided exposure to distressing memories, reducing their intensity and helping process trauma in a way that feels manageable and grounded.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Schema Therapy</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Explores deep-rooted patterns formed in childhood that may be driving current struggles in relationships, in how you see yourself, and in how you respond to the world.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Cognitive Behaviour Therapy (CBT)</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Helps you identify and change unhelpful thought patterns that affect how you feel and behave, building more adaptive ways of responding to life's challenges.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Acceptance and Commitment Therapy (ACT)</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Teaches you to accept difficult emotions rather than fight them, and to focus your energy on what truly matters to you, creating a life aligned with your values.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Person Centred Therapy</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">A warm, non-judgemental space where you lead the conversation and set the pace of your healing. No agenda, no rush, just genuine listening and support.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Solution Focused Therapy</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Focuses on your strengths and practical steps forward rather than dwelling on the past. Particularly useful when you want clear, actionable progress.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Positive Psychology</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Positive psychology tools go beyond fixing what’s broken to build what’s right. Using science-backed practice, like gratitude charting, signature strength building, and mindfulness, we actively cultivate your resilience, tap into authentic joy, and create habits that help you truly thrive.</span>
+    </span>
+  </li>
+
+  <li>
+    <span class="ts-tip">
+      <strong>Motivational Interviewing</strong>
+      <span class="ts-tip-icon">i</span>
+      <span class="ts-tip-box">Motivational Interviewing is a collaborative, goal-oriented style of communication that actively avoids arguing, honours your autonomy, and helps you explore your own mixed feelings about change, drawing out your inner motivation so you can move forward on your own terms.</span>
+    </span>
+  </li>
+
+</ul>
+      </div>
+
+      <!-- WORKSAFE VICTORIA -->
+<!-- <  div style="border: 2px solid #6E7349; border-radius: 8px; padding: 1.5rem; margin-top: 2rem;"> -->
+ <div style="border: 2px solid var(--accent); border-radius: 8px; padding: 1.5rem; margin-top: 2rem; background: var(--warm-cream);">
+  <div class="fee-card-header">
+      <h2><a href="https://www.worksafe.vic.gov.au/counselling-services-policy" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 3px;">WorkSafe Victoria Counselling</a></h2>
+
+    <!-- <h2>WorkSafe Victoria Counselling</h2> -->
+  </div>
+  <p class="section-body">Thoughtful Strides is a registered WorkSafe Victoria counselling provider, supporting workers who have experienced a workplace injury, psychological trauma, or mental health impact as a result of their work. If you have been referred for counselling through WorkSafe Victoria, Nigel Joseph provides trauma-informed, evidence-based therapy to help you process what you have been through, rebuild your confidence and wellbeing, and move forward with your life.</p>
+  <p class="section-body">Sessions are available in-person in Narre Warren or via Telehealth across Victoria.</p>
+</div>
+
+    
+  </div>
+</section>
 
 <section class="location-section">
   <div class="fee-card-header">
     <h2>Locations We Serve</h2>
   </div>
-  <p class="bio-body">Thoughtful Strides is conveniently located at 26–28 Verdun Drive, Narre Warren — easily accessible to residents across Melbourne's southeast.</p>
-  <p class="bio-body">We welcome clients from: </p>
- 
- <ul class="bio-body" style="column-count: 2; column-gap: 2rem; list-style: disc; padding-left: 1.5rem; font-family: inherit; font-size: inherit;">
-
-  <li>Narre Warren</li>
-  <li>Berwick</li>
-  <li>Cranbourne</li>
-  <li>Hallam</li>
-  <li>Endeavour Hills</li>
-  <li>Hampton Park</li>
-  <li>Clyde</li>
-  <li>Officer</li>
-  <li>Pakenham</li>
-  <li>Lynbrook</li>
-  <li>Other surrounding suburbs</li>
-</ul>
+  <p class="bio-body">Thoughtful Strides is conveniently located at <span style="color: var(--accent); font-weight: 500;">Suite 4, 26–28 Verdun Drive, Narre Warren.</span> Easily accessible to residents across Melbourne's southeast.</p>
   <p class="bio-body">Can't make it in person? Telehealth counselling sessions are available to clients across Victoria and Australia.</p>
 </section>
 
@@ -314,7 +489,7 @@
       <div class="step">
         <div class="step-num">2</div>
         <h3>Discovery Call</h3>
-         <p>A free 15-minute call to talk through your concerns, ask any questions, and see whether Thoughtful Strides is the right fit for you. No commitment required — just a conversation.</p>
+         <p>A free 15-minute call to talk through your concerns, ask any questions, and see whether Thoughtful Strides is the right fit for you. No commitment required, just a conversation.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
@@ -324,7 +499,7 @@
       <div class="step">
         <div class="step-num">4</div>
         <h3>Ongoing Support</h3>
-         <p>A personalised treatment plan is developed with you. We work together at a pace that feels right — adapting as you grow, heal, and move forward toward the life you want.</p>
+         <p>A personalised treatment plan is developed with you. We work together at a pace that feels right, adapting as you grow, heal, and move forward toward the life you want.</p>
       </div>
     </div>
   </section>
@@ -376,7 +551,7 @@
           </div>
           <div class="contact-detail-text">
             <strong>Location</strong>
-            <span>26-28 Verdun Drive, Narre Warren</span>
+            <span>Suite 4, 26-28 Verdun Drive, Narre Warren</span>
           </div>
         </div>
         <div class="contact-detail">
@@ -391,7 +566,12 @@
           </div>
         </div>
       </div>
+      <br>
+      <div style="margin-top: 1.5rem;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.9497440743985!2d145.31285417621362!3d-38.024951071923354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad619fff5f299f1%3A0x639cbaeb1b67fb7b!2s26-28%20Verdun%20Dr%2C%20Narre%20Warren%20VIC%203805!5e0!3m2!1sen!2sau!4v1782113423194!5m2!1sen!2sau" width="100%" height="200" style="border:0; border-radius: 10px; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
+
 
     <!-- CONTACT FORM (Netlify) -->
     <div class="contact-form">
@@ -431,6 +611,9 @@
             <option>Other</option>
           </select>
         </div>
+
+       
+
         <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for…"></textarea>
@@ -447,7 +630,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based therapy for individuals  & Couples in Narre Warren and via Telehealth across Australia.</p>
+        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals  & Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
         <ul class="footer-nav">
           <li><a href="about.html">About</a></li>
           <li><a href="individuals.html">Individuals</a></li>
@@ -465,19 +648,7 @@
     </div>
   </footer>
 
-  <script>
-    document.querySelector('.nav-toggle').addEventListener('click', function () {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
-    document.querySelector('.services-toggle').addEventListener('click', function (e) {
-      if (window.innerWidth <= 850) {
-        e.preventDefault();
-        this.closest('.services-mobile').classList.toggle('mobile-open');
-      }
-    });
-  </script>
-  <script src="form-validation.js"></script>
-
+  
 </body>
 </html>
 
