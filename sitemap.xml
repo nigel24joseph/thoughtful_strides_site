@@ -2,42 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thoughtfulstrides.com.au/</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thoughtfulstrides.com.au/about</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://thoughtfulstrides.com.au/individuals</loc>
-    <priority>0.8</priority>
+    <loc>https://thoughtfulstrides.com.au/book-now</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thoughtfulstrides.com.au/couples</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://thoughtfulstrides.com.au/supervision</loc>
+    <loc>https://thoughtfulstrides.com.au/trauma-therapy</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/anxiety</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/depression</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/anger-management</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/grief-and-loss</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/relationships</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/general-counselling</loc>
+    <lastmod>2026-07-29</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thoughtfulstrides.com.au/worksafe-counselling</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thoughtfulstrides.com.au/fees</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thoughtfulstrides.com.au/how-it-works</loc>
+    <lastmod>2026-07-29</lastmod>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://thoughtfulstrides.com.au/book-now</loc>
-    <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
