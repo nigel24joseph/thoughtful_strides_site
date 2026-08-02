@@ -1315,8 +1315,9 @@ footer {
 
 .services-image {
   float: right;
-  width: 42%;
-  margin: 0 0 2rem 3.5rem;
+  width: 45%;
+  max-width: 540px;
+  margin: 2rem 0 2rem 3.5rem;
   border-radius: 2rem;
   overflow: hidden;
   background: var(--sage-pale);
@@ -1327,6 +1328,7 @@ footer {
   height: auto;
   display: block;
 }
+
 
 .services-body {
   background: var(--warm-white);
