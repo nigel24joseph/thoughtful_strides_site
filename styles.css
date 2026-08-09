@@ -206,6 +206,23 @@ nav {
   transition: all 0.3s;
 }
 
+@media (min-width: 851px) and (max-width: 1024px) {
+  .nav-logo img {
+    width: 380px;
+    height: auto;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+  }
+
+  .nav-cta,
+  .nav-phone {
+    padding: 0.4rem 0.5rem;
+    min-width: 0;
+  }
+}
+
 /* ── HERO ── */
 .hero {
   min-height: calc(90vh - var(--nav-height));
@@ -1374,12 +1391,9 @@ footer {
 }
 
 @media (max-width: 850px) {
-  .services-desktop { display: list-item; }
-  .services-mobile { display: none; }
-
   .has-dropdown:hover .nav-dropdown,
   .has-dropdown:focus-within .nav-dropdown { display: none; }
-  .services-mobile .nav-dropdown {
+  .has-dropdown .nav-dropdown {
     position: static;
     transform: none;
     box-shadow: none;
@@ -1389,14 +1403,14 @@ footer {
     padding: 0;
     min-width: unset;
   }
-  .services-mobile.mobile-open .nav-dropdown { display: block; }
-  .services-mobile.mobile-open .nav-dropdown li { border-bottom: none !important; }
-  .services-mobile.mobile-open .nav-dropdown li a {
+  .has-dropdown.mobile-open .nav-dropdown { display: block; }
+  .has-dropdown.mobile-open .nav-dropdown li { border-bottom: none !important; }
+  .has-dropdown.mobile-open .nav-dropdown li a {
     padding: 0.5rem 0 0.5rem 1.25rem !important;
     font-size: 0.875rem;
     color: var(--text-light);
   }
-  .services-mobile.mobile-open .dropdown-arrow { transform: rotate(180deg); }
+  .has-dropdown.mobile-open .dropdown-arrow { transform: rotate(180deg); }
 
   .nav-links { display: none; }
   .nav-links.open {
@@ -1413,10 +1427,18 @@ footer {
     z-index: 99;
   }
   .nav-links.open li { border-bottom: 1px solid rgba(0,0,0,0.06); }
-  .nav-links.open a { display: block; padding: 0.75rem 0; }
-  .nav-links.open .nav-cta {
+  .nav-links.open a { display: block; padding: 0.75rem 0;text-align:center; }
+  .nav-links.open .dropdown-arrow {
+    font-size: 1em;
+    margin-left: 0.3em;
+  }
+  .nav-links.open .nav-cta,
+  .nav-links.open .nav-phone {
     margin-top: 0.5rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-radius: 2rem;
     padding: 0.65rem 2rem;
   }
@@ -1433,7 +1455,15 @@ footer {
 }
 
 @media (max-width: 425px) {
-  .nav-logo img { width: 350px; }
+  .nav-logo img { width: 340px; }
+}
+
+@media (max-width: 390px) {
+  .nav-logo img { width: 300px; }
+}
+
+@media (max-width: 340px) {
+  .nav-logo img { width: 275px; }
 }
 
 /* ===== TOOLTIP STYLES ===== */

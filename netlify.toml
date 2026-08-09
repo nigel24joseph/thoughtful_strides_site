@@ -2,6 +2,26 @@
   publish = "."
 
 [[redirects]]
+  from = "/individuals"
+  to = "/general-counselling"
+  status = 301
+
+[[redirects]]
+  from = "/individuals.html"
+  to = "/general-counselling"
+  status = 301
+
+[[redirects]]
+  from = "/supervision"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/supervision.html"
+  to = "/"
+  status = 301  
+
+[[redirects]]
   from = "/:page"
   to = "/:page.html"
   status = 200
