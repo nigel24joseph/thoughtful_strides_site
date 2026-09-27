@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=4" />
-  
+
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -185,13 +185,20 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
 
   <!-- NAV -->
   <nav>
-   
+
     <!-- Final version -->
    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="WorkSafe Victoria Counselling Narre Warren"></a>
     <ul class="nav-links">
@@ -212,7 +219,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
 <!-- END final version -->
@@ -255,23 +262,24 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>WorkSafe Victoria Counselling <em>in Narre Warren</em></h1>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/Worksafe.webp" alt="Client's hands clasped together during a therapy session" style="cursor:pointer;"></a>
-    </div>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Worksafe.webp" alt="Client's hands clasped together during a therapy session" style="cursor:pointer;"></a>
+      </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Steady Ground to Recover On</p>
-      <p class="bio-body">Support for workers recovering from a work-related psychological or physical injury, at no out-of-pocket cost.</p>
-      <p class="bio-body">If you've experienced a work-related injury, whether psychological, physical, or both, WorkSafe Victoria can fund counselling to support your recovery and return to work. Thoughtful Strides Counselling and Psychotherapy is a registered WorkSafe Victoria counselling provider, offering trauma-informed, evidence-based support for injured workers across Victoria.</p>
-      <p class="bio-body" style="margin-bottom:0;">Common reasons workers access WorkSafe-funded counselling include workplace bullying or harassment, exposure to a traumatic incident, workplace accidents or injuries, excessive or unsafe workloads, and psychological injury arising from any work-related event or ongoing workplace stressor. Where anger has become part of the picture following a workplace incident, <a href="anger-management.html">anger management counselling</a> can also form part of this work. Whatever the injury, the goal is the same, steady ground under you again, and a clear path back to work and to yourself.</p>
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">Steady Ground to Recover On</p>
+        <p class="bio-body">I support workers recovering from a work-related psychological or physical injury, at no out-of-pocket cost to you.</p>
+        <p class="bio-body">If you've experienced a work-related injury, whether psychological, physical, or both, WorkSafe Victoria can fund counselling to support your recovery and return to work. I'm a registered WorkSafe Victoria counselling provider, offering trauma-informed, evidence-based support to injured workers across Victoria.</p>
+        <p class="bio-body" style="margin-bottom:0;">Common reasons workers access WorkSafe-funded counselling include workplace bullying or harassment, exposure to a traumatic incident, workplace accidents or injuries, excessive or unsafe workloads, and psychological injury arising from any work-related event or ongoing workplace stressor. Where anger has become part of the picture following a workplace incident, I can also help with <a href="anger-management.html">anger management counselling</a> as part of this work. Whatever the injury, my goal is the same, steady ground under you again, and a clear path back to work and to yourself.</p>
+      </div>
     </div>
-
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
 
     <!-- ELIGIBILITY CARD -->
     <div class="symptom-card">
@@ -313,42 +321,13 @@
       </div>
     </div>
 
-    <!-- APPROACH -->
-    <div class="fee-card-header">
-      <h2>Our Approach</h2>
-    </div>
-    <p class="bio-body">With PACFA Clinical Registration, AASW membership, and 20 years of clinical experience, our WorkSafe counselling is trauma-informed and tailored to your specific injury and recovery goals, always working in line with WorkSafe's Clinical Framework and in collaboration with your GP and treatment team, so recovery feels steady rather than uncertain.</p>
-
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>For processing traumatic workplace incidents, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Cognitive Behavioural Therapy (CBT)</strong>
-        <span>For anxiety, depression, and stress linked to your workplace injury.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>For longstanding patterns affecting recovery.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Solution Focused Therapy</strong>
-        <span>Practical, goal-directed support for returning to work and daily life.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Motivational Interviewing</strong>
-        <span>Supporting engagement with treatment and the return-to-work process.</span>
-      </div>
-    </div>
-
     <!-- WHAT TO EXPECT + QUOTE -->
     <div class="info-band">
       <div class="fee-card-header">
         <h2>What to Expect</h2>
       </div>
-      <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth across Victoria. WorkSafe can fund the reasonable costs of counselling for up to 12 hours or six months, provided your progress continues to be reviewed by your treating medical practitioner and treatment remains clinically justified. Further sessions can be supported with updated clinical justification if needed.</p>
-      <p class="bio-body" style="margin-bottom:0;">Once your claim is accepted, you typically pay nothing. WorkSafe's insurer pays your counsellor directly at the published fee schedule rate.</p>
+      <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth across Victoria. I start with a thorough assessment of how the injury has affected you, then build a plan suited to your recovery and return to work. WorkSafe can fund the reasonable costs of counselling for up to 12 hours or six months, provided your progress continues to be reviewed by your treating medical practitioner and treatment remains clinically justified. Further sessions can be supported with updated clinical justification if needed.</p>
+      <p class="bio-body" style="margin-bottom:0;">Once your claim is accepted, you typically pay nothing. WorkSafe's insurer pays me directly at the published fee schedule rate.</p>
 
       <blockquote class="pull-quote">
         Recovering from a workplace injury is rarely only physical. Good support treats the whole impact, not just the claim.
@@ -359,8 +338,7 @@
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>If you have a work-related injury and would like support with your recovery, help is available.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <p>If you have a work-related injury and would like support with your recovery, call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
 
     <div class="clearfix"></div>
@@ -459,9 +437,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>A workplace injury doesn't just affect you at work.</h2>
+    <p class="cta-band-line1" style="max-width:none;">Why put off the support that could help you recover and get back on track.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
