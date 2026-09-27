@@ -113,7 +113,7 @@
           "@type": "ServiceChannel",
           "name": "Telehealth",
           "availableLanguage": "English",
-          "serviceUrl": "https://thoughtfulstrides.com.au/book-now.html"
+          "serviceUrl": "https://thoughtfulstrides.com.au/book-now"
         }
       ]
     }
@@ -183,6 +183,13 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
@@ -210,7 +217,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
     <!-- END Final version -->
@@ -251,21 +258,23 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>Depression Counselling <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">You don't have to feel like yourself again all at once.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/Depression.webp" alt="Man sitting alone on a leather couch with his hand over his eyes, reflecting the weight of low mood and depression" style="cursor:pointer;"></a>
-    </div>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Depression.webp" alt="Man sitting alone on a leather couch with his hand over his eyes, reflecting the weight of low mood and depression" style="cursor:pointer;"></a>
+      </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Reconnect With Life</p>
-      <p class="bio-body" style="margin-bottom:0;">When everything feels heavier than it should, getting through the day can start to feel like an effort in itself. Depression can show up as a flat, disconnected feeling, or as exhaustion that sleep doesn't fix, or as a quiet sense that the things you once enjoyed have lost their pull. If that sounds familiar, you are not alone, and it is not a sign of weakness. It is a sign that something needs support.</p>
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">Reconnect With Life</p>
+        <p class="bio-body" style="margin-bottom:0;">When everything feels heavier than it should, getting through the day can start to feel like an effort in itself. Depression can show up as a flat, disconnected feeling, or as exhaustion that sleep doesn't fix, or as a quiet sense that the things you once enjoyed have lost their pull. <br><br>If that sounds familiar, you are not alone, and it is not a sign of weakness. It is a sign that something needs support.</p>
+      </div>
     </div>
-
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
 
     <!-- SIGNS CARD -->
     <div class="symptom-card">
@@ -297,53 +306,49 @@
       </div>
     </div>
 
-    <!-- OUR APPROACH -->
+    <!-- DEPRESSION THERAPY AND COUNSELLING -->
     <div class="fee-card-header">
-      <h2>Our Approach</h2>
+      <h2>Depression Therapy and Counselling</h2>
     </div>
     <p class="bio-body">With 20 years of clinical experience, I draw on several evidence-based approaches depending on what fits you best, not a one-size-fits-all program.</p>
-
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Cognitive Behaviour Therapy (CBT)</strong>
-        <span>Helps identify and shift the unhelpful thought patterns that feed low mood.</span>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Understanding What's Driving It</h3>
+        <p>We start by understanding what's actually driving your low mood, whether that's grief, relationship strain, longstanding beliefs, or something less clear cut.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I draw on Cognitive Behaviour Therapy to help identify and shift the unhelpful thought patterns that feed low mood, and Schema Therapy where longstanding beliefs formed early in life are quietly keeping depression in place. Where trauma is a contributing factor, EMDR can help process the experiences underneath the depression itself, part of my trauma therapy work.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding What's Driving It" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Acceptance and Commitment Therapy (ACT)</strong>
-        <span>Builds psychological flexibility and reconnects you with what matters to you.</span>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Rebuilding Motivation and Connection</h3>
+        <p>Together we rebuild motivation and routine, one manageable step at a time, and reconnect with activities and people that used to matter to you.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I draw on Acceptance and Commitment Therapy to build psychological flexibility and reconnect you with what matters to you, rather than pushing forced positivity. Where relevant, this includes processing grief or relationship strain alongside the day to day work of rebuilding.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Rebuilding Motivation and Connection" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Addresses longstanding beliefs formed early in life that can quietly keep depression in place.</span>
-      </div>
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>Where trauma is a contributing factor, helps process the experiences underneath the depression itself, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Building a Plan That Lasts</h3>
+        <p>We shift the thought patterns that keep depression in place, and build a relapse prevention plan for harder periods ahead.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>This is practical, goal-focused work suited to you, whether that's short-term, focused work or a longer-term course of therapy, with a plan you can keep using well beyond our sessions together.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Building a Plan That Lasts" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
     </div>
 
-    <!-- WHAT WE'LL WORK ON -->
-    <div class="fee-card-header">
-      <h2>What We'll Work On Together</h2>
-    </div>
-    <ul class="checklist-grid">
-      <li>Understanding what's actually driving your low mood</li>
-      <li>Shifting the thought patterns that keep depression in place</li>
-      <li>Rebuilding motivation and routine, one manageable step at a time</li>
-      <li>Reconnecting with activities and people that used to matter to you</li>
-      <li>Where relevant, processing grief, relationship strain, or past experiences underneath it</li>
-      <li>Building a relapse prevention plan for harder periods ahead</li>
-    </ul>
-
-    <!-- WHAT TO EXPECT -->
-    <div class="fee-card-header">
-      <h2>What to Expect</h2>
-    </div>
-    <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. We start with a thorough assessment of your history, symptoms, and goals, then build a plan suited to you, whether that's short-term, focused work or a longer-term course of therapy.</p>
-
-    <!-- QUOTE BAND -->
+    <!-- COUNSELLING SESSIONS -->
     <div class="info-band" style="text-align:center;">
-      <blockquote class="pull-quote" style="margin-top:0;">
+      <div class="fee-card-header">
+        <h2>Counselling Sessions</h2>
+      </div>
+      <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. I start with a thorough assessment of your history, symptoms, and goals, then build a plan suited to you, whether that's short-term, focused work or a longer-term course of therapy.</p>
+
+      <blockquote class="pull-quote" style="margin-bottom:0;">
         Depression often narrows life down to survival. Therapy is about widening it back out again, one workable step at a time.
       </blockquote>
     </div>
@@ -352,11 +357,9 @@
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>If depression is making everyday life harder than it should be, support is available.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <p>If depression is making everyday life harder than it should be, call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
 
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -422,9 +425,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>You don't have to keep pushing through this alone.</h2>
+    <p class="cta-band-line1" style="max-width:none;">Support can help you find your way back to energy, motivation, and meaning.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -460,6 +466,16 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
       });
     });
   </script>

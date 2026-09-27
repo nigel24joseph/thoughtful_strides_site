@@ -33,8 +33,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=4" />
-  
-  
+
+
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -181,6 +181,13 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
@@ -192,7 +199,7 @@
 
     <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Anxiety, OCD and Panic Counselling Narre Warren"></a>
 
-       <ul class="nav-links"> 
+       <ul class="nav-links">
       <li><a href="/about">About</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
@@ -210,7 +217,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
 
@@ -254,23 +261,25 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>Anxiety, OCD & Panic Counselling <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">You don't have to have it all figured out to ask for help.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image" style="float: right; width: 40%; max-width: 480px;">
-  <a href="/book-now"><img src="images/Anxiety.webp" alt="Close-up of hands tightly clasped together, fidgeting with fabric, reflecting nervous tension and anxiety" style="cursor:pointer;"></a>
-</div>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Anxiety.webp" alt="Close-up of hands tightly clasped together, fidgeting with fabric, reflecting nervous tension and anxiety" style="cursor:pointer;"></a>
+      </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Freedom From Fear &amp; Worry</p>
-      <p class="bio-body">Anxiety conditions are among the most common and most treatable mental health conditions. You don't have to manage this on your own.</p>
-      <p class="bio-body">Anxiety is Australia's most common mental health condition, affecting around 1 in 4 people at some point in their lives. It can show up as constant worry, sudden panic, intrusive thoughts and compulsions, or a persistent sense of dread that's hard to explain. At Thoughtful Strides Counselling and Psychotherapy, we help individuals understand what's driving their anxiety and build practical, evidence-based tools to feel more in control again.</p>
-      <p class="bio-body" style="margin-bottom:0;">Anxiety disorders cover a range of presentations, including generalised anxiety, panic disorder, social anxiety, phobias, and obsessive-compulsive disorder (OCD), and they often overlap with each other. Whatever form it takes, effective, well-evidenced treatment is available.</p>
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">Freedom From Fear &amp; Worry</p>
+        <p class="bio-body" style="margin-bottom:0;">Anxiety conditions are among the most common and most treatable mental health conditions. You don't have to manage this on your own. <br><br>Anxiety is Australia's most common mental health condition, affecting around 1 in 4 people at some point in their lives. It can show up as constant worry, sudden panic, intrusive thoughts and compulsions, or a persistent sense of dread that's hard to explain.</p>
+      </div>
     </div>
 
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
+    <p class="bio-body">I help you understand what's driving your anxiety and build practical, evidence-based tools to feel more in control again. Anxiety disorders cover a range of presentations, including generalised anxiety, panic disorder, social anxiety, phobias, and obsessive-compulsive disorder (OCD), and they often overlap with each other. Whatever form it takes, effective, well-evidenced treatment is available.</p>
 
     <!-- SIGNS CARD -->
     <div class="symptom-card">
@@ -292,64 +301,56 @@
     <!-- PANIC / OCD SPLIT CARDS -->
     <div class="split-grid">
       <div class="split-card">
-        <h3>Panic Disorder</h3>
+        <h3>Panic Therapy and Counselling</h3>
         <p>Panic disorder involves recurrent, unexpected panic attacks, sudden surges of intense fear accompanied by physical symptoms such as a racing heart, chest tightness, or dizziness, along with ongoing worry about having another attack. It's highly treatable, and many people fear something is physically wrong with them before recognising the pattern as panic.</p>
       </div>
       <div class="split-card">
-        <h3>Obsessive-Compulsive Disorder (OCD)</h3>
+        <h3>OCD Therapy and Counselling</h3>
         <p>OCD involves intrusive, unwanted thoughts, images, or urges (obsessions) that cause significant distress, and repetitive behaviours or mental acts (compulsions) performed to reduce that distress or prevent a feared outcome. Common themes include contamination, harm, symmetry, or intrusive taboo thoughts. OCD responds well to structured, evidence-based treatment.</p>
       </div>
     </div>
 
-    <!-- APPROACH -->
+    <!-- ANXIETY THERAPY AND COUNSELLING -->
     <div class="fee-card-header">
-      <h2>Our Approach</h2>
+      <h2>Anxiety Therapy and Counselling</h2>
     </div>
-    <p class="bio-body">With 20 years of clinical experience and advanced training across trauma-informed and evidence-based modalities, we tailor treatment to the specific type of anxiety you're experiencing, not a one-size-fits-all program.</p>
-
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Cognitive Behavioural Therapy (CBT)</strong>
-        <span>The leading evidence-based treatment for anxiety, panic, and OCD.</span>
+    <p class="bio-body">Therapy starts with getting to know you, your experiences, your childhood and when the anxiety firs started to bother you.</p>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Understanding Your Triggers and Patterns</h3>
+        <p>We start by understanding your specific anxiety triggers and patterns, and the unhelpful thinking patterns that fuel anxiety.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I use EMDR which is a very effective and efficient treatment for anxiety. EMDR targets the core beliefs that trigger the emotional responses</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Triggers and Patterns" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Acceptance and Commitment Therapy (ACT)</strong>
-        <span>Building tolerance for anxious thoughts and feelings without letting them dictate your choices.</span>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Reducing Avoidance, Building Tolerance</h3>
+        <p>Together we work through gradual, structured exposure to reduce avoidance and compulsions, and practical tools to manage panic symptoms in the moment.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I draw on Acceptance and Commitment Therapy to build your tolerance for anxious thoughts and feelings without letting them dictate your choices, alongside nervous system regulation and grounding techniques you can use as symptoms arise.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Reducing Avoidance, Building Tolerance" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Addressing longstanding patterns that contribute to chronic or treatment-resistant anxiety.</span>
-      </div>
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>Processing past experiences that may be fuelling anxiety or panic symptoms, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Solution Focused Therapy</strong>
-        <span>Practical, goal-directed strategies to rebuild confidence and function.</span>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Building Practical Tools</h3>
+        <p>We build a relapse prevention plan for the future, using practical, goal-directed strategies to rebuild confidence and function.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I draw on Solution Focused Therapy for practical, goal-directed strategies, and where relevant, we process past experiences that underlie current symptoms, so the tools you build last well beyond our sessions together.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Building Practical Tools" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
     </div>
 
-    <!-- WHAT WE'LL WORK ON -->
-    <div class="fee-card-header">
-      <h2>What We'll Work On Together</h2>
-    </div>
-    <ul class="checklist-grid">
-      <li>Understanding your specific anxiety triggers and patterns</li>
-      <li>Practical tools to manage panic symptoms in the moment</li>
-      <li>Gradual, structured exposure to reduce avoidance and compulsions</li>
-      <li>Challenging unhelpful thinking patterns that fuel anxiety</li>
-      <li>Nervous system regulation and grounding techniques</li>
-      <li>Where relevant, processing past experiences that underlie current symptoms</li>
-      <li>Building a relapse prevention plan for the future</li>
-    </ul>
-
-    <!-- WHAT TO EXPECT / QUOTE BAND -->
+    <!-- COUNSELLING SESSIONS / QUOTE BAND -->
     <div class="info-band">
       <div class="fee-card-header">
-        <h2>What to Expect</h2>
+        <h2>Counselling Sessions</h2>
       </div>
-      <p class="bio-body" style="margin-bottom:0;">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. We start with a thorough assessment of your history, symptoms, and goals, then build a plan suited to you, whether that's short-term, focused work or a longer-term course of therapy.</p>
+      <p class="bio-body" style="margin-bottom:0;">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. I start with a thorough assessment of your history, symptoms, and goals, then build a plan suited to you, whether that's short-term, focused work or a longer-term course of therapy.</p>
 
       <blockquote class="pull-quote">
         Anxiety shrinks the world down to what feels safe. Therapy is about widening it back out again, one manageable step at a time.
@@ -360,11 +361,9 @@
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>If anxiety, panic, or OCD is affecting your day to day life, support is available.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <p>If anxiety, panic, or OCD is affecting your day to day life, call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
 
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -450,9 +449,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>A mind that won't switch off takes its toll eventually.</h2>
+    <p class="cta-band-line1" style="max-width:none;">Why wait for it to ease on its own, when you can do something about it now.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -488,6 +490,16 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
       });
     });
   </script>

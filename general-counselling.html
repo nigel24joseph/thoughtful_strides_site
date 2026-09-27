@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=4" />
-  <!-- 
+  <!--
   Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -181,13 +181,20 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
 
   <!-- NAV -->
   <nav>
-   
+
     <!-- Final version - comment in before publishing -->
      <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="General Counselling Narre Warren"></a>
     <ul class="nav-links">
@@ -208,7 +215,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
 <!-- END Final version -->
@@ -251,23 +258,25 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>General Counselling <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">Not everything that brings you here needs a diagnosis to be worth talking about.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/General.webp" alt="Client sitting with knees drawn up and hands clasped, speaking with a counsellor during a general counselling session" style="cursor:pointer;"></a>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/General.webp" alt="Client sitting with knees drawn up and hands clasped, speaking with a counsellor during a general counselling session" style="cursor:pointer;"></a>
+      </div>
+
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">Support for Whatever Life Brings</p>
+        <p class="bio-body" style="margin-bottom:0;">A safe, confidential space to talk things through, whatever you're facing, and wherever you're starting from. <br><br>Not every reason for seeking counselling fits neatly into a diagnosis. Sometimes you're going through a difficult life transition, feeling stuck, overwhelmed, or simply want an experienced, objective person to talk things through with.</p>
+      </div>
     </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Support for Whatever Life Brings</p>
-      <p class="bio-body">A safe, confidential space to talk things through, whatever you're facing, and wherever you're starting from.</p>
-      <p class="bio-body">Not every reason for seeking counselling fits neatly into a diagnosis. Sometimes you're going through a difficult life transition, feeling stuck, overwhelmed, or simply want an experienced, objective person to talk things through with. At Thoughtful Strides Counselling and Psychotherapy, general counselling offers exactly that, a confidential, non-judgemental space tailored to whatever you're bringing to it.</p>
-      <p class="bio-body" style="margin-bottom:0;">With 20 years of clinical experience across individuals and couples, our approach adapts to you, rather than fitting you into a fixed program. Whether you need a handful of sessions to work through a specific issue, or longer-term, open-ended support, we'll shape the work around your goals, and toward a life that feels more like your own again.</p>
-    </div>
-
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
+    <p class="bio-body">With 20 years of clinical experience across individuals and couples, my approach adapts to you, rather than fitting you into a fixed program. Whether you need a handful of sessions to work through a specific issue, or longer-term, open-ended support, I'll shape the work around your goals, and toward a life that feels more like your own again.</p>
 
     <!-- HELPS WITH CARD -->
     <div class="symptom-card">
@@ -287,87 +296,60 @@
       </ul>
     </div>
 
-    <!-- APPROACH -->
+    <!-- GENERAL COUNSELLING AND THERAPY -->
     <div class="fee-card-header">
-      <h2>Our Approach</h2>
+      <h2>General Counselling and Therapy</h2>
     </div>
-    <p class="bio-body">Counselling is, by definition, relational. The quality of the relationship between you and your counsellor is central to how useful the work is. We draw on a range of evidence-based approaches and tailor them to you, so the goal isn't just coping better, it's a life that feels steadier and more genuinely yours.</p>
-
-    <p class="approach-subhead" style="margin-top:0.5rem;">Core Approaches</p>
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Person-Centred Counselling</strong>
-        <span>Meeting you where you are, without judgement.</span>
+    <p class="bio-body">Counselling is, by definition, relational. The quality of the relationship between you and your counsellor is central to how useful the work is, so sessions tend to move through a few natural stages as we find our footing together.</p>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Understanding What's Brought You Here</h3>
+        <p>We start by getting clear on what's actually brought you to counselling, and what you'd like to get out of it, without needing it to fit a specific diagnosis.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I draw on Person-Centred Counselling to meet you where you are, without judgement, whether that's a life transition, stress, low self-esteem, or simply wanting a confidential space to think out loud.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding What's Brought You Here" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Cognitive Behavioural Therapy (CBT)</strong>
-        <span>For unhelpful thinking patterns and practical strategies.</span>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Understanding the Patterns</h3>
+        <p>Together we work through a specific decision, transition, or life change, and look at patterns that keep showing up in different areas of your life.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>Depending on what's most useful, this can draw on Cognitive Behavioural Therapy for unhelpful thinking patterns, Acceptance and Commitment Therapy for psychological flexibility and values-based living, or Schema Therapy where longstanding patterns from earlier in life are part of the picture. Where past experiences are still affecting the present, I also draw on EMDR, part of my trauma therapy work.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding the Patterns" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Acceptance and Commitment Therapy (ACT)</strong>
-        <span>Building psychological flexibility and values-based living.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Solution Focused Therapy</strong>
-        <span>Practical, goal-directed support for specific issues.</span>
-      </div>
-    </div>
-
-    <p class="approach-subhead">Additional Approaches, Used as Needed</p>
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Motivational Interviewing</strong>
-        <span>For exploring ambivalence and readiness for change.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Positive Psychology</strong>
-        <span>Strengthening wellbeing and resilience, not just addressing problems.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Where longstanding patterns from earlier in life are part of the picture.</span>
-      </div>
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>Where past experiences are still affecting the present, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Building a Plan That Fits You</h3>
+        <p>We build practical coping strategies for stress and overwhelm, and work toward rebuilding confidence, direction, or a sense of meaning.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>I also draw on Solution Focused Therapy for practical, goal-directed support, Motivational Interviewing where ambivalence about change is part of the picture, and Positive Psychology to strengthen wellbeing and resilience, not just address problems. There's no set number of sessions, and the plan is shaped around your goals, not a fixed program.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Building a Plan That Fits You" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
     </div>
 
-    <!-- WHAT WE'LL WORK ON -->
-    <div class="fee-card-header">
-      <h2>What We'll Work On Together</h2>
-    </div>
-    <ul class="checklist-grid">
-      <li>Getting clear on what's actually brought you to counselling</li>
-      <li>Working through a specific decision, transition, or life change</li>
-      <li>Building practical coping strategies for stress and overwhelm</li>
-      <li>Understanding patterns that keep showing up in different areas of your life</li>
-      <li>Rebuilding confidence, direction, or a sense of meaning</li>
-      <li>Shaping a plan that fits your goals, not a fixed program</li>
-    </ul>
-
-    <!-- QUOTE BAND -->
+    <!-- COUNSELLING SESSIONS -->
     <div class="info-band" style="text-align:center;">
-      <blockquote class="pull-quote" style="margin-top:0;">
+      <div class="fee-card-header">
+        <h2>Counselling Sessions</h2>
+      </div>
+      <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. Your first session is about understanding what's brought you to counselling and what you'd like to get out of it. There's no set number of sessions, and the pace and focus are shaped around you.</p>
+
+      <blockquote class="pull-quote" style="margin-bottom:0;">
         Counselling is not only for crisis. Sometimes the most valuable work happens when you simply want to understand yourself a little better.
       </blockquote>
     </div>
-
-    <!-- WHAT TO EXPECT -->
-    <div class="fee-card-header">
-      <h2>What to Expect</h2>
-    </div>
-    <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. Your first session is about understanding what's brought you to counselling and what you'd like to get out of it. There's no set number of sessions, and the pace and focus are shaped around you.</p>
 
     <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>Whatever you're facing, you don't have to work through it alone.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <p>Whatever you're facing, call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
 
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -454,8 +436,11 @@
   <!-- CTA BAND -->
   <div class="cta-band">
     <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <p class="cta-band-line1" style="max-width:none;">Appointments are available now. Reach out today and we'll find a time that works for you.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -491,6 +476,16 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
       });
     });
   </script>

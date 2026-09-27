@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=4" />
-  
+
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -59,12 +59,12 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "name": "Grief and Loss Counselling in Narre Warren",
-  "description": "Grief and loss counselling in Narre Warren and via Telehealth, supporting bereavement, complicated grief, and non-death losses using Worden's Tasks of Mourning, Rando's Six 'R' Processes, EMDR, CBT and ACT.",
+  "description": "Grief and loss counselling in Narre Warren and via Telehealth, supporting bereavement, complicated grief, and non-death losses, including EMDR for grief connected to trauma.",
   "url": "https://thoughtfulstrides.com.au/grief-and-loss",
   "inLanguage": "en-AU",
   "about": [
     { "@type": "MedicalCondition", "name": "Grief" },
-    { "@type": "MedicalCondition", "name": "Prolonged Grief Disorder" }
+    { "@type": "MedicalCondition", "name": "Complicated Grief" }
   ],
   "hasPart": [
     { "@id": "https://thoughtfulstrides.com.au/grief-and-loss#faq" }
@@ -73,7 +73,7 @@
     "@type": "Service",
     "@id": "https://thoughtfulstrides.com.au/grief-and-loss#service",
     "name": "Grief and Loss Counselling",
-    "description": "Compassionate counselling for bereavement, complicated grief, and non-death losses, using Worden's Tasks of Mourning, Rando's Six 'R' Processes, EMDR, CBT and ACT in Narre Warren and via Telehealth across Australia.",
+    "description": "Compassionate counselling for bereavement, complicated grief, and non-death losses, including EMDR for grief connected to trauma, in Narre Warren and via Telehealth across Australia.",
     "provider": {
       "@type": "Person",
       "@id": "https://thoughtfulstrides.com.au/#nigel-joseph",
@@ -83,17 +83,7 @@
       "hasCredential": "PACFA Clinical Registration 33251"
     },
     "serviceType": "Grief Counselling, Bereavement Counselling, Loss Counselling",
-    "areaServed": ["Narre Warren","Berwick","Cranbourne","Hallam","Endeavour Hills","Hampton Park","Pakenham","Melbourne"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Therapy Approaches",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EMDR", "description": "Particularly helpful for grief involving trauma, sudden death, or intrusive images of the loss." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cognitive Behavioural Therapy (CBT)", "description": "Addressing unhelpful thinking patterns, guilt, or avoidance that can prolong grief." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acceptance and Commitment Therapy (ACT)", "description": "Building the capacity to carry grief while re-engaging with a meaningful life." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Schema Therapy", "description": "Addressing early attachment patterns shaping how a current loss is being processed." } }
-      ]
-    }
+    "areaServed": ["Narre Warren","Berwick","Cranbourne","Hallam","Endeavour Hills","Hampton Park","Pakenham","Melbourne"]
   }
 }
 </script>
@@ -111,7 +101,7 @@
       "name": "What is grief counselling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Grief counselling is professional support for people processing the death of a loved one or another significant loss. It helps people understand their grief, work through difficult emotions, and adjust to life after loss, using approaches such as Worden's Tasks of Mourning and Rando's Six 'R' Processes."
+        "text": "Grief counselling is professional support for people processing the death of a loved one or another significant loss. It helps you understand your grief, work through difficult emotions, and find your way toward a life that has room for both the loss and what comes next."
       }
     },
     {
@@ -119,7 +109,7 @@
       "name": "How long does grief normally last?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no fixed timeline for grief. For most people, the intensity gradually eases over the first one to two years, though grief can resurface around anniversaries, holidays, and other reminders indefinitely. Grief that remains severely disruptive well beyond what's culturally expected may indicate Prolonged Grief Disorder, which responds well to targeted support."
+        "text": "There is no fixed timeline for grief. For most people, the intensity gradually eases over the first one to two years, though grief can resurface around anniversaries, holidays, and other reminders indefinitely. If it stays just as intense for much longer than that and starts to affect your day to day life, it's worth reaching out. That's more common than people think, and it responds well to support."
       }
     },
     {
@@ -132,10 +122,18 @@
     },
     {
       "@type": "Question",
-      "name": "What is Prolonged Grief Disorder?",
+      "name": "What if my grief isn't easing over time?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prolonged Grief Disorder is a diagnosis included in the DSM-5-TR for grief that remains intensely disruptive for at least 12 months after a loss, six months for children, well beyond expected social, cultural, or religious norms. It involves persistent yearning, preoccupation with the deceased, and difficulty resuming daily life, and is a recognised, treatable condition."
+        "text": "For a small number of people, grief doesn't ease the way it usually does. It stays intense and starts to get in the way of everyday life well beyond what feels expected. This is a real experience, not a sign you're grieving wrong, and it responds well to the right support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can EMDR help with grief that involves trauma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When a loss involves trauma, such as a sudden or violent death, grief can get interrupted by trauma memories every time you think of the person. I'm trained in EMDR Therapy and use it to help process those memories, so grief can move again and you can remember your loved one without being pulled back to how they died."
       }
     },
     {
@@ -177,6 +175,13 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
@@ -204,7 +209,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
 <!-- END Final version -->
@@ -247,69 +252,30 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>Grief &amp; Loss Counselling <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">There's no single way to grieve, and no wrong way either.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/Grief.webp" alt="Man with hands clasped in front of his mouth, deep in thought, reflecting the weight of grief and loss" style="cursor:pointer;"></a>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Grief.webp" alt="Man with hands clasped in front of his mouth, deep in thought, reflecting the weight of grief and loss" style="cursor:pointer;"></a>
+      </div>
+
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">A Space to Grieve in Your Own Way</p>
+        <p class="bio-body" style="margin-bottom:0;">Losing someone can touch every part of your life: your thoughts, feelings, beliefs, physical health, and relationships with others. <br><br>I offer a non-judgemental space to talk through your relationship, what that person meant to you, what life looks like now that they're gone, and how you find your way forward without them.</p>
+      </div>
     </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Carry Loss Without Being Consumed By It</p>
-      <p class="bio-body">Grief is not a problem to be fixed, it's a process to be moved through, at your own pace, with the right support.</p>
-      <p class="bio-body">Grief is the natural response to loss, most often the death of someone close to us, but also the loss of a relationship, health, identity, a pet, a pregnancy, or a future that was expected but didn't happen. At Thoughtful Strides Counselling and Psychotherapy, we support people through all forms of grief and loss, using well-established, evidence-informed models alongside a genuinely person-centred approach.</p>
-      <p class="bio-body" style="margin-bottom:0;">There is no single right way to grieve, and no fixed timeline. Grief can show up as sadness, anger, guilt, relief, numbness, or a mix of all of these, sometimes all in the same day. Our role is to walk alongside you as you find your own way through it.</p>
-    </div>
-
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
-
-    <!-- FORMS OF GRIEF GRID -->
     <div class="fee-card-header">
-      <h2>Forms of Grief and Loss We Support</h2>
+      <h2>More Than One Kind of Loss</h2>
     </div>
-    <p class="bio-body">Grief takes many forms, not all of them following a death. Here's how they tend to group.</p>
-
-    <p class="grief-forms-label">Loss Through Death</p>
-    <div class="approach-grid grief-forms-grid">
-      <div class="approach-card grief-form-card">
-        <strong>Bereavement</strong>
-        <span>The death of a parent, partner, child, sibling, friend, or other loved one.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Sudden or Traumatic Loss</strong>
-        <span>Sudden, traumatic, or violent loss, including suicide bereavement.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Anticipatory Grief</strong>
-        <span>Grieving in advance of an expected death or decline.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Complicated Grief</strong>
-        <span>Complicated or prolonged grief that hasn't eased with time.</span>
-      </div>
-    </div>
-
-    <p class="grief-forms-label">Loss Beyond Death</p>
-    <div class="approach-grid grief-forms-grid">
-      <div class="approach-card grief-form-card">
-        <strong>Disenfranchised Grief</strong>
-        <span>Losses not widely recognised or socially supported, such as miscarriage, pet loss, or estrangement.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Ambiguous Loss</strong>
-        <span>Loss without closure, such as estrangement, dementia, or a missing person.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Non-Death Loss</strong>
-        <span>Divorce, infertility, chronic illness, job loss, or loss of identity and independence.</span>
-      </div>
-      <div class="approach-card grief-form-card">
-        <strong>Cumulative Grief</strong>
-        <span>Compounded grief from multiple losses.</span>
-      </div>
-    </div>
+    <p class="bio-body">Grief is a natural response to loss, most often the death of someone close to us, but also the loss of a relationship, health, identity, a pet, a pregnancy, or a future that was expected but didn't happen. Sometimes grief builds up over time too, especially when several losses happen close together or you haven't had the chance to fully process one before the next arrives, and that cumulative weight can feel harder to place than grief from a single loss.</p>
+    <p class="bio-body">I can support you through all forms of grief and loss, in a way that fits you and how you experience it.</p>
+    <p class="bio-body">There is no single right way to grieve, and no fixed timeline. Grief can show up as sadness, anger, guilt, relief, numbness, or a mix of all of these, sometimes all in the same day. My role is to walk alongside you as you find your own way through it.</p>
 
     <!-- SIGNS CARD -->
     <div class="symptom-card">
@@ -327,45 +293,113 @@
       </ul>
     </div>
 
-    <!-- APPROACH -->
+    <!-- HOW GRIEF COUNSELLING WORKS -->
     <div class="fee-card-header">
-      <h2>Our Approach</h2>
+      <h2>Grief Therapy and Counselling</h2>
     </div>
-    <p class="bio-body">With 20 years of clinical experience, our grief work draws on the two most influential frameworks in the field, alongside trauma-informed and evidence-based modalities suited to your specific situation.</p>
-
-    <p class="grief-forms-label" style="margin-top:0.5rem;">Grief-Specific Frameworks</p>
-    <div class="split-grid">
-      <div class="split-card">
-        <h3>Worden's Tasks of Mourning</h3>
-        <p>Accepting the reality of the loss, processing the pain, adjusting to a world without the person, and finding a way to carry their memory forward while continuing to live.</p>
+    <p class="bio-body">Grief work doesn't follow a script, but sessions tend to move through a few natural stages as we get to know your loss, whatever form it's taken, and find what actually helps you carry it.</p>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Getting to Know You and Your Grief</h3>
+        <p>In our first sessions, I want to understand your loss, whether that's a person, a relationship, your health, or something else entirely, and how grief has been showing up for you since.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>There's no rush here. I take the time to understand what you've lost, your history, and what your life looks like now, so the support that follows actually fits you. This might be a handful of sessions to help you through a difficult period, or longer-term work with more complicated or compounded grief. Where grief is connected to relationship strain, <a href="relationships.html">relationship counselling</a> may also be worth considering alongside this work.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Getting to Know You and Your Grief" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="split-card">
-        <h3>Rando's Six 'R' Processes</h3>
-        <p>Recognising the loss, reacting to the separation, recollecting the relationship, relinquishing old attachments, readjusting to a changed world, and reinvesting in life.</p>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Making Sense of It</h3>
+        <p>Together we look at the different sides of your grief, sadness, anger, guilt, relief, or numbness, and find language for what's often hard to put into words.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>Where a loss carries its own trauma, this is also where I draw on EMDR to help process those memories, so grief can move again instead of staying stuck.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Making Sense of It" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Finding Your Way Forward</h3>
+        <p>We work toward a way of carrying your loss that lets you live fully again, remembering your loved one without being consumed by the loss.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>This isn't about moving on or leaving them behind. It's about finding a place for your loss in your life going forward, at whatever pace feels right for you.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Finding Your Way Forward" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
     </div>
 
-    <p class="grief-forms-label">Therapeutic Approaches</p>
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>Particularly helpful for grief involving trauma, sudden death, or intrusive images, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
+    <!-- GROWING AROUND GRIEF DIAGRAM (full width, below "Grief Therapy and Counselling") -->
+    <div class="grief-diagram-band">
+      <div class="grief-diagram-panels">
+        <div class="grief-diagram-panel">
+          <p class="grief-diagram-panel-label">Early in Grief</p>
+          <svg viewBox="0 0 220 220" width="210" height="210">
+            <circle cx="110" cy="110" r="95" fill="#6e7349" fill-opacity="0.22"/>
+            <circle cx="110" cy="110" r="80" fill="#963c00" fill-opacity="0.75"/>
+            <text x="110" y="106" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#fdfbf9">GRIEF</text>
+            <text x="110" y="28" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" font-weight="600" letter-spacing="0.04em" fill="#4c5c40">YOUR LIFE</text>
+          </svg>
+        </div>
+        <svg viewBox="0 0 24 24" class="grief-diagram-arrow" fill="none" stroke="#5a5348" stroke-width="1.5"><path d="M2 12h18M14 6l6 6-6 6"/></svg>
+        <div class="grief-diagram-panel">
+          <p class="grief-diagram-panel-label">Over Time</p>
+          <svg viewBox="0 0 220 220" width="210" height="210">
+            <circle cx="110" cy="110" r="105" fill="#6e7349" fill-opacity="0.22"/>
+            <circle cx="110" cy="110" r="40" fill="#963c00" fill-opacity="0.75"/>
+            <text x="110" y="114" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="11" font-weight="600" fill="#fdfbf9">GRIEF</text>
+            <text x="110" y="16" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" font-weight="600" letter-spacing="0.04em" fill="#4c5c40">YOUR LIFE</text>
+          </svg>
+        </div>
       </div>
-      <div class="approach-card">
-        <strong>Cognitive Behavioural Therapy (CBT)</strong>
-        <span>Addressing unhelpful thinking patterns, guilt, or avoidance that can prolong grief.</span>
+      <div class="grief-diagram-narrative">
+        <p>The <strong>grief circle</strong> never gets smaller. What you lost stays just as significant. But over time your <span class="sage-em">life grows</span> around it, new experiences, new people, moments of joy again.</p>
+        <p>Because your life is bigger, grief takes up less of your day to day, even though it's still entirely there.</p>
       </div>
-      <div class="approach-card">
-        <strong>Acceptance and Commitment Therapy (ACT)</strong>
-        <span>Building the capacity to carry grief while re-engaging with a meaningful life.</span>
+    </div>
+
+    <!-- FORMS OF GRIEF LIST -->
+    <div class="fee-card-header">
+      <h2>Forms of Grief and Loss I Support</h2>
+    </div>
+    <p class="bio-body">Grief takes many forms, not all of them following a death. Here's how they tend to group.</p>
+
+    <p class="grief-forms-label">Loss Through Death</p>
+    <div class="grief-forms-list">
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Bereavement</h3><p>The death of a parent, partner, child, sibling, friend, or other loved one.</p></div>
       </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Where early attachment patterns are shaping how a current loss is being processed.</span>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Sudden or Traumatic Loss</h3><p>Sudden, traumatic, or violent loss, including suicide bereavement.</p></div>
       </div>
-      <div class="approach-card">
-        <strong>Solution Focused Therapy</strong>
-        <span>For practical support in rebuilding routine and daily functioning.</span>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Anticipatory Grief</h3><p>Grieving in advance of an expected death or decline.</p></div>
+      </div>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Complicated Grief</h3><p>Complicated or prolonged grief that hasn't eased with time.</p></div>
+      </div>
+    </div>
+
+    <p class="grief-forms-label">Loss Beyond Death</p>
+    <div class="grief-forms-list">
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Disenfranchised Grief</h3><p>Losses not widely recognised or socially supported, such as miscarriage, pet loss, or estrangement.</p></div>
+      </div>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Ambiguous Loss</h3><p>Loss without closure, such as estrangement, dementia, or a missing person.</p></div>
+      </div>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Non-Death Loss</h3><p>Divorce, infertility, chronic illness, job loss, or loss of identity and independence.</p></div>
+      </div>
+      <div class="grief-form-item">
+        <span class="dot"></span>
+        <div><h3>Cumulative Grief</h3><p>Compounded grief from multiple losses.</p></div>
       </div>
     </div>
 
@@ -374,7 +408,9 @@
       <div class="fee-card-header">
         <h2>When Grief Becomes Complicated</h2>
       </div>
-      <p class="bio-body" style="margin-bottom:0;">For most people, grief eases gradually over time, even though it never fully disappears. For a minority, grief remains intensely disruptive well beyond what's culturally expected, now recognised in the DSM-5-TR as Prolonged Grief Disorder. This isn't a sign of doing grief wrong, it's a recognised, treatable clinical presentation, and targeted support can make a significant difference.</p>
+      <p class="bio-body">For most people, grief eases gradually over time, even though it never fully disappears. For some, grief stays just as intense for much longer than expected, and starts to get in the way of daily life. This isn't a sign of doing grief wrong. It's something the right support can make a real difference with.</p>
+
+      <p class="bio-body" style="margin-bottom:0;">Sometimes a loss carries its own trauma: a sudden or violent death, or last images that sit closer to trauma memories than to the person you knew. When that happens, grief can get interrupted every time you think of them, pulled back into the moment of loss instead of being able to sit with who they were to you. This is often part of what makes grief complicated or prolonged. I'm trained in EMDR Therapy, and where trauma is tangled up with a loss like this, I use it to help process those traumatic memories, so grief can move again and you can remember your loved one fondly rather than being pulled back to how they died.</p>
 
       <blockquote class="pull-quote">
         Grief is not something to get over. It is something you learn to carry differently, until it becomes part of how you move forward rather than what holds you back.
@@ -383,19 +419,16 @@
 
     <!-- WHAT TO EXPECT -->
     <div class="fee-card-header">
-      <h2>What to Expect</h2>
+      <h2>Counselling Sessions</h2>
     </div>
-    <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. We start by understanding your loss, your history, and what support looks like for you, whether that's a handful of sessions to help you through a difficult period, or longer-term work with a more complicated or compounded grief. Where grief is connected to relationship strain, <a href="relationships.html">relationship counselling</a> may also be worth considering alongside this work.</p>
+    <p class="bio-body">I offer 60 minute sessions, in person in Narre Warren or via telehealth Australia-wide.</p>
 
     <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>Whatever form your loss has taken, you don't have to carry it alone.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+       <p>Whatever form your loss has taken, you don't have to carry it alone. Call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
-
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -412,7 +445,7 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>Grief counselling is professional support for people processing the death of a loved one or another significant loss. It helps people understand their grief, work through difficult emotions, and adjust to life after loss, using approaches such as Worden's Tasks of Mourning and Rando's Six 'R' Processes.</p>
+          <p>Grief counselling is professional support for people processing the death of a loved one or another significant loss. It helps you understand your grief, work through difficult emotions, and find your way toward a life that has room for both the loss and what comes next.</p>
         </div>
       </div>
 
@@ -422,7 +455,7 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>There is no fixed timeline for grief. For most people, the intensity gradually eases over the first one to two years, though grief can resurface around anniversaries, holidays, and other reminders indefinitely. Grief that remains severely disruptive well beyond what's culturally expected may indicate Prolonged Grief Disorder, which responds well to targeted support.</p>
+          <p>There is no fixed timeline for grief. For most people, the intensity gradually eases over the first one to two years, though grief can resurface around anniversaries, holidays, and other reminders indefinitely. If it stays just as intense for much longer than that and starts to affect your day to day life, it's worth reaching out. That's more common than people think, and it responds well to support.</p>
         </div>
       </div>
 
@@ -438,11 +471,21 @@
 
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>What is Prolonged Grief Disorder?</span>
+          <span>What if my grief isn't easing over time?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>Prolonged Grief Disorder is a diagnosis included in the DSM-5-TR for grief that remains intensely disruptive for at least 12 months after a loss, six months for children, well beyond expected social, cultural, or religious norms. It involves persistent yearning, preoccupation with the deceased, and difficulty resuming daily life, and is a recognised, treatable condition.</p>
+          <p>For a small number of people, grief doesn't ease the way it usually does. It stays intense and starts to get in the way of everyday life well beyond what feels expected. This is a real experience, not a sign you're grieving wrong, and it responds well to the right support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can EMDR help with grief that involves trauma?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. When a loss involves trauma, such as a sudden or violent death, grief can get interrupted by trauma memories every time you think of the person. I'm trained in EMDR Therapy and use it to help process those memories, so grief can move again and you can remember your loved one without being pulled back to how they died.</p>
         </div>
       </div>
 
@@ -481,9 +524,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>It helps to have support while you grieve.</h2>
+    <p class="cta-band-line1" style="max-width:none;">You don't have to do this alone.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -519,6 +565,16 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
       });
     });
   </script>

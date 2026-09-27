@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=4" />
- 
+
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
   <script>
@@ -168,6 +168,13 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 
 <body>
@@ -195,7 +202,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
 <!-- END Final version -->
@@ -238,23 +245,25 @@
   <div class="page-header">
     <p class="page-header-label">Services</p>
     <h1>Relationship Counselling <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">The patterns you bring into relationships were shaped long before this one.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/Relationship.webp" alt="Couple holding hands during a counselling session, with a medical patient information clipboard in the foreground" style="cursor:pointer;"></a>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Relationship.webp" alt="Couple holding hands during a counselling session, with a medical patient information clipboard in the foreground" style="cursor:pointer;"></a>
+      </div>
+
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">Feel Close to the People You Love</p>
+        <p class="bio-body" style="margin-bottom:0;">Many of the difficulties people experience in relationships have less to do with the other person than with patterns formed long before that relationship began, ways of relating, trusting, and responding to conflict that were shaped early in life and tend to repeat themselves. <br><br>This individual counselling is for anyone wanting to understand their own part in relationship difficulties, whether they're currently in a relationship, between relationships, or simply noticing a pattern they'd like to change.</p>
+      </div>
     </div>
 
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Feel Close to the People You Love</p>
-      <p class="bio-body">Understand the patterns you bring into relationships, and build the capacity for closer, more secure connection.</p>
-      <p class="bio-body">Many of the difficulties people experience in relationships have less to do with the other person than with patterns formed long before that relationship began, ways of relating, trusting, and responding to conflict that were shaped early in life and tend to repeat themselves. This individual counselling is for anyone wanting to understand their own part in relationship difficulties, whether they're currently in a relationship, between relationships, or simply noticing a pattern they'd like to change.</p>
-      <p class="bio-body" style="margin-bottom:0;">This work is separate from <a href="couples.html">couples counselling</a>. It's one-on-one, focused on you, your history, and your patterns, and can be valuable whether or not you have a partner right now.</p>
-    </div>
-
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
+    <p class="bio-body">This work is separate from <a href="couples.html">couples counselling</a>. It's one-on-one, focused on you, your history, and your patterns, and can be valuable whether or not you have a partner right now.</p>
 
     <!-- SIGNS CARD -->
     <div class="symptom-card">
@@ -286,54 +295,52 @@
       </blockquote>
     </div>
 
-    <!-- APPROACH -->
+    <!-- RELATIONSHIP THERAPY AND COUNSELLING -->
     <div class="fee-card-header">
-      <h2>Our Approach</h2>
+      <h2>Relationship Therapy and Counselling</h2>
     </div>
-    <p class="bio-body">With 20 years of clinical experience and advanced training across trauma-informed and evidence-based modalities, we help you understand where your relational patterns come from and build the capacity to respond differently.</p>
-
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Addressing early attachment patterns and core beliefs that continue to shape adult relationships.</span>
+    <p class="bio-body">This work doesn't follow a script, but sessions tend to move through a few natural stages as we get to know your patterns and build the capacity to relate differently.</p>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Understanding Your Patterns</h3>
+        <p>In our first sessions, I want to understand your attachment style, where it comes from, and the patterns that keep showing up across your relationships.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>We look at your history and family of origin dynamics, using Schema Therapy to understand the patterns still shaping how you connect today, and how they show up differently depending on the relationship.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Patterns" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Cognitive Behavioural Therapy (CBT)</strong>
-        <span>Identifying and shifting unhelpful relational thoughts and behaviours.</span>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Working Through What's Underneath</h3>
+        <p>Together we work through past relational hurt or betrayal, and build your tolerance for the closeness or independence that feels hardest for you.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>Where past experiences are still shaping how you connect, I also draw on EMDR to help process what's keeping old patterns in place, alongside Acceptance and Commitment Therapy to build your tolerance for the discomfort of vulnerability and connection.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Working Through What's Underneath" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
-      <div class="approach-card">
-        <strong>Acceptance and Commitment Therapy (ACT)</strong>
-        <span>Building tolerance for the discomfort of vulnerability and connection.</span>
-      </div>
-      <div class="approach-card">
-        <strong>EMDR</strong>
-        <span>Processing past relational hurt or betrayal, part of our <a href="trauma-therapy.html">trauma therapy</a> work.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Solution Focused Therapy</strong>
-        <span>Practical strategies for communication, boundaries, and self-expression.</span>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Building Healthier Connection</h3>
+        <p>We build practical communication and boundary setting skills, so you can approach relationships, current or future, with greater self-awareness and steadiness.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>This is practical, goal-focused work, real skills you can use, not just insight. Where you're currently in a relationship, this is separate from couples counselling, but the two can also work well together.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Building Healthier Connection" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
       </div>
     </div>
 
-    <!-- WHAT WE'LL WORK ON -->
+    <!-- COUNSELLING SESSIONS -->
     <div class="fee-card-header">
-      <h2>What We'll Work On Together</h2>
+      <h2>Counselling Sessions</h2>
     </div>
-    <ul class="checklist-grid">
-      <li>Understanding your attachment style and where it comes from</li>
-      <li>Recognising patterns that repeat across different relationships</li>
-      <li>Processing past relational hurt, betrayal, or family of origin dynamics</li>
-      <li>Building healthier communication and boundary setting skills</li>
-      <li>Increasing tolerance for closeness, vulnerability, or independence, whichever feels harder for you</li>
-      <li>Preparing for future relationships with greater self-awareness</li>
-    </ul>
+    <p class="bio-body">I offer 60 minute sessions, in person in Narre Warren or via telehealth Australia-wide.</p>
 
     <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>If patterns in your relationships are affecting your wellbeing, support is available. Sessions run 60 minutes, in person or via telehealth.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <p>If patterns in your relationships are affecting your wellbeing, call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
 
     <p class="bio-body">If you and a partner decide you'd like to work on the relationship together, <a href="couples.html">couples counselling</a> is also available.</p>
@@ -348,8 +355,6 @@
       <p class="bio-body">Fraley, R. C. (2019). Attachment in adulthood: Recent developments, emerging debates, and future directions. Annual Review of Psychology, 70, pages 401 to 422. https://pmc.ncbi.nlm.nih.gov/articles/PMC7075830/</p>
       <p class="bio-body" style="margin-bottom:0;">Young, J. E., Klosko, J. S., &amp; Weishaar, M. E. (2003). Schema therapy: A practitioner's guide. Guilford Press.</p>
     </div>
-
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -425,9 +430,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>Unresolved patterns don't just disappear on their own.</h2>
+    <p class="cta-band-line1" style="max-width:none;">Why keep repeating the same painful cycles, when you can understand what's driving them.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+      <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -463,6 +471,16 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
       });
     });
   </script>

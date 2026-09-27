@@ -17,7 +17,7 @@
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
   <link rel="apple-touch-icon" href="images/logo.svg" />
   <title>Couples Counselling Narre Warren | Thoughtful Strides</title>
-  <meta name="description" content="Rebuild connection and improve communication with couples counselling in Narre Warren. Gottman Method and EFCT. PACFA registered. Telehealth available across Australia." />
+  <meta name="description" content="Rebuild connection and improve communication with couples counselling in Narre Warren. Gottman Method and EFCT. PACFA registered. Telehealth available." />
   <link rel="canonical" href="https://thoughtfulstrides.com.au/couples" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +70,8 @@
     "@type": "Service",
     "@id": "https://thoughtfulstrides.com.au/couples#service",
     "name": "Couples Counselling and Relationship Therapy",
-    "description": "Couples counselling and relationship therapy in Narre Warren. Supporting couples through conflict, communication difficulties, trust issues, and relationship breakdown, using the Gottman Method, Emotionally Focused Couples Therapy (EFCT), and Schema Therapy. Telehealth available.",
+    "alternateName": ["Relationship Counselling", "Marriage Counselling"],
+    "description": "Couples counselling and relationship therapy in Narre Warren. Supporting couples through conflict, communication difficulties, trust issues, and relationship breakdown, using the Gottman Method and Emotionally Focused Couples Therapy (EFCT). Telehealth available.",
     "provider": {
       "@type": "Person",
       "@id": "https://thoughtfulstrides.com.au/#nigel-joseph",
@@ -102,7 +103,7 @@
         "@type": "ServiceChannel",
         "name": "Telehealth",
         "availableLanguage": "English",
-        "serviceUrl": "https://thoughtfulstrides.com.au/book-now.html"
+        "serviceUrl": "https://thoughtfulstrides.com.au/book-now"
       }
     ],
     "hasOfferCatalog": {
@@ -110,8 +111,7 @@
       "name": "Therapy Approaches",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gottman Method", "description": "Research-based framework for understanding what erodes and rebuilds connection." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emotionally Focused Couples Therapy (EFCT)", "description": "Attachment-based approach addressing the emotional cycles underneath conflict." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Schema Therapy", "description": "Addressing early patterns each partner brings into the relationship." } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emotionally Focused Couples Therapy (EFCT)", "description": "Attachment-based approach addressing the emotional cycles underneath conflict." } }
       ]
     }
   }
@@ -139,7 +139,7 @@
       "name": "Can old trauma affect how we argue as a couple?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often, yes. What looks like a communication problem is sometimes an old trauma response playing out between two people, the argument that escalates too fast, the silence that goes on too long, the feeling of being unseen by the person who's supposed to know you best (van der Kolk, 2014). When either partner feels threatened or emotionally overwhelmed, it's easy to react from old survival patterns rather than a considered response."
+        "text": "Often, yes. What looks like a communication problem is sometimes an old trauma response playing out between two people, the argument that escalates too fast, the silence that goes on too long, the feeling of being unseen by the person who's supposed to know you best (van der Kolk, 2014). When either partner feels threatened or emotionally overwhelmed, it's easy to react from old survival patterns rather than a considered response. This is one reason couples counselling and individual trauma work often benefit from happening alongside each other."
       }
     },
     {
@@ -197,6 +197,13 @@
     ]
 }
 </script>
+<style>
+  .cta-band-line1 { white-space: nowrap; }
+  @media (max-width: 640px) {
+    .cta-band-line1 { white-space: normal; }
+  }
+  .cta-band .btn-white { padding: 0.4rem 1.1rem; font-size: 0.85rem; font-weight: 600; }
+</style>
 </head>
 <body>
 
@@ -204,7 +211,7 @@
   <nav>
 
     <!-- Final version - comment in before publishing -->
-    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Couples counselling Narre Warren"></a>
+    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
       <li class="has-dropdown">
@@ -223,7 +230,7 @@
       </li>
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
-      <li><a href="/book-now" class="nav-cta">Book Now</a></li>
+      <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
       <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
     </ul>
     <!-- END Final version -->
@@ -263,102 +270,195 @@
   <!-- PAGE HEADER -->
   <div class="page-header">
     <p class="page-header-label">Services</p>
-    <h1>Couples Counselling &amp; Relationship Therapy<br><em>in Narre Warren</em></h1>
+    <h1>Couples Counselling &amp; Relationship Therapy <em>in Narre Warren</em></h1>
+    <p class="page-header-tagline">Sometimes a session brings up things neither of you saw coming.</p>
+    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
   </div>
 
   <!-- BODY COPY -->
   <section class="services-body">
-    <div class="services-image">
-      <a href="/book-now"><img src="images/Couples.webp" alt="Two people seated side by side with hands clasped, representing couples counselling" style="cursor:pointer;"></a>
-    </div>
-
-    <!-- INTRO CARD -->
-    <div class="content-intro">
-      <p class="service-badge">Find Your Way Back to Each Other</p>
-      <div class="fee-card-header">
-        <h2>Feeling lonely in your relationship?</h2>
+    <div class="intro-row" style="margin-top:19px;">
+      <div class="services-image">
+        <a href="/book-now"><img src="images/Couples.webp" alt="Two people seated side by side with hands clasped, representing couples counselling" style="cursor:pointer;"></a>
       </div>
-      <p class="bio-body">Most relationships begin with two people feeling loved, understood, and deeply connected. Then life happens. Work pressures, financial strain, parenting, family responsibilities, health concerns, and major transitions can slowly wear on even the strongest relationships. You may notice yourselves having the same arguments, feeling unheard, growing apart, or wondering quietly when things became this hard.</p>
-      <p class="bio-body" style="margin-bottom:0;">You are not imagining it, and you are not alone. Research shows that couples often experience a real decline in relationship satisfaction during major transitions like becoming parents, and financial stress remains one of the most common sources of tension between partners (Gottman &amp; Gottman, 2007; Archuleta et al., 2011). These pressures are common. They do not mean something is wrong with you or your relationship.</p>
+
+      <!-- INTRO CARD -->
+      <div class="content-intro" style="margin-top:0;">
+        <p class="service-badge">A Space to Work Through It Together</p>
+        <div class="fee-card-header">
+          <h2>Not feeling as connected as you used to?</h2>
+        </div>
+        <p class="bio-body">Most relationships start with two people in love, enjoying each other's company, going on dates, and building a strong friendship. As life goes on, family responsibilities, financial pressures, work stress, and health issues can make it harder to keep doing what you once did easily. You may not have as much time together to nurture the relationship, and things can start to feel distant.</p>
+        <p class="bio-body" style="margin-bottom:0;">I offer couples therapy as a space to understand what's changed in your relationship, and find the best way forward, together.</p>
+      </div>
     </div>
 
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
+    <div class="fee-card-header">
+      <h2>It Started Long Before You Met.</h2>
+    </div>
+    <p class="bio-body">So much of what shows up in a relationship was shaped long before you met your partner. The way each of you learned to communicate, manage emotions, handle conflict, and feel safe in connection with others often began early in life. When stress builds, these old patterns tend to surface more easily, and both people can end up feeling hurt, frustrated, or disconnected, even when neither of you meant any harm.</p>
+
+    <p class="bio-body">I offer couples counselling as somewhere to pause, breathe, and make sense of what is really happening between you. Whether you are feeling distant, caught in conflict, navigating a big life change, or working through betrayal, change is possible when you are both willing to take the first step.</p>
 
     <!-- SIGNS CARD -->
     <div class="symptom-card">
       <div class="fee-card-header">
         <h2>You Might Recognise Some of These</h2>
       </div>
-      <ul class="bullet-list" style="margin-bottom:0;">
-        <li>Ongoing conflict or frequent arguments</li>
-        <li>Difficulty communicating or feeling unheard</li>
-        <li>Loss of connection, closeness, or intimacy</li>
-        <li>Trust issues or recovering from betrayal</li>
-        <li>Navigating major life transitions together</li>
-        <li>Differences in values, expectations, or goals</li>
-        <li>Feeling stuck in the same patterns</li>
-        <li>Wanting to feel close again</li>
+      <ul class="signs-grid">
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8-1.06 0-2.077-.163-3.02-.463L3 21l1.5-4.5C3.55 15.163 3 13.62 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></span>
+          <span>Ongoing conflict or frequent arguments</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9h8M8 13h5M3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9c-1.3 0-2.53-.28-3.64-.77L3 21l1.02-4.08A8.96 8.96 0 013 12z"/></svg></span>
+          <span>Difficulty communicating or feeling unheard</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="12" r="4"/><circle cx="17.5" cy="12" r="4"/></svg></span>
+          <span>Loss of connection, closeness, or intimacy</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg></span>
+          <span>Trust issues or recovering from betrayal</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span>
+          <span>Navigating major life transitions together</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h13M8 12h13M8 17h13M3 7h.01M3 12h.01M3 17h.01"/></svg></span>
+          <span>Differences in values, expectations, or goals</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+          <span>Feeling stuck in the same patterns</span>
+        </li>
+        <li>
+          <span class="signs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6c-1.7-1.7-4.4-1.7-6.1 0L12 7.3l-2.7-2.7c-1.7-1.7-4.4-1.7-6.1 0-1.7 1.7-1.7 4.4 0 6.1L12 19.4l8.8-8.7c1.7-1.7 1.7-4.4 0-6.1z"/></svg></span>
+          <span>Wanting to feel close again</span>
+        </li>
       </ul>
     </div>
 
+    <!-- HOW IT WORKS -->
     <div class="fee-card-header">
-      <h2>Understanding What's Beneath the Surface</h2>
+      <h2>How Couples Counselling Works</h2>
     </div>
-    <p class="bio-body">So much of what shows up in a relationship was shaped long before you met your partner. The way each of you learned to communicate, manage emotions, handle conflict, and feel safe in connection with others often began early in life. When stress builds, these old patterns tend to surface more easily, and both people can end up feeling hurt, frustrated, or disconnected, even when neither of you meant any harm.</p>
+    <div class="steps recovery-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Getting to Know You Both</h3>
+        <p>In our first session, I get to know you both together, your history, how you met, what's been going on, and how long you've been dealing with it.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>This session is about understanding your relationship as a whole, where you started, what's changed, and what's brought you here now.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Getting to Know You Both" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Individual Sessions</h3>
+        <p>Next, I meet with each of you separately, to understand your own family history and how you learned to connect with others growing up.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>This isn't about taking sides. It's about understanding what each of you brings into the relationship, so we can make sense of the patterns that show up between you.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Individual Sessions" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Working Through It Together</h3>
+        <p>Then we come back together as a couple, and use what we've learned to work through what's actually happening between you.</p>
+        <div class="read-more-text" style="display:none;">
+          <p>From here, we keep meeting as a couple, at a pace that suits your relationship, whether that's a focused piece of work or a longer course of therapy.</p>
+        </div>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Working Through It Together" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+      </div>
+    </div>
 
-    <p class="bio-body">Couples counselling offers somewhere to pause, breathe, and make sense of what is really happening between you. Whether you are feeling distant, caught in conflict, navigating a big life change, or working through betrayal, change is possible when you are both willing to take the first step.</p>
-
-    <!-- EFCT + QUOTE -->
-    <div class="info-band">
+    <!-- GOTTMAN METHOD + EFCT TOOL COMPARISON -->
+    <div class="tool-compare-intro">
+      <span class="service-badge">How I Work With Couples</span>
       <div class="fee-card-header">
-        <h2>Emotionally Focused Couples Therapy (EFCT)</h2>
-      </div>
-      <p class="bio-body" style="margin-bottom:0;">Alongside the Gottman Method, I also draw on Emotionally Focused Couples Therapy (EFCT), developed by Dr Sue Johnson. EFCT is grounded in attachment theory, the idea that adult romantic bonds run on the same wiring as a child's need for a secure caregiver. Rather than treating conflict as a communication problem to be solved on the surface, EFCT looks underneath the argument to the attachment fear driving it, am I safe with you, do you still want me, will you be there when I need you. EFCT works by slowing the cycle down enough for each partner to see the vulnerability underneath their partner's anger or withdrawal, and to respond to that instead of reacting to the surface behaviour.</p>
-
-      <blockquote class="pull-quote">
-        "Emotional dependency is not immature or pathological; it is our greatest strength."
-        <cite class="quote-attribution">Sue Johnson, <i>The Love Secret</i></cite>
-      </blockquote>
-    </div>
-
-    <!-- APPROACH -->
-    <div class="fee-card-header">
-      <h2>Our Approach</h2>
-    </div>
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>Gottman Method</strong>
-        <span>A research-based framework for understanding what quietly erodes connection over time and what rebuilds it.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Emotionally Focused Couples Therapy (EFCT)</strong>
-        <span>Addressing the attachment fears and emotional cycles underneath conflict.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Schema Therapy</strong>
-        <span>Understanding the early patterns each partner brings into the relationship, part of our <a href="relationships.html">individual relationship counselling</a> work too.</span>
+        <h2>Two Evidence-Based Approaches, Used Together</h2>
       </div>
     </div>
 
-    <blockquote class="pull-quote">
-      Every relationship goes through hard seasons. Reaching out for support is not a sign of failure, rather it is often a sign that what you have together still matters enough to fight for.
-    </blockquote>
+    <div class="split-grid">
+      <div class="tool-col gottman">
+        <h3>The Gottman Method</h3>
+        <div class="tool-intro-text">
+          <p class="bio-body" style="margin-bottom:0.9rem;">I use the Gottman Method, built on decades of research into what actually predicts whether a relationship thrives or breaks down.</p>
+          <p class="bio-body" style="margin-bottom:0.9rem;">Rather than treating every disagreement as a one-off, the Gottman Method looks at the specific habits and blind spots you've built up together over time, and gives us practical, tested ways to shift them. Tap through the five tools below to see how each one works.</p>
+        </div>
+        <div class="tool-pill-wrap">
+          <div class="tool-item">
+            <button class="tool-item-btn">Love Maps <span class="plus">+</span></button>
+            <p class="tool-item-desc">A structured way of rebuilding a detailed, up to date picture of each other's inner world. We build this through simple, guided questions about your partner's daily life, worries, hopes, and history.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Conflict Blueprint <span class="plus">+</span></button>
+            <p class="tool-item-desc">Maps out how an argument actually unfolds between you, so you can catch it earlier. We look at what typically triggers it, how it escalates, and where either of you could step in differently.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Stress Reducing Conversation <span class="plus">+</span></button>
+            <p class="tool-item-desc">Supporting each other after a hard day without it turning into another fight. It's a simple structure for listening and validating, without jumping straight to advice or trying to fix it.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Five Essential Rituals <span class="plus">+</span></button>
+            <p class="tool-item-desc">Small, repeated moments of connection that quietly hold a relationship together. Things like how you greet each other, say goodbye, or check in during the day.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Art of Compromise <span class="plus">+</span></button>
+            <p class="tool-item-desc">Finding workable middle ground on issues that never seem to resolve. We separate what actually matters to each of you from what you're willing to flex on, so compromise feels fair rather than one-sided.</p>
+          </div>
+        </div>
+        <p class="tool-hint">Hover to preview, tap to keep it open.</p>
+      </div>
+
+      <div class="tool-col efct">
+        <h3>Emotionally Focused Couples Therapy</h3>
+        <div class="tool-intro-text">
+          <p class="bio-body" style="margin-bottom:0.9rem;">An attachment-based approach that slows the defensive cycle down so you can see what's underneath it, often hurt, fear, or a need to feel close again.</p>
+          <p class="bio-body" style="margin-bottom:0.9rem;">Rather than focusing on the argument itself, EFCT looks at the emotional cycle underneath it, the moment one of you reaches for connection and the other pulls back, or one raises their voice and the other shuts down. Tap through the five tools below to see how each one works.</p>
+        </div>
+        <div class="tool-pill-wrap">
+          <div class="tool-item">
+            <button class="tool-item-btn">Attachment-Based <span class="plus">+</span></button>
+            <p class="tool-item-desc">Looks at the underlying emotional fears driving conflict, rather than just the conflict itself. Most conflict is really about needing to feel wanted, safe, or important to the other person.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">De-escalating Conflict <span class="plus">+</span></button>
+            <p class="tool-item-desc">Both partners' defensive reactions feed off each other. In session, I help you both slow that cycle down before it escalates. Once you can name the cycle together, it becomes something you're both working against, rather than each other.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Emotional Safety <span class="plus">+</span></button>
+            <p class="tool-item-desc">Once the cycle settles, we look at what's underneath it, often hurt, fear, or a need to feel close again. Being able to show that to each other, and have it land gently, is often what actually shifts things.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Reaching for Connection <span class="plus">+</span></button>
+            <p class="tool-item-desc">Learning to recognise the small moments you're each reaching for reassurance or closeness, even when it looks like anger or distance, so you can respond to what's actually being asked for.</p>
+          </div>
+          <div class="tool-item">
+            <button class="tool-item-btn">Rebuilding Trust <span class="plus">+</span></button>
+            <p class="tool-item-desc">Creating new, consistent experiences of being there for each other, so trust is rebuilt through repeated action over time, not just through talking about it.</p>
+          </div>
+        </div>
+        <p class="tool-hint">Hover to preview, tap to keep it open.</p>
+      </div>
+    </div>
 
     <!-- WHAT TO EXPECT -->
     <div class="fee-card-header">
-      <h2>What to Expect</h2>
+      <h2>Counselling sessions</h2>
     </div>
-    <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth Australia-wide. We start by understanding both of your histories, what's happening now, and what you'd each like to see change, then build a plan suited to your relationship, whether that's a focused piece of work or a longer-term course of therapy.</p>
+    <p class="bio-body">I offer 60 minute sessions, in person in Narre Warren or via telehealth Australia-wide.</p>
 
     <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
 
     <!-- MINI CTA -->
-    <div class="cta-mini">
-      <p>Whatever is happening in your relationship, you don't have to work through it alone.</p>
-      <a href="book-now.html">Book a Session &rarr;</a>
+      <div class="cta-mini">
+       <p>Whatever is happening in your relationship, you don't have to work through it alone. Call on <a href="tel:+61479171121">0479 171 121</a> or <a href="book-now.html" class="cta-mini-btn">Contact Me</a>.</p>
     </div>
-
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -444,9 +544,12 @@
 
   <!-- CTA BAND -->
   <div class="cta-band">
-    <h2>Ready to take the first step?</h2>
-    <p>Appointments are available now. Reach out today and we'll find a time that works for you.</p>
-    <a href="book-now.html" class="btn-white">Book an Appointment</a>
+    <h2>Your relationship is worth a conversation.</h2>
+    <p class="cta-band-line1" style="max-width:none;">Sometimes small changes can make a big difference.</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+         <span style="color:rgba(255,255,255,0.85); font-weight:300;">Call on <a href="tel:+61479171121" style="display:inline-block; background:#fff; color:var(--accent); font-weight:600; padding:0.4rem 1.1rem; border-radius:100px; text-decoration:none; font-size:0.85rem;">0479 171 121</a> or</span>
+      <a href="book-now.html" class="btn-white">Contact Me</a>
+    </div>
   </div>
 
   </main>
@@ -484,6 +587,38 @@
         btn.setAttribute('aria-expanded', String(!isOpen));
       });
     });
+
+    document.querySelectorAll('.read-more-toggle').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var content = this.previousElementSibling;
+        var isHidden = content.style.display === 'none';
+        content.style.display = isHidden ? 'block' : 'none';
+        this.innerHTML = isHidden ? 'Read less &uarr;' : 'Read more &darr;';
+      });
+    });
+
+    document.querySelectorAll('.tool-item-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.closest('.tool-item').classList.toggle('pinned');
+      });
+    });
+
+    function syncToolIntroHeights() {
+      var intros = document.querySelectorAll('.tool-intro-text');
+      if (intros.length < 2) return;
+      intros.forEach(function (el) { el.style.minHeight = ''; });
+      var tallest = 0;
+      intros.forEach(function (el) { tallest = Math.max(tallest, el.offsetHeight); });
+      if (window.innerWidth > 700) {
+        intros.forEach(function (el) { el.style.minHeight = tallest + 'px'; });
+      }
+    }
+    window.addEventListener('load', syncToolIntroHeights);
+    window.addEventListener('resize', syncToolIntroHeights);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncToolIntroHeights);
+    }
   </script>
 </body>
 </html>
