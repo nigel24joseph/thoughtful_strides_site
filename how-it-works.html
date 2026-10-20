@@ -18,20 +18,20 @@
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
   <link rel="apple-touch-icon" href="images/logo.svg" />
   <title>How Counselling Works | Thoughtful Strides Narre Warren</title>
-  <meta name="description" content="Not sure what to expect from counselling? Thoughtful Strides walks you through the process, from first contact to ongoing support, including how progress is tracked." />
+  <meta name="description" content="Not sure what to expect from counselling? See how it works at Thoughtful Strides, from your first free call to ongoing sessions and tracking progress." />
   <link rel="canonical" href="https://thoughtfulstrides.com.au/how-it-works" />
 
   <meta property="og:title" content="How Counselling Works | Thoughtful Strides Narre Warren" />
-  <meta property="og:description" content="Not sure what to expect from counselling? Thoughtful Strides walks you through the process, from first contact to ongoing support. It's simpler than you think." />
+  <meta property="og:description" content="Not sure what to expect from counselling? See how it works at Thoughtful Strides, from your first free call to ongoing sessions and tracking progress." />
   <meta property="og:url" content="https://thoughtfulstrides.com.au/how-it-works" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/nigel.webp" />
+  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
   <meta property="og:image:alt" content="Nigel Joseph, Trauma Therapist and Counsellor at Thoughtful Strides Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
@@ -61,12 +61,14 @@
   "provider": {
     "@type": "ProfessionalService",
     "@id": "https://thoughtfulstrides.com.au/#business",
-    "name": "Thoughtful Strides",
+    "name": "Thoughtful Strides Counselling and Psychotherapy",
     "url": "https://thoughtfulstrides.com.au/"
   },
   "description": "A simple four-step process to book a counselling or therapy appointment with Nigel Joseph at Thoughtful Strides in Narre Warren.",
   "hasPart": [
-    { "@id": "https://thoughtfulstrides.com.au/how-it-works#faq" }
+    {
+      "@id": "https://thoughtfulstrides.com.au/how-it-works#faq"
+    }
   ],
   "step": [
     {
@@ -79,13 +81,13 @@
       "@type": "HowToStep",
       "position": 2,
       "name": "Free Discovery Call",
-      "text": "A free 15-minute call to discuss your concerns and goals, and to see whether Thoughtful Strides is the right fit for you. No commitment required."
+      "text": "A free call to discuss your concerns and goals, and to see whether Thoughtful Strides is the right fit for you. No commitment required."
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "First Appointment",
-      "text": "Your initial session focuses on understanding your background, current concerns, and what you would like to achieve from therapy. Sessions are available in person in Narre Warren or via Telehealth."
+      "text": "Your first session focuses on understanding your experiences, your current concerns, and what you hope to get from therapy. Sessions are available in person in Narre Warren or via telehealth across Australia."
     },
     {
       "@type": "HowToStep",
@@ -147,9 +149,19 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thoughtfulstrides.com.au/"},
-      {"@type": "ListItem", "position": 2, "name": "How It Works", "item": "https://thoughtfulstrides.com.au/how-it-works"}
-    ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thoughtfulstrides.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "How It Works",
+      "item": "https://thoughtfulstrides.com.au/how-it-works"
+    }
+  ]
 }
 </script>
 </head>
@@ -216,9 +228,21 @@
 
   <!-- PAGE HEADER -->
   <div class="page-header">
-    <p class="page-header-label">Getting Started</p>
-    <h1>How Counselling <em>Works</em> at Thoughtful Strides</h1>
-    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
+    <div class="header-split">
+      <div class="header-main">
+        <p class="page-header-label">Getting Started</p>
+        <h1>How Counselling <em>Works</em> at Thoughtful Strides</h1>
+      </div>
+      <aside class="header-call" aria-label="Book a free phone chat">
+        <p class="header-call-title">Talk it through first</p>
+        <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
+        <ul class="header-call-ticks">
+          <li>No waitlist</li>
+          <li>In person or telehealth</li>
+          <li>PACFA registered, 20 years</li>
+        </ul>
+      </aside>
+    </div>
   </div>
 
   <section class="services-body" style="float:none;">
@@ -229,7 +253,7 @@
       <p class="bio-body" style="margin-bottom:0;">Starting therapy can feel like a big step, especially if you don't know what to expect. There is no pressure to have everything figured out before reaching out. Here's exactly what happens, from your first message through to how progress is actually tracked over time.</p>
     </div>
 
-    <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p>
+    <!-- <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p> -->
 
     <!-- GETTING STARTED STEPS -->
     <div class="fee-card-header">
@@ -239,22 +263,22 @@
       <div class="step">
         <div class="step-num">1</div>
         <h3>Get in Touch</h3>
-        <p>Reach out via the <a href="book-now.html">contact form</a>, call <a href="tel:+61479171121">0479 171 121</a>, or send an email. There is no obligation and everything you share is completely confidential.</p>
+        <p>Reach out via the <a href="book-now.html">Contact form</a>, call <a href="tel:+61479171121">0479 171 121</a>, or send an email. </p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <h3>Discovery Call</h3>
-        <p>A free 15-minute call to talk through your concerns, ask any questions, and see whether Thoughtful Strides is the right fit for you. No commitment required, just a conversation.</p>
+        <p>We have a chat so you can talk through your concerns, ask any questions, and see whether I'm the right fit for you. You don't need to commit to anything.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <h3>First Appointment</h3>
-        <p>Your initial session focuses on understanding your background, current concerns, and what you'd like to achieve from therapy. Sessions are available in person in Narre Warren or via telehealth across Australia.</p>
+        <p>Your first session focuses on understanding your experiences, your current concerns, and what you hope to get from therapy. Sessions are available in person in Narre Warren or via telehealth across Australia.</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <h3>Ongoing Support</h3>
-        <p>A personalised treatment plan is developed with you. We work together at a pace that feels right, adapting as you grow, heal, and move forward toward the life you want.</p>
+        <p>After your first session, we complete an assessment of your experiences growing up and how they may be affecting you and your current concerns. We then talk through how we'll work together towards what you hope to get from therapy.</p>
       </div>
     </div>
 
@@ -285,8 +309,11 @@
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p>If you have questions about the process before reaching out, we're happy to help.</p>
-      <a href="book-now.html">Contact Me &rarr;</a>
+      <p class="cta-mini-text">If you have questions about the process before reaching out, I'm happy to help.</p>
+      <div class="cta-mini-actions">
+        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+      </div>
     </div>
 
     <div class="clearfix"></div>
@@ -346,8 +373,11 @@
   <!-- CTA BAND -->
   <div class="cta-band">
     <h2>Not knowing what to expect can be the hardest part.</h2>
-    <p>Why let uncertainty hold you back, when the process is more straightforward than you think.</p>
-    <a href="book-now.html" class="btn-white">Contact Me</a>
+    <p class="cta-band-line1">Why let uncertainty hold you back, when the process is more straightforward than you think.</p>
+    <div class="cta-band-actions">
+      <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+    </div>
   </div>
 
   </main>
@@ -358,6 +388,7 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
         <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -365,6 +396,9 @@
       <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
+
+  <!-- Sticky call button (shows on phones only) -->
+  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
@@ -383,9 +417,45 @@
         var isOpen = item.classList.contains('open');
         item.classList.toggle('open', !isOpen);
         btn.setAttribute('aria-expanded', String(!isOpen));
+        if (isOpen) {
+          // Closed by click: ignore hover until the pointer leaves, so it closes straight away
+          item.classList.add('hover-off');
+          item.addEventListener('mouseleave', function () { item.classList.remove('hover-off'); }, { once: true });
+        }
       });
     });
   </script>
 
+  <!-- Google Ads: phone click conversion (Click to call). Fires when any tel: link is tapped. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var called = false;
+      var callback = function () {
+        if (called) return;
+        called = true;
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18286031809/c7lnCOyc4aEdEMHnuo9E',
+          'value': 1.0,
+          'currency': 'AUD',
+          'event_callback': callback
+        });
+      }
+      setTimeout(callback, 1000);
+      return false;
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (link) {
+        e.preventDefault();
+        gtag_report_conversion(link.href);
+      }
+    });
+  </script>
 </body>
 </html>

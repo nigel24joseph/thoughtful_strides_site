@@ -25,13 +25,13 @@
   <meta property="og:description" content="Your message has been received. Nigel Joseph from Thoughtful Strides will be in touch shortly." />
   <meta property="og:url" content="https://thoughtfulstrides.com.au/success" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/nigel.webp" />
+  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
   <meta property="og:image:alt" content="Thoughtful Strides Counselling and Psychotherapy" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
@@ -156,6 +156,7 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
         <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -163,6 +164,9 @@
       <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
+
+  <!-- Sticky call button (shows on phones only) -->
+  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
@@ -176,5 +180,36 @@
     });
   </script>
 
+  <!-- Google Ads: phone click conversion (Click to call). Fires when any tel: link is tapped. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var called = false;
+      var callback = function () {
+        if (called) return;
+        called = true;
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18286031809/c7lnCOyc4aEdEMHnuo9E',
+          'value': 1.0,
+          'currency': 'AUD',
+          'event_callback': callback
+        });
+      }
+      setTimeout(callback, 1000);
+      return false;
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (link) {
+        e.preventDefault();
+        gtag_report_conversion(link.href);
+      }
+    });
+  </script>
 </body>
 </html>
