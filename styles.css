@@ -1391,6 +1391,13 @@ footer {
   margin-top: 1.5rem;
 }
 
+@media (max-width: 640px) {
+  .fees-insurance-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
 /* ── SERVICES BODY ── */
 .bullet-list {
   list-style: none;
