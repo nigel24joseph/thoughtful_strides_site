@@ -2,7 +2,7 @@
 <html lang="en-AU">
 <head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js): Google Ads and GA4 share one loader -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18286031809"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,50 +10,29 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18286031809');
+  gtag('config', 'G-4MRK96F7TT');
 </script>
-
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
   <link rel="apple-touch-icon" href="images/logo.svg" />
   <title>Contact Me | Thoughtful Strides Narre Warren</title>
-  <meta name="description" content="Book an appointment with Nigel Joseph, PACFA registered Trauma Therapist in Narre Warren. Free 15-minute discovery call. In person or Telehealth." />
+  <meta name="description" content="Book an appointment with Nigel Joseph, PACFA registered Trauma Therapist in Narre Warren. Free discovery call. In person or Telehealth." />
 
   <link rel="canonical" href="https://thoughtfulstrides.com.au/book-now" />
 
-  <meta property="og:title" content="Book an Appointment | Thoughtful Strides Narre Warren" />
+  <meta property="og:title" content="Contact Me | Thoughtful Strides Narre Warren" />
   <meta property="og:description" content="Book an appointment with Nigel Joseph, PACFA registered Trauma Therapist in Narre Warren. In-person and Telehealth available." />
   <meta property="og:url" content="https://thoughtfulstrides.com.au/book-now" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/nigel.webp" />
+  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
   <meta property="og:image:alt" content="Trauma therapy and counselling session in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
-
-
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q98ECCSF4E');
-  </script> -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MRK96F7TT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4MRK96F7TT');
-</script>
-
+  <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
 {
@@ -65,7 +44,7 @@
   "mainEntity": {
     "@type": "ProfessionalService",
     "@id": "https://thoughtfulstrides.com.au/#business",
-    "name": "Thoughtful Strides",
+    "name": "Thoughtful Strides Counselling and Psychotherapy",
     "telephone": "+61479171121",
     "email": "nigel.joseph@thoughtfulstrides.com.au",
     "address": {
@@ -79,7 +58,13 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
         "opens": "09:00",
         "closes": "20:00"
       }
@@ -88,15 +73,24 @@
 }
 </script>
 
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thoughtfulstrides.com.au/"},
-      {"@type": "ListItem", "position": 2, "name": "Contact Me", "item": "https://thoughtfulstrides.com.au/book-now"}
-    ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thoughtfulstrides.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact Me",
+      "item": "https://thoughtfulstrides.com.au/book-now"
+    }
+  ]
 }
 </script>
 </head>
@@ -165,7 +159,7 @@
   <!-- PAGE HEADER -->
   <div class="page-header">
     <p class="page-header-label">Contact</p>
-    <h1>Lets have a conversation</h1>
+    <h1>Let's have a conversation</h1>
   </div>
 
   <!-- REASSURANCE + TRUST STRIP -->
@@ -302,6 +296,7 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
         <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -310,6 +305,8 @@
     </div>
   </footer>
 
+  <!-- Sticky call button (shows on phones only) -->
+  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
@@ -323,5 +320,36 @@
     });
   </script>
   <script src="form-validation.js"></script>
+  <!-- Google Ads: phone click conversion (Click to call). Fires when any tel: link is tapped. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var called = false;
+      var callback = function () {
+        if (called) return;
+        called = true;
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18286031809/c7lnCOyc4aEdEMHnuo9E',
+          'value': 1.0,
+          'currency': 'AUD',
+          'event_callback': callback
+        });
+      }
+      setTimeout(callback, 1000);
+      return false;
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (link) {
+        e.preventDefault();
+        gtag_report_conversion(link.href);
+      }
+    });
+  </script>
 </body>
 </html>

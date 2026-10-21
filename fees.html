@@ -2,7 +2,7 @@
 <html lang="en-AU">
 <head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js): Google Ads and GA4 share one loader -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18286031809"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,6 +10,7 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18286031809');
+  gtag('config', 'G-4MRK96F7TT');
 </script>
 
   <meta charset="UTF-8" />
@@ -25,34 +26,13 @@
   <meta property="og:description" content="Transparent counselling fees in Narre Warren. Individuals from $150, Couples from $200. Private health insurance rebates available." />
   <meta property="og:url" content="https://thoughtfulstrides.com.au/fees" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/nigel.webp" />
+  <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
   <meta property="og:image:alt" content="Counselling fees for trauma therapy and couples counselling in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
-
-
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98ECCSF4E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q98ECCSF4E');
-  </script> -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MRK96F7TT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4MRK96F7TT');
-</script>
-
+  <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
 {
@@ -64,7 +44,7 @@
   "mainEntity": {
     "@type": "ProfessionalService",
     "@id": "https://thoughtfulstrides.com.au/#business",
-    "name": "Thoughtful Strides",
+    "name": "Thoughtful Strides Counselling and Psychotherapy",
     "url": "https://thoughtfulstrides.com.au/",
     "priceRange": "$150-$200",
     "hasOfferCatalog": {
@@ -107,17 +87,11 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Clinical Supervision Session",
-            "description": "60-minute clinical supervision session for counsellors and psychotherapists."
+            "name": "WorkSafe Victoria Counselling",
+            "description": "60-minute counselling for injured workers with a WorkSafe Victoria claim, on GP referral. Billed directly to WorkSafe at no cost to the worker."
           },
-          "price": "150",
-          "priceCurrency": "AUD",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": "150",
-            "priceCurrency": "AUD",
-            "unitText": "per 60-minute session"
-          }
+          "price": "0",
+          "priceCurrency": "AUD"
         }
       ]
     }
@@ -125,15 +99,24 @@
 }
 </script>
 
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thoughtfulstrides.com.au/"},
-      {"@type": "ListItem", "position": 2, "name": "Fees", "item": "https://thoughtfulstrides.com.au/fees"}
-    ]
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thoughtfulstrides.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Fees",
+      "item": "https://thoughtfulstrides.com.au/fees"
+    }
+  ]
 }
 </script>
 </head>
@@ -200,9 +183,21 @@
 
   <!-- PAGE HEADER -->
   <div class="page-header">
-    <p class="page-header-label">Fees</p>
-    <h1>Counselling Fees<br><em>Narre Warren</em></h1>
-    <p class="call-invite-pill" style="display:flex; align-items:center; gap:0.5rem; width:fit-content; margin:0.85rem 0 0; background:var(--warm-white); border:1px solid rgba(150,60,0,0.25); color:var(--text-dark); padding:0.5rem 1rem; border-radius:100px; font-size:0.85rem; box-shadow:0 4px 10px rgba(0,0,0,0.08);">I'm happy to talk through your situation and how I work, to see if it feels right for you. <a href="tel:+61479171121" style="color:var(--accent); font-weight:600; text-decoration:none;">Call me on 0479 171 121</a>.</p>
+    <div class="header-split">
+      <div class="header-main">
+        <p class="page-header-label">Fees</p>
+        <h1>Counselling Fees<br><em>Narre Warren</em></h1>
+      </div>
+      <aside class="header-call" aria-label="Book a free phone chat">
+        <p class="header-call-title">Talk it through first</p>
+        <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
+        <ul class="header-call-ticks">
+          <li>Private health rebates</li>
+          <li>In person or telehealth</li>
+          <li>PACFA registered, 20 years</li>
+        </ul>
+      </aside>
+    </div>
   </div>
 
   <!-- INTRO -->
@@ -246,7 +241,7 @@
       </div>
     </div>
     <p class="bio-body" style="text-align:center;margin-top:1.5rem;">
-      Not sure yet? A <strong>free 15-minute discovery call</strong> is available before your first appointment, no commitment required.
+      Not sure yet? A <strong>free discovery call</strong> is available before your first appointment, no commitment required.
     </p>
   </section>
 
@@ -256,8 +251,8 @@
     <div class="fee-card-header">
       <h2>Investment</h2>
     </div>
-    <p class="bio-body">We know that cost is a genuine consideration and we believe that quality support should be as accessible as possible.</p>
-    <p class="bio-body">Investing in your mental health is one of the most meaningful steps you can take. At Thoughtful Strides, fees are kept transparent and fair so you can focus on what matters most.</p>
+    <p class="bio-body">I know that cost is a genuine consideration, and I believe quality support should be as accessible as possible.</p>
+    <p class="bio-body">Investing in your mental health is one of the most meaningful steps you can take. I keep my fees transparent and fair, so you can focus on what matters most.</p>
     <p class="bio-body">Payment for in-person sessions is taken after the session. Telehealth sessions require payment before the session via direct deposit.</p>
 
     <p class="bio-body" style="margin-bottom:0.75rem;"><strong>Payment methods accepted:</strong></p>
@@ -305,30 +300,25 @@
       <div class="fee-card-header">
         <h2><a href="https://www.worksafe.vic.gov.au/counselling-services-policy" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 3px;">WorkSafe Victoria Counselling</a></h2>
       </div>
-      <p class="bio-body">Thoughtful Strides is a registered <a href="worksafe-counselling.html">WorkSafe Victoria counselling</a> provider. If you have been referred for counselling through WorkSafe Victoria, your sessions are fully funded by WorkSafe at no out-of-pocket cost to you.</p>
-      <p class="bio-body">To access counselling through WorkSafe Victoria you will need:</p>
+      <p class="bio-body">I'm a registered <a href="worksafe-counselling.html">WorkSafe Victoria counselling</a> provider. I bill WorkSafe directly for your sessions, so there's no cost to you.</p>
+      <p class="bio-body">To access counselling through WorkSafe Victoria:</p>
       <ul class="bullet-list">
-        <li>A valid WorkSafe Victoria claim number</li>
-        <li>A referral or approval from your WorkSafe case manager</li>
-        <li>Confirmation that counselling has been approved as part of your treatment plan</li>
+        <li>Report the injury to your employer and lodge a Worker's Injury Claim Form</li>
+        <li>Get a referral for counselling from your GP</li>
+        <li>If your claim includes a mental injury, you can usually start straight away under provisional payments, while your claim is being assessed</li>
       </ul>
-      <p class="bio-body" style="margin-bottom:0;">Once your referral is in place, please contact us directly and we will take care of the rest. Sessions are available in person in Narre Warren or via telehealth across Victoria. If you are unsure whether you are eligible, feel free to get in touch and we will be happy to help you navigate it.</p>
-    </div>
-  </section>
-
-  <!-- MINI CTA -->
-  <section class="fees-info" style="padding-top:0;">
-    <div class="cta-mini">
-      <p>Still have questions about cost or what's covered? We're happy to talk it through.</p>
-      <a href="book-now.html">Book a Free Discovery Call &rarr;</a>
+      <p class="bio-body" style="margin-bottom:0;">No prior approval from WorkSafe is needed for counselling. Sessions are available in person in Narre Warren or via telehealth across Victoria. If you're unsure whether you're eligible, get in touch and I'll be happy to help you work through it. You can read more on my <a href="worksafe-counselling.html">WorkSafe counselling</a> page.</p>
     </div>
   </section>
 
   <!-- CTA BAND -->
   <div class="cta-band">
     <h2>Cost shouldn't be a mystery.</h2>
-    <p>Fees here are transparent from the start, so there are no surprises later.</p>
-    <a href="book-now.html" class="btn-white">Contact Me</a>
+    <p class="cta-band-line1">Fees here are transparent from the start, so there are no surprises later.</p>
+    <div class="cta-band-actions">
+      <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+    </div>
   </div>
 
   </main>
@@ -339,6 +329,7 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
         <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -346,6 +337,9 @@
       <span>PACFA registered | AASW Member</span>
     </div>
   </footer>
+
+  <!-- Sticky call button (shows on phones only) -->
+  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
@@ -359,5 +353,36 @@
     });
   </script>
 
+  <!-- Google Ads: phone click conversion (Click to call). Fires when any tel: link is tapped. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var called = false;
+      var callback = function () {
+        if (called) return;
+        called = true;
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18286031809/c7lnCOyc4aEdEMHnuo9E',
+          'value': 1.0,
+          'currency': 'AUD',
+          'event_callback': callback
+        });
+      }
+      setTimeout(callback, 1000);
+      return false;
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+      if (link) {
+        e.preventDefault();
+        gtag_report_conversion(link.href);
+      }
+    });
+  </script>
 </body>
 </html>
