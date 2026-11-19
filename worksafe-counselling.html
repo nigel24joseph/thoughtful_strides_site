@@ -13,6 +13,13 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -28,11 +35,12 @@
   <meta property="og:url" content="https://thoughtfulstrides.com.au/worksafe-counselling" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Worksafe.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="WorkSafe Victoria counselling session in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -184,6 +192,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can I see a counsellor and a psychologist at the same time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not under WorkSafe. WorkSafe doesn't fund counselling at the same time as treatment with a psychologist or mental health social worker. If you're already seeing one through your claim, talk with me and your GP about which option suits you best."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Do I have to pay for WorkSafe counselling?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -254,19 +270,20 @@
   <nav>
 
     <!-- Final version -->
-   <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="WorkSafe Victoria Counselling Narre Warren"></a>
+   <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling" class="active">WorkSafe Counselling</a></li>
         </ul>
@@ -274,34 +291,9 @@
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
 <!-- END final version -->
-
-    <!-- Test version for local drive -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="WorkSafe Victoria Counselling Narre Warren"></a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html" class="active">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
-<!-- END test version -->
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -319,7 +311,13 @@
         <p class="page-header-credentials">Nigel Joseph, Registered WorkSafe Victoria Provider (A363821Y)</p>
       </div>
       <aside class="header-call" aria-label="Book a free phone chat">
-        <p class="header-call-title">Talk it through first</p>
+        <div class="header-call-person">
+          <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist" width="56" height="56" decoding="async">
+          <div>
+            <p class="header-call-title">Talk it through first</p>
+            <p class="header-call-name">with Nigel Joseph</p>
+          </div>
+        </div>
         <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
         <ul class="header-call-ticks">
           <li>No cost to you</li>
@@ -334,16 +332,37 @@
   <section class="services-body">
     <div class="intro-row" style="margin-top:19px;">
       <div class="services-image">
-        <a href="/book-now"><img src="images/Worksafe.webp" alt="Client's hands clasped together during a therapy session" style="cursor:pointer;"></a>
+        <a href="/book-now"><img width="1200" height="800" fetchpriority="high" src="images/Worksafe.webp" alt="Client's hands clasped together during a therapy session" style="cursor:pointer;"></a>
       </div>
 
       <!-- INTRO CARD -->
       <div class="content-intro" style="margin-top:0;">
         <p class="service-badge">Steady Ground to Recover On</p>
-        <p class="bio-body">I support workers recovering from a work-related psychological or physical injury. I bill WorkSafe directly, so there's no cost to you.</p>
-        <p class="bio-body">If you've experienced a work-related injury, whether psychological, physical, or both, WorkSafe Victoria can fund counselling to support your recovery and return to work. I'm a registered WorkSafe Victoria counselling provider, offering trauma-informed, evidence-based support to injured workers across Victoria.</p>
-        <p class="bio-body" style="margin-bottom:0;">Common reasons workers access WorkSafe-funded counselling include workplace bullying or harassment, exposure to a traumatic incident, workplace accidents or injuries, excessive or unsafe workloads, and psychological injury arising from any work-related event or ongoing workplace stressor. Where anger has become part of the picture following a workplace incident, I can also help with <a href="anger-management.html">anger management counselling</a> as part of this work. Whatever the injury, my goal is the same, steady ground under you again, and a clear path back to work and to yourself.</p>
+        <p class="bio-body">I support workers recovering from a work-related psychological or physical injury. As a registered WorkSafe Victoria provider, I bill WorkSafe directly, so there's no cost to you.</p>
+        <p class="bio-body">People come to me after workplace bullying or harassment, a traumatic incident, an accident, or ongoing stress and unsafe workloads. If you're a first responder, see <a href="/first-responder-trauma-counselling">trauma counselling for first responders</a>.</p>
+        <p class="bio-body" style="margin-bottom:0;">Whatever the injury, my goal is the same: steady ground under you again, and a clear path back to work and to yourself.</p>
       </div>
+    </div>
+
+    <!-- WHEN TO REACH OUT (sign tiles) -->
+    <div class="signs-tiles-section">
+      <p class="service-badge">When to Reach Out</p>
+      <div class="fee-card-header">
+        <h2>Signs WorkSafe Counselling Could Help</h2>
+      </div>
+      <p class="bio-body signs-tiles-lead">A workplace injury can affect more than your body. If some of these feel familiar since your injury, it may help to talk.</p>
+      <ul class="signs-tiles">
+        <li class="signs-tile"><h3>Replaying the incident</h3><p>Flashbacks, or nightmares about what happened</p></li>
+        <li class="signs-tile"><h3>Anxious about work</h3><p>Worry about returning, or about the workplace</p></li>
+        <li class="signs-tile"><h3>Low mood</h3><p>Feeling flat or down since the injury</p></li>
+        <li class="signs-tile"><h3>Pain and frustration</h3><p>Living with an injury that limits you</p></li>
+        <li class="signs-tile"><h3>Poor sleep</h3><p>Trouble sleeping since it happened</p></li>
+        <li class="signs-tile"><h3>Losing confidence</h3><p>Doubting yourself at work or at home</p></li>
+        <li class="signs-tile"><h3>Shorter fuse</h3><p>More irritable with family or colleagues</p></li>
+        <li class="signs-tile"><h3>Pulling back</h3><p>From friends, family or things you enjoyed</p></li>
+        <li class="signs-tile"><h3>Worry about the future</h3><p>Work, money or how recovery will go</p></li>
+      </ul>
+      <p class="signs-tiles-call">Not sure if it applies to you? <a href="tel:+61479171121" class="signs-tiles-btn">Call 0479 171 121</a></p>
     </div>
 
     <!-- ELIGIBILITY CARD -->
@@ -397,7 +416,7 @@
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>A traumatic incident at work.</strong> An accident, assault, or critical incident that keeps coming back as images, nightmares, or flashbacks.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Bullying or harassment.</strong> Feeling anxious, small, or on edge long after the behaviour has stopped.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Fear of returning to work.</strong> Dreading the workplace, certain tasks, or the people involved.</span></li>
-        <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Cumulative stress.</strong> Frontline or high pressure roles where difficult experiences have built up over time.</span></li>
+        <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Cumulative stress.</strong> Frontline or high pressure roles where difficult experiences have built up over time. <a href="/first-responder-trauma-counselling" style="color:var(--accent); font-weight:600;">Support for first responders</a>.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Painful beliefs since the injury.</strong> Thoughts like "I'm not safe", "It was my fault", or "I'm not the person I used to be".</span></li>
       </ul>
 
@@ -410,6 +429,29 @@
       </div>
 
       <p class="bio-body" style="margin-bottom:0;">You won't need to describe the incident in detail. EMDR can be part of your WorkSafe funded counselling, and we work at a pace that supports your recovery.</p>
+
+      <div class="emdr-compact" id="is-emdr-safe">
+        <div class="emdr-compact-side">
+          <div class="emdr-compact-stat"><strong>12</strong><span>years of EMDR practice</span></div>
+          <i aria-hidden="true"></i>
+          <div class="emdr-compact-stat"><strong>20</strong><span>years of clinical experience</span></div>
+        </div>
+        <div class="emdr-compact-main">
+          <h2>Is EMDR Safe?</h2>
+          <p>EMDR is well researched, and how it's delivered makes the difference. Most difficulties come from starting memory work before someone feels steady enough, choosing the wrong memories to work on, missing signs of overwhelm, or ending a session without settling things. I take time to prepare you, pace each session to what you can manage, and make sure you leave settled.</p>
+          <a href="/my-approach#emdr-difference">What can go wrong, and how I prevent it &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT YOUR WORKSAFE COUNSELLOR -->
+    <div class="counsellor-band">
+      <img src="images/Nigel.webp" alt="Nigel Joseph, WorkSafe Counsellor in Narre Warren" width="104" height="104" loading="lazy" decoding="async">
+      <div class="counsellor-band-text">
+        <h2>About Your WorkSafe Counsellor</h2>
+        <p class="counsellor-band-creds">Nigel Joseph &middot; MCoun, MSW &middot; PACFA Registered &middot; Registered WorkSafe Provider</p>
+        <p class="bio-body">I'm a registered WorkSafe Victoria provider, and most of my clinical work has been as a trauma therapist. I use EMDR to help workers recover after workplace incidents, bullying and injury, and return to work feeling steadier. <a href="/about">More about me</a>.</p>
+      </div>
     </div>
 
     <!-- WHAT TO EXPECT + QUOTE -->
@@ -417,27 +459,48 @@
       <div class="fee-card-header">
         <h2>What to Expect</h2>
       </div>
-      <p class="bio-body">Sessions are 60 minutes, available in person in Narre Warren or via telehealth across Victoria. I start with a thorough assessment of how the injury has affected you, then build a plan suited to your recovery and return to work. WorkSafe can fund the reasonable costs of counselling for up to 12 hours or six months, provided your progress continues to be reviewed by your treating medical practitioner and treatment remains clinically justified. After your first assessment I send WorkSafe a treatment update, followed by regular updates, so your sessions can continue for as long as you need them.</p>
-      <p class="bio-body">Clients come from Narre Warren, Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
-      <p class="bio-body" style="margin-bottom:0;">There's no cost to you. I bill WorkSafe directly for your sessions.</p>
+      <p class="bio-body">I start with a thorough assessment of how the injury has affected you, then build a plan suited to your recovery and return to work. WorkSafe can fund the reasonable costs of counselling for up to 12 hours or six months, provided your progress continues to be reviewed by your treating medical practitioner and treatment remains clinically justified.</p>
+      <p class="bio-body" style="margin-bottom:0;">After your first assessment I send WorkSafe a treatment update, followed by regular updates, so your sessions can continue for as long as you need them.</p>
 
       <blockquote class="pull-quote">
         Recovering from a workplace injury is rarely only physical. Good support treats the whole impact, not just the claim.
       </blockquote>
     </div>
 
-    <p class="bio-body" style="text-align:center; font-size:0.875rem;">Not accessing counselling through WorkSafe? Session fees and rebate details for self-funded or private health cover are on the <a href="fees.html">Fees page</a>.</p>
+    <!-- COUNSELLING SESSIONS -->
+    <div class="fee-card-header">
+      <h2>Counselling Sessions</h2>
+    </div>
+    <dl class="session-facts">
+      <div class="session-fact">
+        <dt>Sessions</dt>
+        <dd>60 minutes, in person in Narre Warren or via telehealth across Victoria</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Hours</dt>
+        <dd>Monday to Friday, 10am to 8pm</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Fee</dt>
+        <dd>No cost to you. I bill WorkSafe directly once your claim is accepted, or while provisional payments cover a mental injury.</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Location</dt>
+        <dd>Suite 4, 26-28 Verdun Drive<br>Narre Warren VIC 3805</dd>
+      </div>
+    </dl>
+    <p class="session-areas">Easy to reach from Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
+    <p class="session-areas">Not accessing counselling through WorkSafe? Self-funded sessions are $150, and with private health extras cover you may be able to claim a health fund rebate. Details are on the <a href="/fees">Fees page</a>.</p>
+    <p class="session-crisis">Counselling is not a crisis service. If you are in crisis or worried about your safety, call Lifeline on <a href="tel:131114">13 11 14</a> at any time, or 000 in an emergency.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p class="cta-mini-text">If you have a work-related injury and would like support with your recovery,</p>
+      <p class="cta-mini-text">If you have a work-related injury and would like support with your recovery, I'm here to help.</p>
       <div class="cta-mini-actions">
-        <span class="cta-band-group"><span class="cta-mini-label">call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
       </div>
     </div>
-
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
@@ -500,6 +563,16 @@
 
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
+          <span>Can I see a counsellor and a psychologist at the same time?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Not under WorkSafe. WorkSafe doesn't fund counselling at the same time as treatment with a psychologist or mental health social worker. If you're already seeing one through your claim, talk with me and your GP about which option suits you best.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
           <span>Do I have to pay for WorkSafe counselling?</span>
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
@@ -542,12 +615,12 @@
   </section>
 
   <!-- CTA BAND -->
-  <div class="cta-band">
+  <div class="cta-band" role="region" aria-label="Get in touch">
     <h2>A workplace injury doesn't just affect you at work.</h2>
-    <p class="cta-band-line1">Why put off the support that could help you recover and get back on track.</p>
+    <p class="cta-band-line1">Why put off the support that could help you recover and get back on track?</p>
     <div class="cta-band-actions">
       <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
     </div>
   </div>
 
@@ -557,8 +630,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -566,10 +639,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {

@@ -13,6 +13,14 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -27,11 +35,12 @@
   <meta property="og:url" content="https://thoughtfulstrides.com.au/book-now" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="Trauma therapy and counselling session in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -44,6 +53,8 @@
   "mainEntity": {
     "@type": "ProfessionalService",
     "@id": "https://thoughtfulstrides.com.au/#business",
+    "image": "https://thoughtfulstrides.com.au/images/Nigel.webp",
+    "priceRange": "$150-$200",
     "name": "Thoughtful Strides Counselling and Psychotherapy",
     "telephone": "+61479171121",
     "email": "nigel.joseph@thoughtfulstrides.com.au",
@@ -65,7 +76,7 @@
           "Thursday",
           "Friday"
         ],
-        "opens": "09:00",
+        "opens": "10:00",
         "closes": "20:00"
       }
     ]
@@ -100,19 +111,20 @@
   <nav>
 
     <!-- Final version - comment in before publishing -->
-    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+    <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling">WorkSafe Counselling</a></li>
         </ul>
@@ -120,34 +132,9 @@
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
     <!-- END Final version -->
-
-    <!-- Test version for local drive -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta active">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
-    <!-- END test version -->
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -166,7 +153,7 @@
   <section class="fees-section" style="padding-bottom:0;">
     <div class="content-intro" style="max-width:900px; margin-left:auto; margin-right:auto;">
       <p class="service-badge">No Pressure, Just a Conversation</p>
-      <p class="bio-body" style="margin-bottom:1rem;">There's no need to have everything figured out before reaching out. Contact me to have a conversation about how I work and see if it feels right for you. I will contact you within 24 hours if I am not able to answer your enquiry or call immediately.</p>
+      <p class="bio-body" style="margin-bottom:1rem;">There's no need to have everything figured out before reaching out. Contact me to have a conversation about how I work and see if it feels right for you. If I can't answer straight away, I'll get back to you within one business day.</p>
       <div class="modality-tags" style="justify-content:flex-start; margin-bottom:0;">
         <span class="modality-tag">PACFA Registered</span>
         <span class="modality-tag">Free Discovery Call</span>
@@ -212,7 +199,7 @@
           </div>
           <div class="contact-detail-text">
             <strong>Location</strong>
-            <span>Suite 4, 26-28 Verdun Drive, Narre Warren</span>
+            <span>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805</span>
           </div>
         </div>
         <div class="contact-detail">
@@ -223,13 +210,13 @@
           </div>
           <div class="contact-detail-text">
             <strong>Hours</strong>
-            <span>Monday to Friday, 9:00AM to 8:00PM</span>
+            <span>Monday to Friday, 10am to 8pm</span>
           </div>
         </div>
       </div>
 
       <div style="margin-top: 1.5rem;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.9497440743985!2d145.31285417621362!3d-38.024951071923354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad619fff5f299f1%3A0x639cbaeb1b67fb7b!2s26-28%20Verdun%20Dr%2C%20Narre%20Warren%20VIC%203805!5e0!3m2!1sen!2sau!4v1782113423194!5m2!1sen!2sau" width="100%" height="200" style="border:0; border-radius: 10px; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Map showing Thoughtful Strides at Suite 4, 26-28 Verdun Drive, Narre Warren" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.9497440743985!2d145.31285417621362!3d-38.024951071923354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad619fff5f299f1%3A0x639cbaeb1b67fb7b!2s26-28%20Verdun%20Dr%2C%20Narre%20Warren%20VIC%203805!5e0!3m2!1sen!2sau!4v1782113423194!5m2!1sen!2sau" width="100%" height="200" style="border:0; border-radius: 10px; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -237,8 +224,9 @@
     <div class="contact-form">
       <h2>Contact Me</h2>
       <p class="bio-body" style="font-size:0.875rem; margin-bottom:1.25rem;">Not ready to fill in a form? Call <a href="tel:+61479171121" style="color:var(--accent);">0479 171 121</a> to see if it feels right for you.</p>
-      <form name="contact" method="POST" action="/success" netlify novalidate>
+      <form name="contact" method="POST" action="/success" netlify netlify-honeypot="bot-field" novalidate>
         <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field" hidden aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First name</label>
@@ -268,9 +256,9 @@
             <option>Contact Me</option>
             <option>Couples</option>
             <option>Trauma Therapy</option>
+            <option>First Responders</option>
             <option>Anxiety</option>
             <option>Depression</option>
-            <option>Anger Management</option>
             <option>Grief and Loss</option>
             <option>Relationship Issues</option>
             <option>General Counselling</option>
@@ -294,8 +282,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -303,10 +291,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {

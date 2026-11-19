@@ -13,33 +13,43 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
   <link rel="apple-touch-icon" href="images/logo.svg" />
-  <title>Anxiety Counsellor Narre Warren | OCD &amp; Panic Counselling</title>
+  <title>Anxiety Counsellor Narre Warren | OCD, Panic and Phobias</title>
 
   <link rel="canonical" href="https://thoughtfulstrides.com.au/anxiety" />
 
-  <meta name="description" content="Anxiety, OCD and panic counselling in Narre Warren using EMDR, CBT and ACT. PACFA registered. In person or telehealth across Australia." />
+  <meta name="description" content="Anxiety, panic, OCD and phobia counselling in Narre Warren using EMDR, CBT and ACT. PACFA registered. In person or telehealth across Australia." />
 
-  <meta property="og:title" content="Anxiety Counsellor Narre Warren | OCD &amp; Panic Counselling" />
-  <meta property="og:description" content="Anxiety, OCD and panic counselling in Narre Warren using EMDR, CBT and ACT. PACFA registered. In person or telehealth across Australia." />
+  <meta property="og:title" content="Anxiety Counsellor Narre Warren | OCD, Panic and Phobias" />
+  <meta property="og:description" content="Anxiety, panic, OCD and phobia counselling in Narre Warren using EMDR, CBT and ACT. PACFA registered. In person or telehealth across Australia." />
   <meta property="og:url" content="https://thoughtfulstrides.com.au/anxiety" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Anxiety.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="Anxiety and panic counselling session in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  "name": "Anxiety, OCD & Panic Counselling in Narre Warren",
+  "name": "Anxiety, OCD and Panic Counselling in Narre Warren",
   "description": "Anxiety, OCD and panic counselling in Narre Warren and via Telehealth, using CBT, ACT, Schema Therapy and EMDR.",
   "url": "https://thoughtfulstrides.com.au/anxiety",
   "inLanguage": "en-AU",
@@ -81,7 +91,15 @@
       "name": "Nigel Joseph",
       "jobTitle": "Trauma Therapist and Couples Counsellor",
       "url": "https://thoughtfulstrides.com.au/about",
-      "hasCredential": "PACFA Clinical Registration 33251"
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "PACFA Clinical Registration 33251",
+        "credentialCategory": "Professional registration",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Psychotherapy and Counselling Federation of Australia (PACFA)"
+        }
+      }
     },
     "serviceType": "Anxiety Counselling, OCD Treatment, Panic Disorder Treatment",
     "areaServed": [
@@ -162,6 +180,14 @@
     },
     {
       "@type": "Question",
+      "name": "How much does anxiety counselling cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sessions are 60 minutes and cost $150. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the Fees page. You are welcome to call for a free chat first."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What are the signs of an anxiety disorder?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -182,6 +208,30 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Obsessive-Compulsive Disorder (OCD) involves intrusive, unwanted thoughts, images, or urges (obsessions) that cause distress, and repetitive behaviours or mental acts (compulsions) performed to reduce that distress or prevent a feared outcome. Common themes include contamination, harm, symmetry, or intrusive taboo thoughts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a phobia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A phobia is an intense, persistent fear of a specific thing or situation, such as flying, driving, needles, heights, animals or vomiting, that feels far bigger than the actual risk. Many people know the fear doesn't make sense but still feel their body react, and start avoiding the situation, which tends to make the fear stronger over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can EMDR help with phobias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many phobias start with a frightening experience, or build up after one. EMDR helps process that memory, works through the situations that trigger the fear now, and rehearses facing it in the future, alongside gradual, supported exposure. Phobias are among the most treatable forms of anxiety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many sessions does phobia treatment take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the phobia and how long it has been there. A specific phobia linked to a clear event often needs fewer sessions than longstanding or overlapping anxiety. We review progress together as we go, rather than committing to a fixed number upfront."
       }
     },
     {
@@ -239,6 +289,9 @@
 }
 </script>
 <style>
+  /* Panic / OCD / Phobia cards: three across on desktop */
+  .split-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 900px) { .split-grid-3 { grid-template-columns: 1fr; } }
 </style>
 </head>
 
@@ -249,20 +302,21 @@
 
     <!-- This is the published version - comment in before uploading -->
 
-    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Anxiety, OCD and Panic Counselling Narre Warren"></a>
+    <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
 
        <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety" class="active">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling">WorkSafe Counselling</a></li>
         </ul>
@@ -270,35 +324,8 @@
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
-
-<!-- END -->
-
-<!-- This is the local drive working version for website building only - comment out before publishing -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Anxiety, OCD and Panic Counselling Narre Warren"></a>
-
-     <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html" class="active">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
 
 <!-- END -->
 
@@ -314,15 +341,21 @@
     <div class="header-split">
       <div class="header-main">
         <p class="page-header-label">Services</p>
-        <h1>Anxiety, OCD & Panic Counselling <em>in Narre Warren</em></h1>
+        <h1>Anxiety, Panic, OCD and Phobia Counselling <em>in Narre Warren</em></h1>
         <p class="page-header-credentials">Nigel Joseph, Anxiety Counsellor and EMDR Therapist</p>
         <p class="page-header-tagline">You don't have to have it all figured out to ask for help.</p>
       </div>
       <aside class="header-call" aria-label="Book a free phone chat">
-        <p class="header-call-title">Talk it through first</p>
+        <div class="header-call-person">
+          <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist" width="56" height="56" decoding="async">
+          <div>
+            <p class="header-call-title">Talk it through first</p>
+            <p class="header-call-name">with Nigel Joseph</p>
+          </div>
+        </div>
         <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
         <ul class="header-call-ticks">
-          <li>No waitlist</li>
+          <li>EMDR and Schema Therapy</li>
           <li>In person or telehealth</li>
           <li>PACFA registered, 20 years</li>
         </ul>
@@ -334,38 +367,42 @@
   <section class="services-body">
     <div class="intro-row" style="margin-top:19px;">
       <div class="services-image">
-        <a href="/book-now"><img src="images/Anxiety.webp" alt="Close-up of hands tightly clasped together, fidgeting with fabric, reflecting nervous tension and anxiety" style="cursor:pointer;"></a>
+        <a href="/book-now"><img width="1200" height="800" fetchpriority="high" src="images/Anxiety.webp" alt="Close-up of hands tightly clasped together, fidgeting with fabric, reflecting nervous tension and anxiety" style="cursor:pointer;"></a>
       </div>
 
       <!-- INTRO CARD -->
       <div class="content-intro" style="margin-top:0;">
-        <p class="service-badge">Freedom From Fear &amp; Worry</p>
-        <p class="bio-body" style="margin-bottom:0;">Anxiety conditions are among the most common and most treatable mental health conditions. You don't have to manage this on your own. <br><br>Anxiety is Australia's most common mental health condition, affecting around 1 in 4 people at some point in their lives. It can show up as constant worry, sudden panic attacks, intrusive thoughts and compulsions, or a persistent sense of dread that's hard to explain.</p>
+        <p class="service-badge">Freedom From Fear and Worry</p>
+        <p class="bio-body" style="margin-bottom:0;">Anxiety is one of the most treatable mental health conditions. You don't have to manage this on your own. <br><br>Anxiety is Australia's most common mental health condition, affecting around 1 in 4 people at some point in their lives. It can show up as constant worry, sudden panic attacks, intrusive thoughts and compulsions, or a persistent sense of dread that's hard to explain.</p>
+        <p class="bio-body" style="margin-top:1.25rem;">I help you understand what's driving your anxiety and build practical, evidence-based tools to feel more in control again. Anxiety disorders cover a range of presentations, including generalised anxiety (GAD), panic disorder, social anxiety, phobias, and obsessive-compulsive disorder (OCD), and they often overlap with each other. Whatever form it takes, effective, well-evidenced treatment is available.</p>
         <blockquote class="pull-quote" style="margin-bottom:1.25rem;">Anxiety shrinks the world down to what feels safe. Therapy is about widening it back out again, one manageable step at a time.</blockquote>
       </div>
     </div>
 
-    <p class="bio-body">I help you understand what's driving your anxiety and build practical, evidence-based tools to feel more in control again. Anxiety disorders cover a range of presentations, including generalised anxiety, panic disorder, social anxiety, phobias, and obsessive-compulsive disorder (OCD), and they often overlap with each other. Whatever form it takes, effective, well-evidenced treatment is available.</p>
 
-    <!-- SIGNS CARD -->
-    <div class="symptom-card">
+    <!-- WHEN TO REACH OUT (sign tiles) -->
+    <div class="signs-tiles-section signs-tiles-spaced">
+      <p class="service-badge">When to Reach Out</p>
       <div class="fee-card-header">
         <h2>Signs Anxiety Counselling Could Help</h2>
       </div>
-      <ul class="bullet-list" style="margin-bottom:0;">
-        <li>Persistent, hard to control worry about everyday things</li>
-        <li>Restlessness, muscle tension, or feeling constantly on edge</li>
-        <li>Sudden panic attacks, including a racing heart, shortness of breath, dizziness, or a fear of losing control</li>
-        <li>Avoiding places, situations, or activities out of fear or anxiety</li>
-        <li>Intrusive, unwanted thoughts that cause distress</li>
-        <li>Compulsions or rituals used to reduce anxiety or prevent a feared outcome</li>
-        <li>Difficulty sleeping due to a racing mind</li>
-        <li>Anxiety that's interfering with work, study, or relationships</li>
+      <p class="bio-body signs-tiles-lead">Anxiety can be worked through. If some of these feel familiar, it may be a good time to talk.</p>
+      <ul class="signs-tiles">
+        <li class="signs-tile"><h3>Constant worry</h3><p>Hard to control worry about everyday things</p></li>
+        <li class="signs-tile"><h3>Always on edge</h3><p>Restlessness, tension, never quite settling</p></li>
+        <li class="signs-tile"><h3>Panic attacks</h3><p>Racing heart, breathlessness, fear of losing control</p></li>
+        <li class="signs-tile"><h3>Avoidance</h3><p>Steering clear of places or situations out of fear</p></li>
+        <li class="signs-tile"><h3>Intrusive thoughts</h3><p>Unwanted thoughts that cause distress</p></li>
+        <li class="signs-tile"><h3>Compulsions</h3><p>Checking or rituals to prevent a feared outcome</p></li>
+        <li class="signs-tile"><h3>Poor sleep</h3><p>A racing mind at night</p></li>
+        <li class="signs-tile"><h3>Getting in the way</h3><p>Of work, study or relationships</p></li>
+        <li class="signs-tile"><h3>Fears and phobias</h3><p>Flying, driving, needles or social situations</p></li>
       </ul>
+      <p class="signs-tiles-call">Not sure if it applies to you? <a href="tel:+61479171121" class="signs-tiles-btn">Call 0479 171 121</a></p>
     </div>
 
-    <!-- PANIC / OCD SPLIT CARDS -->
-    <div class="split-grid">
+    <!-- PANIC / OCD / PHOBIA CARDS -->
+    <div class="split-grid split-grid-3">
       <div class="split-card">
         <h3>Panic Therapy and Counselling</h3>
         <p>Panic disorder involves recurrent, unexpected panic attacks, sudden surges of intense fear accompanied by physical symptoms such as a racing heart, chest tightness, or dizziness, along with ongoing worry about having another attack. It's highly treatable, and many people fear something is physically wrong with them before recognising the pattern as panic.</p>
@@ -374,22 +411,26 @@
         <h3>OCD Therapy and Counselling</h3>
         <p>OCD involves intrusive, unwanted thoughts, images, or urges (obsessions) that cause significant distress, and repetitive behaviours or mental acts (compulsions) performed to reduce that distress or prevent a feared outcome. Common themes include contamination, harm, symmetry, or intrusive taboo thoughts. OCD responds well to structured, evidence-based treatment.</p>
       </div>
+      <div class="split-card" id="phobias">
+        <h3>Phobia Therapy and Counselling</h3>
+        <p>A phobia is an intense fear of a specific thing or situation, far bigger than the actual risk, such as flying, driving, needles, the dentist, heights or vomiting. Avoiding it brings relief but makes the fear grow. Phobias are among the most treatable forms of anxiety, and EMDR can help process where the fear began.</p>
+      </div>
     </div>
 
     <!-- ANXIETY THERAPY AND COUNSELLING -->
     <div class="fee-card-header">
       <h2>Anxiety Therapy and Counselling</h2>
     </div>
-    <p class="bio-body">Therapy starts with getting to know you, your experiences, your childhood and when the anxiety firs started to bother you.</p>
+    <p class="bio-body">Therapy starts with getting to know you, your experiences, your childhood and when the anxiety first started to bother you.</p>
     <div class="steps recovery-steps">
       <div class="step">
         <div class="step-num">1</div>
         <h3>Understanding Your Triggers and Patterns</h3>
         <p>We start by understanding your specific anxiety triggers and patterns, and the unhelpful thinking patterns that fuel anxiety.</p>
         <div class="read-more-text" style="display:none;">
-          <p>I use EMDR which is a very effective and efficient treatment for anxiety. EMDR targets the core beliefs that trigger the emotional responses</p>
+          <p>I use EMDR, an effective treatment for anxiety, to target the core beliefs that trigger anxious emotional responses.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Triggers and Patterns" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Triggers and Patterns">Read more &darr;</a>
       </div>
       <div class="step">
         <div class="step-num">2</div>
@@ -398,7 +439,7 @@
         <div class="read-more-text" style="display:none;">
           <p>I draw on Acceptance and Commitment Therapy to build your tolerance for anxious thoughts and feelings without letting them dictate your choices, alongside nervous system regulation and grounding techniques you can use as symptoms arise.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Reducing Avoidance, Building Tolerance" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Reducing Avoidance, Building Tolerance">Read more &darr;</a>
       </div>
       <div class="step">
         <div class="step-num">3</div>
@@ -407,21 +448,21 @@
         <div class="read-more-text" style="display:none;">
           <p>I draw on Solution Focused Therapy for practical, goal-directed strategies, and where relevant, we process past experiences that underlie current symptoms, so the tools you build last well beyond our sessions together.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Building Practical Tools" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Building Practical Tools">Read more &darr;</a>
       </div>
     </div>
 
     <!-- EMDR FOR ANXIETY -->
     <div class="info-band emdr-band">
       <p class="service-badge">When Your Mind Stays on Guard</p>
-      <div class="fee-card-header"><h2>EMDR Therapy for Anxiety, Panic and OCD</h2></div>
+      <div class="fee-card-header"><h2>EMDR Therapy for Anxiety, Panic, OCD and Phobias</h2></div>
       <p class="bio-body">Anxiety often makes sense when you trace it back. A mind that's always scanning for danger has usually learnt, at some point, that it needed to. Knowing you're safe now doesn't always switch that alarm off, because the feeling is tied to earlier experiences rather than to what's happening today.</p>
 
       <p class="emdr-sub">When EMDR may help</p>
       <ul class="signs-split-list emdr-list">
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Panic attacks.</strong> Sudden waves of fear, especially if you can remember when the first one happened.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Constant worry.</strong> A sense that something bad will happen unless you stay alert.</span></li>
-        <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Specific fears.</strong> Driving, flying, medical procedures, or social situations that feel bigger than they should.</span></li>
+        <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Specific fears and phobias.</strong> Flying, driving, needles, medical or dental procedures, or social situations that feel bigger than they should.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Beliefs like "I'm not safe" or "I'm not in control".</strong> Thoughts that drive checking, avoiding, or needing reassurance.</span></li>
         <li><span class="signs-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Anxiety after a difficult event.</strong> Feeling on edge since an accident, illness, or frightening experience.</span></li>
       </ul>
@@ -436,23 +477,62 @@
 
       <p class="bio-body" style="margin-bottom:0;">We start by building ways to calm your body and mind, so you have tools to use in sessions and in daily life. EMDR processing only begins once you feel ready.</p>
       <p class="emdr-safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>For OCD, EMDR usually works alongside other approaches rather than on its own. We'll talk through what's likely to help most in your situation.</span></p>
+
+      <div class="emdr-compact" id="is-emdr-safe">
+        <div class="emdr-compact-side">
+          <div class="emdr-compact-stat"><strong>12</strong><span>years of EMDR practice</span></div>
+          <i aria-hidden="true"></i>
+          <div class="emdr-compact-stat"><strong>20</strong><span>years of clinical experience</span></div>
+        </div>
+        <div class="emdr-compact-main">
+          <h2>Is EMDR Safe?</h2>
+          <p>EMDR is well researched, and how it's delivered makes the difference. Most difficulties come from starting memory work before someone feels steady enough, choosing the wrong memories to work on, missing signs of overwhelm, or ending a session without settling things. I take time to prepare you, pace each session to what you can manage, and make sure you leave settled.</p>
+          <a href="/my-approach#emdr-difference">What can go wrong, and how I prevent it &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="counsellor-band">
+      <img src="images/Nigel.webp" alt="Nigel Joseph, Anxiety Counsellor in Narre Warren" width="104" height="104" loading="lazy" decoding="async">
+      <div class="counsellor-band-text">
+        <h2>About Your Anxiety Counsellor</h2>
+        <p class="counsellor-band-creds">Nigel Joseph &middot; MCoun, MSW &middot; PACFA Registered &middot; EMDR Trained</p>
+        <p class="bio-body">Most of my clinical work has been as a trauma therapist, and I draw on EMDR, CBT and ACT to help with anxiety, panic and OCD. <a href="/about">More about me</a>.</p>
+      </div>
     </div>
 
     <!-- COUNSELLING SESSIONS -->
     <div class="fee-card-header">
       <h2>Counselling Sessions</h2>
     </div>
-    <p class="bio-body">I offer 60 minute sessions, in person in Narre Warren or via telehealth Australia-wide.</p>
-    <p class="bio-body">Clients come from Narre Warren, Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
-
-    <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
+    <dl class="session-facts">
+      <div class="session-fact">
+        <dt>Sessions</dt>
+        <dd>60 minutes, in person in Narre Warren or via telehealth Australia-wide. You don't need a GP referral or a diagnosis to book.</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Hours</dt>
+        <dd>Monday to Friday, 10am to 8pm</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Fee</dt>
+        <dd>$150 per session. You may be able to claim a health fund rebate with private extras cover. <a href="/fees">Fees page</a></dd>
+      </div>
+      <div class="session-fact">
+        <dt>Location</dt>
+        <dd>Suite 4, 26-28 Verdun Drive<br>Narre Warren VIC 3805</dd>
+      </div>
+    </dl>
+    <p class="session-areas">Easy to reach from Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
+    <p class="session-crisis">Counselling is not a crisis service. If you are in crisis or worried about your safety, call Lifeline on <a href="tel:131114">13 11 14</a> at any time, or 000 in an emergency.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p class="cta-mini-text">If anxiety, panic, or OCD is affecting your day to day life,</p>
+      <p class="cta-mini-text">If anxiety, panic, OCD or a phobia is affecting your day to day life, you don't have to manage it alone.</p>
       <div class="cta-mini-actions">
-        <span class="cta-band-group"><span class="cta-mini-label">call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
       </div>
     </div>
 
@@ -462,7 +542,7 @@
   <section class="faq-section" id="faqs">
     <div class="faq-header">
       <p class="section-label">Common Questions</p>
-      <h2 class="section-title">Anxiety, OCD &amp; Panic FAQs</h2>
+      <h2 class="section-title">Anxiety, Panic, OCD and Phobia FAQs</h2>
     </div>
     <div class="faq-list">
 
@@ -473,6 +553,16 @@
         </button>
         <div class="faq-answer">
           <p>Anxiety counselling is professional support for generalised anxiety, panic disorder, phobias, social anxiety, and obsessive-compulsive disorder (OCD). It helps identify what's driving the anxiety and build practical, evidence-based tools to feel more in control.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much does anxiety counselling cost?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Sessions are 60 minutes and cost $150. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the <a href="/fees">Fees page</a>. You are welcome to call for a free chat first.</p>
         </div>
       </div>
 
@@ -503,6 +593,36 @@
         </button>
         <div class="faq-answer">
           <p>Obsessive-Compulsive Disorder (OCD) involves intrusive, unwanted thoughts, images, or urges (obsessions) that cause distress, and repetitive behaviours or mental acts (compulsions) performed to reduce that distress or prevent a feared outcome. Common themes include contamination, harm, symmetry, or intrusive taboo thoughts.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is a phobia?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>A phobia is an intense, persistent fear of a specific thing or situation, such as flying, driving, needles, heights, animals or vomiting, that feels far bigger than the actual risk. Many people know the fear doesn't make sense but still feel their body react, and start avoiding the situation, which tends to make the fear stronger over time.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can EMDR help with phobias?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Many phobias start with a frightening experience, or build up after one. EMDR helps process that memory, works through the situations that trigger the fear now, and rehearses facing it in the future, alongside gradual, supported exposure. Phobias are among the most treatable forms of anxiety.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How many sessions does phobia treatment take?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>It depends on the phobia and how long it has been there. A specific phobia linked to a clear event often needs fewer sessions than longstanding or overlapping anxiety. We review progress together as we go, rather than committing to a fixed number upfront.</p>
         </div>
       </div>
 
@@ -540,12 +660,12 @@
   </section>
 
   <!-- CTA BAND -->
-  <div class="cta-band">
+  <div class="cta-band" role="region" aria-label="Get in touch">
     <h2>A mind that won't switch off takes its toll eventually.</h2>
-    <p class="cta-band-line1">Why wait for it to ease on its own, when you can do something about it now.</p>
+    <p class="cta-band-line1">Why wait for it to ease on its own, when you can do something about it now?</p>
     <div class="cta-band-actions">
       <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
     </div>
   </div>
 
@@ -555,8 +675,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -564,10 +684,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
