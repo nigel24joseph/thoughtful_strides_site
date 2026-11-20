@@ -22,6 +22,18 @@
   status = 301
 
 [[redirects]]
+  from = "/anger-management"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/anger-management.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/index.html"
   to = "/"
   status = 301

@@ -13,6 +13,13 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -28,11 +35,12 @@
   <meta property="og:url" content="https://thoughtfulstrides.com.au/relationships" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Relationship.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="Individual relationship counselling session in Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -69,7 +77,15 @@
       "name": "Nigel Joseph",
       "jobTitle": "Trauma Therapist and Couples Counsellor",
       "url": "https://thoughtfulstrides.com.au/about",
-      "hasCredential": "PACFA Clinical Registration 33251"
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "PACFA Clinical Registration 33251",
+        "credentialCategory": "Professional registration",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Psychotherapy and Counselling Federation of Australia (PACFA)"
+        }
+      }
     },
     "serviceType": "Relationship Counselling, Attachment-Focused Counselling",
     "areaServed": [
@@ -138,6 +154,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Individual relationship counselling is one-on-one support to understand your own patterns in relationships, such as attachment style, communication habits, or recurring conflicts, without your partner or another person attending sessions with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does relationship counselling cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Individual sessions are 60 minutes and cost $150. If you would like to come together as a couple, couples sessions are $200. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the Fees page. You are welcome to call for a free chat first."
       }
     },
     {
@@ -220,19 +244,20 @@
   <nav>
 
 <!-- Final version -->
- <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Relationship Counselling Narre Warren"></a>
+ <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships" class="active">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships" class="active">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling">WorkSafe Counselling</a></li>
         </ul>
@@ -240,34 +265,9 @@
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
 <!-- END Final version -->
-
-<!-- Test version for local drive - comment out before publishing -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Relationship Counselling Narre Warren"></a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html" class="active">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
-<!-- END test version -->
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -282,13 +282,20 @@
       <div class="header-main">
         <p class="page-header-label">Services</p>
         <h1>Relationship Counselling <em>in Narre Warren</em></h1>
+        <p class="page-header-credentials">Nigel Joseph, Trauma Therapist and Relationship Counsellor</p>
         <p class="page-header-tagline">The patterns you bring into relationships were shaped long before this one.</p>
       </div>
       <aside class="header-call" aria-label="Book a free phone chat">
-        <p class="header-call-title">Talk it through first</p>
+        <div class="header-call-person">
+          <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist" width="56" height="56" decoding="async">
+          <div>
+            <p class="header-call-title">Talk it through first</p>
+            <p class="header-call-name">with Nigel Joseph</p>
+          </div>
+        </div>
         <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
         <ul class="header-call-ticks">
-          <li>No waitlist</li>
+          <li>EMDR and Schema Therapy</li>
           <li>In person or telehealth</li>
           <li>PACFA registered, 20 years</li>
         </ul>
@@ -300,41 +307,45 @@
   <section class="services-body">
     <div class="intro-row" style="margin-top:19px;">
       <div class="services-image">
-        <a href="/book-now"><img src="images/Relationship.webp" alt="Couple holding hands during a counselling session, with a medical patient information clipboard in the foreground" style="cursor:pointer;"></a>
+        <a href="/book-now"><img width="1200" height="800" fetchpriority="high" src="images/Relationship.webp" alt="Couple holding hands during a counselling session, with a medical patient information clipboard in the foreground" style="cursor:pointer;"></a>
       </div>
 
       <!-- INTRO CARD -->
       <div class="content-intro" style="margin-top:0;">
         <p class="service-badge">Feel Close to the People You Love</p>
-        <p class="bio-body" style="margin-bottom:0;">Many of the difficulties people experience in relationships have less to do with the other person than with patterns formed long before that relationship began, ways of relating, trusting, and responding to conflict that were shaped early in life and tend to repeat themselves. <br><br>This individual counselling is for anyone wanting to understand their own part in relationship difficulties, whether they're currently in a relationship, between relationships, or simply noticing a pattern they'd like to change.</p>
+        <p class="bio-body" style="margin-bottom:0;">Many relationship difficulties have less to do with the other person than with patterns formed long before, ways of trusting and handling conflict shaped early in life. <br><br>This counselling is for anyone wanting to understand their part, whether you're in a relationship, between relationships, or noticing a pattern you'd like to change.</p>
+        <p class="bio-body" style="margin-top:1.25rem;">This work is separate from <a href="/couples">couples counselling</a>. It's one-on-one, focused on you, your history, and your patterns, and can be valuable whether or not you have a partner right now.</p>
       </div>
     </div>
 
-    <p class="bio-body">This work is separate from <a href="couples.html">couples counselling</a>. It's one-on-one, focused on you, your history, and your patterns, and can be valuable whether or not you have a partner right now.</p>
 
-    <!-- SIGNS CARD -->
-    <div class="symptom-card">
+    <!-- WHEN TO REACH OUT (sign tiles) -->
+    <div class="signs-tiles-section">
+      <p class="service-badge">When to Reach Out</p>
       <div class="fee-card-header">
         <h2>Signs Relationship Counselling Could Help</h2>
       </div>
-      <ul class="bullet-list" style="margin-bottom:0;">
-        <li>A pattern of relationships ending the same way, or for similar reasons</li>
-        <li>Difficulty trusting partners, or a fear of being left or betrayed</li>
-        <li>Feeling anxious, preoccupied, or overly reliant on reassurance in relationships</li>
-        <li>Avoiding closeness, or feeling smothered when a relationship becomes serious</li>
-        <li>Repeating dynamics from your family of origin in adult relationships</li>
-        <li>Difficulty communicating needs, or expressing them in ways that push people away</li>
-        <li>Struggling to set boundaries, or feeling responsible for others' emotions</li>
-        <li>Wanting to understand your patterns before entering a new relationship</li>
+      <p class="bio-body signs-tiles-lead">Relationship patterns often make more sense once we trace where they started. If some of these feel familiar, it may help to talk it through.</p>
+      <ul class="signs-tiles">
+        <li class="signs-tile"><h3>The same ending</h3><p>Relationships ending the same way, or for similar reasons</p></li>
+        <li class="signs-tile"><h3>Hard to trust</h3><p>Fear of being left or betrayed</p></li>
+        <li class="signs-tile"><h3>Anxious in love</h3><p>Preoccupied, or relying heavily on reassurance</p></li>
+        <li class="signs-tile"><h3>Pulling away</h3><p>Avoiding closeness, or feeling smothered as things get serious</p></li>
+        <li class="signs-tile"><h3>Family patterns</h3><p>Repeating dynamics from the family you grew up in</p></li>
+        <li class="signs-tile"><h3>Getting needs across</h3><p>Struggling to say what you need without pushing people away</p></li>
+        <li class="signs-tile"><h3>Boundaries</h3><p>Finding it hard to say no, or feeling responsible for others&#39; feelings</p></li>
+        <li class="signs-tile"><h3>Before something new</h3><p>Understanding your patterns before a new relationship</p></li>
+        <li class="signs-tile"><h3>Conflict that escalates</h3><p>Arguments that blow up or go round in circles</p></li>
       </ul>
+      <p class="signs-tiles-call">Not sure if it applies to you? <a href="tel:+61479171121" class="signs-tiles-btn">Call 0479 171 121</a></p>
     </div>
 
     <!-- ATTACHMENT INFO BAND -->
-    <div class="info-band">
+    <div class="info-band info-feature">
       <div class="fee-card-header">
         <h2>Understanding Attachment Style</h2>
       </div>
-      <p class="bio-body">Attachment theory describes how early relationships with caregivers shape the templates we later bring into adult relationships. Someone with a more anxious attachment style may seek frequent reassurance and fear abandonment. Someone with a more avoidant style may feel uneasy with closeness and pull away when a relationship deepens. A more secure attachment style tends to involve comfort with both closeness and independence. Most people show a mix of these patterns rather than fitting neatly into one category, and patterns can look different depending on the relationship.</p>
+      <p class="bio-body">Attachment theory describes how early relationships with caregivers shape what we bring into adult relationships. Anxious attachment can mean seeking reassurance and fearing abandonment. Avoidant attachment can mean pulling away as closeness grows. Secure attachment means being comfortable with both closeness and independence. Most people show a mix.</p>
       <p class="bio-body" style="margin-bottom:0;">Importantly, attachment style is not fixed. While early patterns can be persistent, research indicates they can shift over time, particularly through new relational experiences and focused therapeutic work.</p>
 
       <blockquote class="pull-quote">
@@ -347,34 +358,40 @@
       <h2>Relationship Therapy and Counselling</h2>
     </div>
     <p class="bio-body">This work doesn't follow a script, but sessions tend to move through a few natural stages as we get to know your patterns and build the capacity to relate differently.</p>
-    <div class="steps recovery-steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Understanding Your Patterns</h3>
-        <p>In our first sessions, I want to understand your attachment style, where it comes from, and the patterns that keep showing up across your relationships.</p>
-        <div class="read-more-text" style="display:none;">
-          <p>We look at your history and family of origin dynamics, using Schema Therapy to understand the patterns still shaping how you connect today, and how they show up differently depending on the relationship.</p>
-        </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Patterns" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Working Through What's Underneath</h3>
-        <p>Together we work through past relational hurt or betrayal, and build your tolerance for the closeness or independence that feels hardest for you.</p>
-        <div class="read-more-text" style="display:none;">
-          <p>Where past experiences are still shaping how you connect, I also draw on EMDR to help process what's keeping old patterns in place, alongside Acceptance and Commitment Therapy to build your tolerance for the discomfort of vulnerability and connection.</p>
-        </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Working Through What's Underneath" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Building Healthier Connection</h3>
-        <p>We build practical communication and boundary setting skills, so you can approach relationships, current or future, with greater self-awareness and steadiness.</p>
-        <div class="read-more-text" style="display:none;">
-          <p>This is practical, goal-focused work, real skills you can use, not just insight. Where you're currently in a relationship, this is separate from couples counselling, but the two can also work well together.</p>
-        </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Building Healthier Connection" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
-      </div>
+    <div class="rs-journey">
+      <p class="rs-journey-label">How sessions tend to unfold</p>
+      <ol class="rs-journey-steps">
+        <li class="rs-journey-step">
+          <span class="rs-journey-num" aria-hidden="true">1</span>
+          <h3>Understanding Your Patterns</h3>
+          <p>In our first sessions, I want to understand your attachment style, where it comes from, and the patterns that keep showing up across your relationships.</p>
+          <div class="read-more-text" style="display:none;">
+            <p>We look at your history and family of origin dynamics, using Schema Therapy to understand the patterns still shaping how you connect today, and how they show up differently depending on the relationship.</p>
+          </div>
+          <a href="#" class="read-more-toggle" aria-label="Read more about Understanding Your Patterns">Read more &darr;</a>
+          <ul class="rs-chips" aria-label="Approaches used"><li>Schema Therapy</li><li>Attachment</li></ul>
+        </li>
+        <li class="rs-journey-step">
+          <span class="rs-journey-num" aria-hidden="true">2</span>
+          <h3>Working Through What's Underneath</h3>
+          <p>Together we work through past relational hurt or betrayal, and build your tolerance for the closeness or independence that feels hardest for you.</p>
+          <div class="read-more-text" style="display:none;">
+            <p>Where past experiences are still shaping how you connect, I also draw on EMDR to help process what's keeping old patterns in place, alongside Acceptance and Commitment Therapy to build your tolerance for the discomfort of vulnerability and connection.</p>
+          </div>
+          <a href="#" class="read-more-toggle" aria-label="Read more about Working Through What's Underneath">Read more &darr;</a>
+          <ul class="rs-chips" aria-label="Approaches used"><li>EMDR</li><li>ACT</li></ul>
+        </li>
+        <li class="rs-journey-step">
+          <span class="rs-journey-num" aria-hidden="true">3</span>
+          <h3>Building Healthier Connection</h3>
+          <p>We build practical communication and boundary setting skills, so you can approach relationships, current or future, with greater self-awareness and steadiness.</p>
+          <div class="read-more-text" style="display:none;">
+            <p>This is practical, goal-focused work, real skills you can use, not just insight. Where you're currently in a relationship, this is separate from couples counselling, but the two can also work well together.</p>
+          </div>
+          <a href="#" class="read-more-toggle" aria-label="Read more about Building Healthier Connection">Read more &darr;</a>
+          <ul class="rs-chips" aria-label="Approaches used"><li>Communication</li><li>Boundaries</li></ul>
+        </li>
+      </ol>
     </div>
 
     <!-- EMDR FOR RELATIONSHIP PATTERNS -->
@@ -402,23 +419,62 @@
 
       <p class="bio-body" style="margin-bottom:0;">This work is done in individual sessions. If you and your partner would like to work on things together, <a href="/couples">couples counselling</a> may also be an option.</p>
       <p class="emdr-safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>If you're in a relationship where there's fear, control, or violence, your safety comes first, and we focus on that before EMDR processing.</span></p>
+
+      <div class="emdr-compact" id="is-emdr-safe">
+        <div class="emdr-compact-side">
+          <div class="emdr-compact-stat"><strong>12</strong><span>years of EMDR practice</span></div>
+          <i aria-hidden="true"></i>
+          <div class="emdr-compact-stat"><strong>20</strong><span>years of clinical experience</span></div>
+        </div>
+        <div class="emdr-compact-main">
+          <h2>Is EMDR Safe?</h2>
+          <p>EMDR is well researched, and how it's delivered makes the difference. Most difficulties come from starting memory work before someone feels steady enough, choosing the wrong memories to work on, missing signs of overwhelm, or ending a session without settling things. I take time to prepare you, pace each session to what you can manage, and make sure you leave settled.</p>
+          <a href="/my-approach#emdr-difference">What can go wrong, and how I prevent it &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="counsellor-band">
+      <img src="images/Nigel.webp" alt="Nigel Joseph, Relationship Counsellor in Narre Warren" width="104" height="104" loading="lazy" decoding="async">
+      <div class="counsellor-band-text">
+        <h2>About Your Relationship Counsellor</h2>
+        <p class="counsellor-band-creds">Nigel Joseph &middot; MCoun, MSW &middot; PACFA Registered &middot; EMDR Trained</p>
+        <p class="bio-body">Most of my clinical work has been as a trauma therapist, and I draw on Schema Therapy and EMDR to help you understand and change the patterns that shape your relationships. <a href="/about">More about me</a>.</p>
+      </div>
     </div>
 
     <!-- COUNSELLING SESSIONS -->
     <div class="fee-card-header">
       <h2>Counselling Sessions</h2>
     </div>
-    <p class="bio-body">I offer 60 minute sessions, in person in Narre Warren or via telehealth Australia-wide.</p>
-    <p class="bio-body">Clients come from Narre Warren, Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
-
-    <p class="bio-body" style="text-align:center; font-size:0.875rem;">Wondering about cost? Session fees and private health insurance rebate details are on the <a href="fees.html">Fees page</a>.</p>
+    <dl class="session-facts">
+      <div class="session-fact">
+        <dt>Sessions</dt>
+        <dd>60 minutes, in person in Narre Warren or via telehealth Australia-wide</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Hours</dt>
+        <dd>Monday to Friday, 10am to 8pm</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Fee</dt>
+        <dd>$150 per individual session. You may be able to claim a health fund rebate with private extras cover. <a href="/fees">Fees page</a></dd>
+      </div>
+      <div class="session-fact">
+        <dt>Location</dt>
+        <dd>Suite 4, 26-28 Verdun Drive<br>Narre Warren VIC 3805</dd>
+      </div>
+    </dl>
+    <p class="session-areas">Easy to reach from Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
+    <p class="session-crisis">Counselling is not a crisis service. If you are in crisis or worried about your safety, call Lifeline on <a href="tel:131114">13 11 14</a> at any time, or 000 in an emergency.</p>
 
     <!-- MINI CTA -->
     <div class="cta-mini">
-      <p class="cta-mini-text">If patterns in your relationships are affecting your wellbeing,</p>
+      <p class="cta-mini-text">If patterns in your relationships are affecting your wellbeing, you don't have to work through them alone.</p>
       <div class="cta-mini-actions">
-        <span class="cta-band-group"><span class="cta-mini-label">call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
       </div>
     </div>
 
@@ -439,6 +495,16 @@
         </button>
         <div class="faq-answer">
           <p>Individual relationship counselling is one-on-one support to understand your own patterns in relationships, such as attachment style, communication habits, or recurring conflicts, without your partner or another person attending sessions with you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much does relationship counselling cost?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Individual sessions are 60 minutes and cost $150. If you would like to come together as a couple, couples sessions are $200. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the <a href="/fees">Fees page</a>. You are welcome to call for a free chat first.</p>
         </div>
       </div>
 
@@ -496,12 +562,12 @@
   </section>
 
   <!-- CTA BAND -->
-  <div class="cta-band">
+  <div class="cta-band" role="region" aria-label="Get in touch">
     <h2>Unresolved patterns don't just disappear on their own.</h2>
-    <p class="cta-band-line1">Why keep repeating the same painful cycles, when you can understand what's driving them.</p>
+    <p class="cta-band-line1">Why keep repeating the same painful cycles, when you can understand what's driving them?</p>
     <div class="cta-band-actions">
       <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
     </div>
   </div>
 
@@ -511,8 +577,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -520,10 +586,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {

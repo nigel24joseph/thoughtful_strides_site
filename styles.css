@@ -10,14 +10,15 @@
 
 :root {
   --sage: #6e7349;
-  --sage-light: #7d9b8a;
+  --sage-light: #6e7349;
+  --sage-dark: #5b6040;
   --sage-pale: #f2f8f5;
   --white: #ffffff;
   --warm-white: #fdfbf9;
   --warm-cream: #f7f2ea;
   --text-dark: #2a2620;
   --text-mid: #5a5348;
-  --text-light: #8a8278;
+  --text-light: #6b635a;
   --accent: #963c00;
   --accent-hover: #7a3100;
   --nav-height: 100px;
@@ -597,7 +598,7 @@ section { padding: 2rem 2%; }
   color: var(--accent);
   margin-bottom: 0.7rem;
 }
-.couples-band p {
+.couples-band p:not(.service-badge) {
   font-size: 1rem;
   color: var(--text-mid);
   font-weight: 300;
@@ -636,7 +637,7 @@ section { padding: 2rem 2%; }
   background: var(--sage);
 }
 .credentials-band .bio-tag {
-  background: rgba(255,255,255,0.12);
+  background: transparent;
   border: 1px solid rgba(255,255,255,0.4);
   color: #fff;
 }
@@ -2119,6 +2120,11 @@ footer {
   margin: 0;
 }
 
+/* Split cards matched to the Who I Support cards (Trauma page) */
+.split-grid-match .split-card { padding: 1.35rem 1.25rem; }
+.split-grid-match .split-card h3 { font-size: 0.98rem; color: var(--text-dark); font-weight: 600; line-height: 1.35; margin-bottom: 0.55rem; }
+.split-grid-match .split-card p { font-size: 0.85rem; line-height: 1.6; }
+
 /* WHO I SUPPORT (4-across cards) */
 .who-support-grid {
   display: grid;
@@ -2303,7 +2309,7 @@ footer {
   padding: 0 1rem 0.9rem;
 }
 
-.tool-hint { font-size: 0.78rem; color: var(--text-mid); font-weight: 300; opacity: 0.75; }
+.tool-hint { font-size: 0.78rem; color: var(--text-mid); font-weight: 300; }
 
 .cta-mini {
   display: flex;
@@ -2508,7 +2514,7 @@ footer {
 }
 .grief-diagram-narrative p:last-child { margin-bottom: 0; }
 .grief-diagram-narrative strong { color: var(--accent); font-weight: 600; }
-.grief-diagram-narrative .sage-em { color: var(--sage); font-weight: 600; }
+.grief-diagram-narrative .sage-em { color: var(--sage-dark); font-weight: 600; }
 
 @media (max-width: 600px) {
   .grief-diagram-panels { gap: 1.5rem; }
@@ -2910,10 +2916,10 @@ footer {
 }
 .emdr-banner-top h2 {
   flex: 1 1 360px;
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.25;
   color: var(--text-dark);
 }
 .emdr-banner-top p {
@@ -2948,8 +2954,9 @@ footer {
   line-height: 1.5;
 }
 .emdr-banner-areas a {
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 1.0625rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--accent);
   text-decoration: none;
 }
@@ -3017,10 +3024,10 @@ footer {
   margin-bottom: 0.3rem;
 }
 .how-i-work-head h2 {
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.25;
   color: var(--text-dark);
 }
 .how-i-work-top > p {
@@ -3032,18 +3039,21 @@ footer {
 }
 .how-i-work-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid #e6ddcf;
 }
 .hiw-item {
   padding: 0.85rem 1rem 0.4rem;
   border-left: 1px solid #e6ddcf;
+  border-bottom: 1px solid #e6ddcf;
 }
 .hiw-item:first-child { border-left: none; padding-left: 0; }
+.hiw-item:nth-child(5) { border-left: none; padding-left: 0; }
 .hiw-name {
   display: block;
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--accent);
 }
 .hiw-main {
@@ -3180,7 +3190,7 @@ footer {
   gap: 1rem;
 }
 .cta-band-group { display: inline-flex; align-items: center; gap: 1rem; }
-.cta-band-text { color: rgba(255,255,255,0.85); font-weight: 300; font-size: 1rem; }
+.cta-band-text { color: #fff; font-weight: 300; font-size: 1rem; }
 .cta-band-pill {
   display: inline-flex;
   align-items: center;
@@ -3216,7 +3226,7 @@ footer {
 }
 .cta-mini .cta-mini-text { color: rgba(255,255,255,0.92); font-size: 0.95rem; font-weight: 300; margin: 0; }
 .cta-mini-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1rem; }
-.cta-mini-label { color: rgba(255,255,255,0.85); font-weight: 300; font-size: 0.95rem; }
+.cta-mini-label { color: #fff; font-weight: 300; font-size: 0.95rem; }
 .cta-mini .cta-band-pill {
   background: #fff;
   color: var(--accent);
@@ -3248,3 +3258,663 @@ footer {
     transition-delay: 0.15s;
   }
 }
+
+/* ===== TEXT LINKS IN BODY COPY ===== */
+/* Inline links inside paragraphs, FAQ answers and cards use the accent colour instead of browser default blue. */
+.bio-body a:not([class]),
+.faq-answer a:not([class]),
+.read-more-text a:not([class]),
+.split-card p a:not([class]),
+.symptom-card li a:not([class]),
+.credential-text a:not([class]),
+.step p a:not([class]) {
+  color: var(--accent);
+}
+
+/* ===== IN-PAGE ANCHOR OFFSET ===== */
+/* Keeps a jumped-to section heading visible below the sticky nav. */
+#affair-recovery {
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+/* ===== ABOUT YOUR COUNSELLOR BAND ===== */
+/* Compact cream band with photo, used for the "About Your ... Counsellor" section on service pages. */
+.counsellor-band {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--warm-cream);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.75rem;
+  margin: 2rem 0;
+}
+.counsellor-band img {
+  flex-shrink: 0;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 22%;
+  border: 3px solid var(--white);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.counsellor-band h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1.3;
+}
+.counsellor-band-creds {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--sage);
+  margin: 0.15rem 0 0.5rem;
+}
+.counsellor-band .bio-body {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+@media (max-width: 640px) {
+  .counsellor-band {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .counsellor-band img { width: 88px; height: 88px; }
+}
+
+/* ===== COUNSELLING SESSIONS: COMPACT FACTS ===== */
+/* Plain (no box) four-column summary of sessions, hours, fee and location. */
+.session-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0.75rem 0 1rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.session-fact {
+  padding: 1rem 1.25rem;
+  border-left: 1px solid rgba(0,0,0,0.08);
+}
+.session-fact:first-child { border-left: none; padding-left: 0; }
+.session-fact dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.3rem;
+}
+.session-fact dd {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-mid);
+}
+.session-fact dd a { color: var(--accent); font-weight: 500; }
+.session-areas {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-mid);
+  margin-bottom: 0.4rem;
+}
+.session-crisis {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+.session-crisis a { color: var(--accent); }
+@media (max-width: 900px) {
+  .session-facts { grid-template-columns: repeat(2, 1fr); }
+  .session-fact:nth-child(3) { border-left: none; padding-left: 0; }
+  .session-fact:nth-child(n+3) { border-top: 1px solid rgba(0,0,0,0.08); }
+}
+@media (max-width: 520px) {
+  .session-facts { grid-template-columns: 1fr; }
+  .session-fact { border-left: none; padding: 0.75rem 0; }
+  .session-fact + .session-fact { border-top: 1px solid rgba(0,0,0,0.08); }
+}
+
+/* ===== HEADER CALL BLOCK: PHOTO ===== */
+.header-call-person { display: flex; align-items: center; gap: 0.75rem; }
+.header-call-person img {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 22%;
+  border: 2px solid var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.header-call-name { margin: 0; font-size: 0.8125rem; color: #5c524b; line-height: 1.3; }
+
+/* ===== MENU: FIVE TOP-LEVEL LINKS (About, My Approach, Services, How It Works, Fees) ===== */
+/* Keeps labels on one line and scales the logo down on laptop and small laptop widths so the menu fits. */
+.nav-links > li > a { white-space: nowrap; }
+@media (min-width: 1101px) and (max-width: 1320px) {
+  .nav-logo img { width: 300px; height: auto; }
+  .nav-links { gap: 0.85rem; }
+}
+@media (min-width: 851px) and (max-width: 1100px) {
+  .nav-logo img { width: 230px; height: auto; }
+  .nav-links { gap: 0.55rem; }
+  .nav-links a { font-size: 0.92rem; }
+  .nav-phone-label { display: none; }
+  .nav-cta, .nav-phone { padding: 0.4rem 0.8rem; min-width: 0; }
+}
+
+/* ===== IS EMDR SAFE? CARD ===== */
+/* Cream card with experience figures and two columns. Used after the EMDR section on service pages and on My Approach. */
+.emdr-safety {
+  background: var(--warm-cream);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin: 2.5rem 0 2rem;
+}
+.emdr-safety-top {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem 2rem;
+  padding: 1.6rem 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.emdr-safety-top h2, .emdr-safety-top h3 {
+  font-family: 'Montserrat', sans-serif; font-weight: 400;
+  color: var(--accent); font-size: 1.6rem; margin: 0;
+}
+.emdr-safety-stats { display: flex; gap: 2.25rem; }
+.emdr-safety-stat { text-align: center; }
+.emdr-safety-stat strong {
+  display: block; font-family: 'Montserrat', sans-serif; font-weight: 300;
+  font-size: 2.2rem; line-height: 1; color: var(--sage);
+}
+.emdr-safety-stat span { font-size: 0.78rem; color: var(--text-mid); }
+.emdr-safety-cols {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  padding: 1.6rem 2rem 1.4rem;
+}
+.emdr-safety-cols h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--sage-dark); font-weight: 600; margin: 0 0 0.4rem;
+}
+.emdr-safety-cols p {
+  font-size: 0.9375rem; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin: 0;
+}
+.emdr-safety-foot {
+  margin: 0; padding: 1.1rem 2rem 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  font-size: 0.9rem; color: var(--text-mid); font-weight: 300; line-height: 1.7;
+}
+.emdr-safety-foot a { color: var(--accent); font-weight: 600; white-space: nowrap; }
+@media (max-width: 700px) {
+  .emdr-safety-cols { grid-template-columns: 1fr; gap: 1.2rem; }
+  .emdr-safety-top, .emdr-safety-cols, .emdr-safety-foot { padding-left: 1.4rem; padding-right: 1.4rem; }
+  .emdr-safety-foot a { white-space: normal; }
+}
+
+/* ===== WHAT MAKES THE DIFFERENCE TABLE (My Approach) ===== */
+.emdr-difference { margin: 0 0 2.5rem; }
+.difference-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  margin: 0.5rem 0 1.25rem; font-size: 0.9rem;
+  background: var(--white); border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 1.1rem; overflow: hidden;
+}
+.difference-table th {
+  text-align: left; padding: 0.85rem 1.1rem;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.difference-table th:first-child { background: var(--warm-cream); color: var(--text-mid); width: 46%; }
+.difference-table th:last-child { background: var(--sage-pale); color: var(--sage); }
+.difference-table td {
+  padding: 0.85rem 1.1rem; vertical-align: top; line-height: 1.6;
+  border-top: 1px solid rgba(0,0,0,0.06); color: var(--text-mid); font-weight: 300;
+}
+.difference-table td:last-child { background: #f8fbf9; color: var(--text-dark); font-weight: 400; }
+@media (max-width: 700px) {
+  .difference-table thead { display: none; }
+  .difference-table, .difference-table tbody, .difference-table tr, .difference-table td { display: block; width: 100%; }
+  .difference-table tr { border-top: 1px solid rgba(0,0,0,0.07); }
+  .difference-table tr:first-child { border-top: 0; }
+  .difference-table td { border-top: 0; padding: 0.8rem 1.1rem 0.4rem; }
+  .difference-table td:last-child { padding: 0.4rem 1.1rem 0.9rem; }
+  .difference-table td::before {
+    content: attr(data-label); display: block; margin-bottom: 0.2rem;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .difference-table td:first-child::before { color: var(--text-light); }
+  .difference-table td:last-child::before { color: var(--sage); }
+}
+
+.session-areas a { color: var(--accent); }
+
+/* ===== IS EMDR SAFE? COMPACT CARD (service pages) ===== */
+/* Narrow sage panel with experience figures beside one paragraph. Links to the full table on My Approach. */
+.emdr-compact {
+  display: grid; grid-template-columns: 150px minmax(0, 1fr);
+  border-radius: 1rem; overflow: hidden;
+  background: var(--warm-cream);
+  margin: 2rem 0;
+}
+.emdr-compact-side {
+  background: var(--sage); color: #fff;
+  padding: 1.2rem 1rem;
+  display: flex; flex-direction: column; justify-content: center; text-align: center;
+}
+.emdr-compact-stat { display: flex; flex-direction: column; }
+.emdr-compact-stat strong {
+  font-family: 'Montserrat', sans-serif; font-weight: 300;
+  font-size: 2.1rem; line-height: 1;
+}
+.emdr-compact-stat span { font-size: 0.72rem; line-height: 1.35; margin-top: 0.2rem; opacity: 0.92; }
+.emdr-compact-side i { display: block; height: 1px; background: rgba(255,255,255,0.35); margin: 0.75rem 0.5rem; }
+.emdr-compact-main { padding: 1.2rem 1.6rem 1.3rem; }
+.emdr-compact-main h2 {
+  font-family: 'Montserrat', sans-serif; font-weight: 400;
+  color: var(--accent); font-size: 1.35rem; margin: 0 0 0.35rem;
+}
+.emdr-compact-main p {
+  font-size: 0.9rem; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin: 0 0 0.5rem;
+}
+.emdr-compact-main a { color: var(--accent); font-weight: 600; font-size: 0.85rem; }
+@media (max-width: 760px) {
+  .emdr-compact { grid-template-columns: 1fr; }
+  .emdr-compact-side { flex-direction: row; align-items: center; padding: 0.9rem 0.8rem; }
+  .emdr-compact-stat { flex: 1; }
+  .emdr-compact-stat strong { font-size: 1.6rem; }
+  .emdr-compact-side i { width: 1px; height: 2.4rem; margin: 0 0.4rem; }
+  .emdr-compact-main { padding: 1.1rem 1.2rem 1.2rem; }
+}
+
+/* ===== READ MORE LINKS ===== */
+/* Shared style for the "Read more" toggles (previously set inline on each link). */
+.read-more-toggle {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* About band directly after a cream EMDR box (or the compact card): sage, so the two blocks don't merge */
+.emdr-compact + .counsellor-band,
+.info-band + .counsellor-band {
+  background: var(--sage-pale);
+  border: 1px solid rgba(110,115,73,0.12);
+}
+
+/* ===== LINK COLOUR SAFETY NET ===== */
+/* Any link without its own colour uses the accent instead of browser blue (low specificity, so styled links are unaffected). */
+a { color: var(--accent); }
+/* Links wrapped around images: no blue alt text or underline while an image loads or if it fails. */
+.services-image a, .fee-card-image a, .cred-image-frame a { color: var(--accent); text-decoration: none; }
+
+/* ===== HOMEPAGE INTRO BAND (Option B) ===== */
+.home-intro-band { background: var(--warm-white); padding: 2rem 2%; }
+.home-intro-band .counsellor-band { max-width: 1180px; margin: 0 auto; padding: 1.5rem 1.75rem; }
+.home-intro-band .counsellor-band img { width: 116px; height: 116px; }
+.home-intro-band .bio-body + .bio-body { margin-top: 0.6rem; }
+
+/* ===== FEES PAGE (streamlined) ===== */
+.fees-simple { background: var(--warm-white); padding: 2rem 5% 2.5rem; }
+.fees-simple-inner { max-width: 1000px; margin: 0 auto; }
+.fees-simple .service-badge { display: table; margin: 0 0 1.25rem; }
+.fee-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.fee-tile { background: var(--warm-cream); border-radius: 1rem; border-top: 4px solid var(--sage); padding: 1.4rem 1.4rem 1.2rem; }
+.fee-tile-couples { border-top-color: var(--accent); }
+.fee-tile-free { background: var(--sage-pale); }
+.fee-tile h2 { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-dark); margin: 0 0 0.6rem; }
+.fee-tile-price { font-size: 2.1rem; font-weight: 300; line-height: 1.1; color: var(--text-dark, #2b2420); margin: 0 0 0.6rem; }
+.fee-tile-note { font-size: 0.9rem; font-weight: 300; color: var(--text-light); line-height: 1.6; margin: 0; }
+.fee-facts { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #e3dccf; border-bottom: 1px solid #e3dccf; margin-top: 1.5rem; }
+.fee-facts > div { padding: 1.1rem 1.25rem 1.1rem 0; }
+.fee-facts > div + div { border-left: 1px solid #e3dccf; padding-left: 1.25rem; }
+.fee-facts h3 { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); margin: 0 0 0.4rem; }
+.fee-facts p { font-size: 0.9rem; font-weight: 300; line-height: 1.6; color: var(--text-mid, #4a423b); margin: 0; }
+.fee-funds { margin-top: 1rem; background: #fff; border: 1px solid #e8e1d6; border-radius: 0.9rem; padding: 0.9rem 1.2rem; }
+.fee-funds summary { cursor: pointer; font-weight: 600; color: var(--accent); font-size: 0.95rem; }
+.fee-funds p { margin: 0.75rem 0 0.2rem; font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: var(--text-mid, #4a423b); }
+@media (max-width: 860px) {
+  .fee-cards { grid-template-columns: 1fr; }
+  .fee-facts { grid-template-columns: 1fr 1fr; }
+  .fee-facts > div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .fee-facts > div:nth-child(n+3) { border-top: 1px solid #e3dccf; }
+}
+@media (max-width: 480px) {
+  .fee-facts { grid-template-columns: 1fr; }
+  .fee-facts > div + div { border-left: 0; padding-left: 0; border-top: 1px solid #e3dccf; }
+}
+
+/* ===== LAYOUT REFRESH (Nov 2026) ===== */
+/* 1. Comfortable content width: sections keep full-width backgrounds, content sits in a centred 1140px column. */
+section,
+.page-header {
+  padding-left: max(2%, calc((100% - 1140px) / 2));
+  padding-right: max(2%, calc((100% - 1140px) / 2));
+}
+.page-header {
+  padding-left: max(5%, calc((100% - 1140px) / 2));
+  padding-right: max(5%, calc((100% - 1140px) / 2));
+}
+/* Readable line length for running text on service pages */
+.services-body p:not(.cta-mini-text),
+.emdr-compact-main p { max-width: 85ch; }
+
+/* 2. "Is EMDR Safe?" folded into the EMDR box: shown as a white card inside it */
+.info-band .emdr-compact {
+  background: var(--white);
+  margin: 1.5rem 0 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.info-band + .counsellor-band { margin-top: 2.5rem; }
+
+/* 3. Heading hierarchy: the page title is the largest heading on each page */
+.page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.section-title { font-size: clamp(1.5rem, 2.2vw, 1.9rem); }
+.cta-band h2 { font-size: clamp(1.5rem, 2.2vw, 1.9rem); letter-spacing: 0.02em; }
+
+/* 4. Readability: small sage text on cream a touch darker (meets 4.5:1 contrast) */
+.counsellor-band-creds, .emdr-sub, .modality-tag, .emdr-banner-sub,
+.grief-diagram-panel-label, .o-full { color: var(--sage-dark); }
+
+/* Sections and footer with their own padding: same 1140px content column */
+.faq-section, .emdr-banner, .services, .how-i-work, .couples-section, .home-intro-band,
+.about-hero, .about-credentials-section, .about-body, footer {
+  padding-left: max(5%, calc((100% - 1140px) / 2));
+  padding-right: max(5%, calc((100% - 1140px) / 2));
+}
+/* Readable line length elsewhere */
+.faq-answer p, .footer-brand p, .emdr-banner-top p, .fee-funds p, .bullet-list li,
+.content-intro p, .about-body p, .hiw-intro p { max-width: 85ch; }
+.home-intro-band .counsellor-band { max-width: 1140px; }
+
+/* Homepage title matches the other pages' title size */
+.hero-with-photo .hero-text h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+
+/* 5. Phones: consistent 20px side margins for page content */
+@media (max-width: 640px) {
+  section, .page-header,
+  .faq-section, .emdr-banner, .services, .how-i-work, .couples-section, .home-intro-band,
+  .about-hero, .about-credentials-section, .about-body, footer { padding-left: 20px; padding-right: 20px; }
+}
+.cta-band .cta-band-line1 { color: #fff; }
+
+/* Compact closing call band: no fixed height, tighter spacing (same look, about half the height) */
+.cta-band { min-height: 0; padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.cta-band h2 { margin-bottom: 0.5rem; }
+.cta-band .cta-band-line1 { margin-bottom: 1.25rem; }
+.cta-band-pill { min-width: 150px; padding: 0.6rem 1.4rem; }
+@media (max-width: 640px) {
+  .cta-band { padding: 2rem 20px; }
+}
+.counsellor-band .bio-body { max-width: 85ch; }
+
+/* ===== FEES: HEALTH FUNDS LIST (five tiles, ARHG funds in columns) ===== */
+.fund-list { margin-top: 1.5rem; background: var(--white); border: 1px solid #e8e1d6; border-radius: 1rem; padding: 1.5rem 1.75rem; }
+.fund-list h2 { font-family: 'Montserrat', sans-serif; font-size: 1.25rem; font-weight: 400; color: var(--accent); margin: 0 0 0.35rem; }
+.fund-list-lead { font-size: 0.95rem; font-weight: 300; color: var(--text-mid); line-height: 1.6; margin: 0 0 1.1rem; max-width: 70ch; }
+.fund-list-group { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-dark); margin: 1.25rem 0 0.6rem; }
+.fund-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.75rem; }
+.fund-tile { display: flex; align-items: center; gap: 0.65rem; background: var(--warm-cream); border-radius: 0.8rem; border-top: 3px solid var(--accent); padding: 0.9rem 1rem; }
+.fund-tile-icon { display: inline-flex; width: 34px; height: 34px; border-radius: 50%; background: var(--white); color: var(--sage); align-items: center; justify-content: center; flex-shrink: 0; }
+.fund-tile-icon svg { width: 18px; height: 18px; }
+.fund-tile strong { font-size: 0.95rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+.fund-tile strong small { display: block; font-size: 0.72rem; font-weight: 400; color: var(--text-mid); margin-top: 0.15rem; line-height: 1.35; }
+.fund-columns { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 2rem; }
+.fund-columns li { font-size: 0.88rem; color: var(--text-mid); padding: 0.35rem 0; border-bottom: 1px solid #f0ebe3; break-inside: avoid; }
+@media (max-width: 1100px) { .fund-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 860px) {
+  .fund-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fund-tile-arhg { grid-column: 1 / -1; }
+  .fund-columns { columns: 2; }
+}
+@media (max-width: 640px) { .fund-list { padding: 1.25rem; } }
+@media (max-width: 420px) { .fund-columns { column-gap: 1rem; } .fund-columns li { font-size: 0.82rem; } }
+
+/* ===== MY APPROACH: WHAT MAKES THE DIFFERENCE (horizontal timeline) ===== */
+.diff-timeline { list-style: none; margin: 1.25rem 0 1.75rem; padding: 1.6rem 1.6rem 1.2rem; background: var(--warm-cream); border-radius: 1.25rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; position: relative; }
+.diff-timeline::before { content: ''; position: absolute; top: calc(1.6rem + 17px); left: calc(1.6rem + 17px); right: calc(33.3% - 0.5rem); height: 2px; background: rgba(110,115,73,0.35); }
+.diff-stage { position: relative; }
+.diff-node { position: relative; z-index: 1; display: inline-flex; width: 36px; height: 36px; border-radius: 50%; background: var(--sage); color: var(--white); font-weight: 600; align-items: center; justify-content: center; box-shadow: 0 0 0 5px var(--warm-cream); margin-bottom: 0.75rem; }
+.diff-stage h4 { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--accent); margin: 0 0 0.2rem; }
+.diff-sub { margin: 0 0 0.9rem; font-size: 0.82rem; color: var(--text-mid); line-height: 1.45; }
+.diff-stage ul { list-style: none; margin: 0; padding: 0; }
+.diff-stage ul li { display: flex; gap: 0.6rem; padding: 0.7rem 0; border-top: 1px solid rgba(110,115,73,0.18); }
+.diff-tick { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--white); color: var(--sage-dark); display: inline-flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.diff-tick svg { width: 13px; height: 13px; }
+.diff-do { margin: 0 0 0.25rem; font-size: 0.9rem; color: var(--text-dark); font-weight: 500; line-height: 1.5; }
+.diff-avoids { margin: 0; font-size: 0.78rem; color: var(--text-mid); line-height: 1.45; }
+@media (max-width: 900px) {
+  .diff-timeline { grid-template-columns: 1fr; gap: 1.25rem; }
+  .diff-timeline::before { display: none; }
+  .diff-stage:not(:last-child)::after { content: ''; position: absolute; left: 17px; top: 36px; bottom: -1.25rem; width: 2px; background: rgba(110,115,73,0.35); }
+  .diff-stage { padding-left: 3.1rem; }
+  .diff-node { position: absolute; left: 0; top: 0; }
+}
+@media (max-width: 480px) { .diff-timeline { padding: 1.25rem 1rem 1rem; } }
+
+/* ===== COLOUR RHYTHM VARIANTS (avoid same-colour blocks side by side) ===== */
+/* Sage version of the "Signs" split section, with a white list inside */
+.signs-split.signs-split-sage { background: var(--sage-pale); border: 1px solid rgba(110,115,73,0.14); }
+.signs-split.signs-split-sage .signs-split-list { background: var(--white); }
+/* Key idea shown as a white feature card instead of another cream band */
+.info-band.info-feature { background: var(--white); border: 1px solid #ece5da; border-top: 4px solid var(--accent); box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+
+/* How I Keep EMDR Safe: open timeline on the page background (no panel), so it doesn't merge with the cream blocks either side */
+.diff-timeline { background: transparent; padding-left: 0; padding-right: 0; border-radius: 0; }
+.diff-timeline::before { left: 17px; }
+.diff-node { box-shadow: 0 0 0 5px var(--warm-white); }
+.diff-tick { background: var(--sage-pale); }
+@media (max-width: 480px) { .diff-timeline { padding-left: 0; padding-right: 0; } }
+
+/* ===== HOW IT WORKS: JOURNEY (before your first session / your sessions) ===== */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.journey { display: grid; grid-template-columns: 2fr 3fr; gap: 1rem; margin: 1rem 0 2.5rem; }
+.journey-phase { border-radius: 1.25rem; padding: 1.25rem 1.4rem 1.4rem; }
+.journey-phase-before { background: var(--warm-cream); }
+.journey-phase-sessions { background: var(--sage-pale); border: 1px solid rgba(110,115,73,0.14); }
+.journey-label { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); background: var(--white); border-radius: 100px; padding: 0.3rem 0.8rem; margin: 0 0 1rem; }
+.journey-phase-sessions .journey-label { color: var(--sage-dark); }
+.journey-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; position: relative; }
+.journey-phase-before .journey-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.journey-phase-sessions .journey-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.journey-steps::before { content: ''; position: absolute; top: 17px; left: 18px; right: calc(100% / var(--cols, 2) - 18px); height: 2px; background: rgba(110,115,73,0.35); }
+.journey-phase-before .journey-steps { --cols: 2; }
+.journey-phase-sessions .journey-steps { --cols: 3; }
+.journey-step { position: relative; }
+.journey-num { position: relative; z-index: 1; display: inline-flex; width: 36px; height: 36px; border-radius: 50%; background: var(--sage); color: var(--white); font-weight: 600; align-items: center; justify-content: center; margin-bottom: 0.7rem; }
+.journey-phase-before .journey-num { box-shadow: 0 0 0 5px var(--warm-cream); }
+.journey-phase-sessions .journey-num { box-shadow: 0 0 0 5px var(--sage-pale); }
+.journey-step h3 { font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--accent); margin: 0 0 0.35rem; }
+.journey-step p { margin: 0; font-size: 0.9rem; font-weight: 300; color: var(--text-mid); line-height: 1.6; }
+.journey-step p a { color: var(--accent); font-weight: 500; }
+@media (max-width: 1000px) {
+  .journey { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .journey-phase-before .journey-steps, .journey-phase-sessions .journey-steps { grid-template-columns: 1fr; gap: 1rem; }
+  .journey-steps::before { display: none; }
+  .journey-step { padding-left: 3.1rem; }
+  .journey-num { position: absolute; left: 0; top: 0; margin: 0; }
+  .journey-step:not(:last-child)::after { content: ''; position: absolute; left: 17px; top: 36px; bottom: -1rem; width: 2px; background: rgba(110,115,73,0.35); }
+  .journey-phase { padding: 1.1rem 1.1rem 1.2rem; }
+}
+
+/* How It Works: open four-step row for the EMDR pathway (no panel) */
+.journey-steps.journey-steps-open { grid-template-columns: repeat(4, minmax(0, 1fr)); --cols: 4; margin: 1rem 0 2.5rem; }
+.journey-steps-open .journey-num { box-shadow: 0 0 0 5px var(--warm-white); }
+@media (max-width: 1000px) { .journey-steps.journey-steps-open { grid-template-columns: repeat(2, minmax(0, 1fr)); } .journey-steps-open::before { display: none; } }
+@media (max-width: 640px) { .journey-steps.journey-steps-open { grid-template-columns: 1fr; } }
+.nowrap { white-space: nowrap; }
+
+/* How It Works: assessment note and two treatment paths */
+.journey-note { margin: -0.4rem 0 1rem; font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+.treat-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 2.5rem; }
+.treat-card { background: var(--white); border: 1px solid #ece5da; border-radius: 1rem; padding: 1.3rem 1.4rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+.treat-card-emdr { border-top: 4px solid var(--accent); }
+.treat-card-other { border-top: 4px solid var(--sage); }
+.treat-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-dark); margin: 0 0 0.2rem; }
+.treat-card h3 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 500; color: var(--accent); margin: 0 0 0.4rem; }
+.treat-sub { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; margin: 0 0 0.6rem; }
+.treat-card ol { list-style: none; margin: 0.4rem 0 0; padding: 0; }
+.treat-card li { display: flex; gap: 0.6rem; padding: 0.6rem 0; border-top: 1px solid #f0ebe3; font-size: 0.92rem; color: var(--text-dark); line-height: 1.5; }
+.treat-card li:first-child { border-top: none; }
+.treat-tick { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--sage-pale); color: var(--sage-dark); display: inline-flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.treat-tick svg { width: 13px; height: 13px; }
+@media (max-width: 760px) { .treat-paths { grid-template-columns: 1fr; } }
+
+.journey { grid-template-columns: 1fr 1fr; }
+.journey-phase-sessions .journey-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); --cols: 2; }
+@media (max-width: 1000px) { .journey { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .journey-phase-sessions .journey-steps { grid-template-columns: 1fr; } }
+
+/* How It Works: questionnaire cards, full name and question count */
+.approach-card .approach-full { display: block; font-size: 0.8rem; color: var(--text-mid); margin: 0.1rem 0 0.55rem; }
+.approach-card .approach-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.7rem; }
+.approach-card .approach-meta span { font-size: 0.72rem; font-weight: 600; border-radius: 100px; padding: 0.2rem 0.6rem; background: var(--sage-pale); color: var(--sage-dark); }
+.approach-card .approach-meta span + span { background: var(--warm-cream); color: var(--accent); }
+
+/* How It Works: EMDR path, safety and stabilisation shown first */
+.em-phase { background: var(--sage-pale); border-left: 3px solid var(--sage); border-radius: 0.6rem; padding: 0.75rem 0.9rem; margin: 0.5rem 0 0.9rem; }
+.em-phase-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage-dark); margin: 0 0 0.25rem; }
+.em-phase p:last-child { margin: 0; font-size: 0.9rem; color: var(--text-dark); line-height: 1.55; }
+.em-then { font-size: 0.8rem; font-weight: 600; color: var(--text-mid); margin: 0; }
+
+/* How It Works: questionnaires, DASS-21 for everyone then PCL-5 and YSQ-R depending on presentation */
+.q-tiers { margin: 1rem 0 1.5rem; }
+.q-lead { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-dark); margin: 0 0 0.6rem; }
+.q-card { border-radius: 1rem; padding: 1.1rem 1.3rem; }
+.q-all { background: var(--warm-cream); display: grid; grid-template-columns: 240px minmax(0, 1fr); column-gap: 1.5rem; align-items: start; }
+.q-all .q-who, .q-all h3, .q-all .q-full, .q-all .q-count { grid-column: 1; }
+.q-all .q-who { justify-self: start; }
+.q-all .q-text { grid-column: 2; grid-row: 1 / span 4; align-self: center; }
+.q-sub { margin: 1rem 0 0.5rem; font-size: 0.85rem; font-weight: 600; color: var(--text-mid); }
+.q-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.q-opt { background: var(--white); border: 1px solid #ece5da; border-top: 4px solid var(--sage); }
+.q-who { display: inline-block; font-size: 0.72rem; font-weight: 600; color: var(--white); background: var(--sage); border-radius: 100px; padding: 0.2rem 0.65rem; margin-bottom: 0.45rem; }
+.q-all .q-who { background: var(--accent); }
+.q-tiers h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 500; color: var(--accent); margin: 0; }
+.q-full { margin: 0.1rem 0 0.35rem; font-size: 0.8rem; color: var(--text-mid); }
+.q-count { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--text-dark); }
+.q-count b { font-size: 1.15rem; font-weight: 600; color: var(--sage-dark); }
+.q-text { margin: 0; font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; }
+.q-text a { color: var(--accent); }
+@media (max-width: 860px) {
+  .q-all { grid-template-columns: 1fr; }
+  .q-all .q-text { grid-column: 1; grid-row: auto; margin-top: 0.3rem; }
+  .q-pair { grid-template-columns: 1fr; }
+}
+
+/* Intro as plain text (no box), for pages where the header and next panel are already cream */
+.content-intro.intro-plain { background: transparent; padding-left: 0; padding-right: 0; box-shadow: none; border: 0; }
+.q-note { margin-top: 1rem; font-style: italic; color: var(--text-mid); }
+/* Phones: call bands stack neatly, "or" sits between the two buttons */
+@media (max-width: 480px) {
+  .cta-band-actions, .cta-mini-actions { flex-direction: column; gap: 0.5rem; }
+  .cta-band-group { flex-direction: column; gap: 0.5rem; }
+  .cta-band-actions .cta-band-pill, .cta-mini-actions .cta-band-pill { min-width: 220px; }
+}
+
+/* ===== ABOUT PAGE: hero with key numbers, story timeline, credential cards ===== */
+.ab-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:3rem;align-items:center;background:var(--warm-white);padding-top:3rem;padding-bottom:2rem}
+.ab-lead{font-size:1.2rem;line-height:1.7;color:var(--text-dark);font-weight:300;margin:.6rem 0 1.2rem;max-width:34ch}
+.ab-hero-photo img{width:100%;max-width:420px;aspect-ratio:1/1;object-fit:cover;object-position:center 25%;border-radius:1.5rem;box-shadow:0 20px 40px -20px rgba(42,38,32,.35);display:block;margin-left:auto}
+.ab-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #e6ddcf;border-bottom:1px solid #e6ddcf;margin-top:.5rem}
+.ab-stats div{padding:.9rem 1rem .9rem 0}.ab-stats div+div{border-left:1px solid #e6ddcf;padding-left:1rem}
+.ab-stats strong{display:block;font-size:1.7rem;font-weight:300;color:var(--accent);line-height:1.1}
+.ab-stats span{font-size:.78rem;color:var(--text-mid);line-height:1.35;display:block;margin-top:.2rem}
+.ab-creds{background:var(--sage-pale);padding-top:2.5rem;padding-bottom:2.5rem}
+.ab-creds-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ab-cred-card{background:#fff;border-radius:1rem;padding:1.4rem 1.5rem;position:relative;border:1px solid rgba(110,115,73,.12)}
+.ab-cred-card h2{font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dark);margin:0 0 .8rem}
+.ab-quals,.ab-regs{list-style:none;margin:0;padding:0}
+.ab-quals li{padding:.55rem 0;border-top:1px solid #f0ebe3;font-size:.93rem;color:var(--text-dark)}.ab-quals li:first-child{border-top:0}
+.ab-regs li{padding:.6rem 90px .6rem 0;border-top:1px solid #f0ebe3;display:flex;flex-direction:column;gap:.15rem}.ab-regs li:first-child{border-top:0}
+.ab-regs strong{font-size:.93rem;font-weight:500;color:var(--text-dark)}.ab-regs span{font-size:.78rem;color:var(--text-mid)}
+.ab-regs a{font-size:.82rem;font-weight:600;color:var(--accent)}
+.ab-badge{position:absolute;top:1.2rem;right:1.2rem;width:72px;height:auto}
+@media(max-width:860px){.ab-hero{grid-template-columns:1fr;gap:1.5rem}.ab-hero-photo img{margin:0 auto;max-width:320px}.ab-stats{grid-template-columns:1fr 1fr}.ab-stats div:nth-child(3){border-left:0;padding-left:0}.ab-stats div:nth-child(n+3){border-top:1px solid #e6ddcf}.ab-creds-inner{grid-template-columns:1fr}.ab-lead{max-width:none}}
+
+.ab-tl-wrap{max-width:820px;margin:0 auto}
+.ab-tl{list-style:none;margin:1rem 0 0;padding:0;position:relative}
+.ab-tl::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:rgba(110,115,73,.3)}
+.ab-tl>li{position:relative;padding:0 0 1.75rem 2.4rem}
+.ab-tl-dot{position:absolute;left:0;top:4px;width:20px;height:20px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 5px var(--warm-white)}
+.ab-tl>li:first-child .ab-tl-dot{background:var(--accent)}
+.ab-tl-when{margin:0;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dark)}
+.ab-tl h3{font-family:'Montserrat',sans-serif;font-size:1.25rem;font-weight:400;color:var(--accent);margin:.15rem 0 .6rem}
+.ab-q{display:block;font-size:1.1rem;color:var(--text-dark);border-left:3px solid var(--accent);padding-left:1rem}
+.ab-help{margin-top:1rem;background:#fff;border:1px solid #ece5da;border-radius:1rem;padding:1.4rem 1.5rem}
+.ab-help h2{font-family:'Montserrat',sans-serif;font-size:1.25rem;font-weight:400;color:var(--accent);margin:0 0 .3rem}.ab-help p{margin:0 0 .8rem;color:var(--text-mid);font-size:.95rem}
+
+/* Relationships: "How sessions tend to unfold" sage journey panel (Nov 2026) */
+.rs-journey { background: var(--sage-pale); border: 1px solid rgba(110,115,73,0.14); border-radius: 1.25rem; padding: 1.4rem 1.6rem 1.6rem; margin: 1.5rem 0 2rem; }
+.rs-journey-label { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-dark); background: var(--white); border-radius: 100px; padding: 0.3rem 0.85rem; margin: 0 0 1.2rem; }
+.rs-journey-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; position: relative; }
+.rs-journey-steps::before { content: ''; position: absolute; top: 19px; left: 20px; right: calc(33.333% - 20px); height: 2px; background: rgba(110,115,73,0.35); }
+.rs-journey-step { position: relative; display: flex; flex-direction: column; align-items: flex-start; }
+.rs-journey-num { position: relative; z-index: 1; width: 40px; height: 40px; border-radius: 50%; background: var(--sage); color: var(--white); font-weight: 600; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 0.85rem; box-shadow: 0 0 0 6px var(--sage-pale); }
+.rs-journey-step h3 { font-family: 'Montserrat', sans-serif; font-size: 1.08rem; font-weight: 600; color: var(--accent); margin: 0 0 0.4rem; line-height: 1.35; }
+.rs-journey-step p { font-size: 0.9rem; font-weight: 300; color: var(--text-mid); line-height: 1.65; margin: 0; }
+.rs-journey-step .read-more-text p { margin-top: 0.6rem; }
+.rs-journey-step .read-more-toggle { margin-top: 0.6rem; }
+.rs-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.85rem 0 0; padding: 0; list-style: none; }
+.rs-chips li { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.02em; border-radius: 100px; padding: 0.22rem 0.65rem; background: var(--white); color: var(--sage-dark); }
+.rs-chips li:first-child { color: var(--accent); }
+@media (max-width: 900px) {
+  .rs-journey-steps { grid-template-columns: 1fr; gap: 1.25rem; }
+  .rs-journey-steps::before { display: none; }
+  .rs-journey-step { padding-left: 3.3rem; }
+  .rs-journey-num { position: absolute; left: 0; top: 0; margin: 0; }
+  .rs-journey-step:not(:last-child)::after { content: ''; position: absolute; left: 19px; top: 40px; bottom: -1.25rem; width: 2px; background: rgba(110,115,73,0.35); }
+}
+@media (max-width: 480px) { .rs-journey { padding: 1.1rem 1.1rem 1.2rem; } }
+
+
+/* ===== WHEN TO REACH OUT: SIGN TILES (all service pages) ===== */
+.signs-tiles-section { margin: 2rem 0 2.25rem; }
+.signs-tiles-section > .fee-card-header:first-of-type { margin-top: 0; }
+.signs-tiles-section .service-badge { display: table; }
+.signs-tiles-lead { margin-bottom: 1.25rem; }
+.signs-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; }
+.signs-tile { background: var(--warm-cream); border-radius: 1rem; border-left: 4px solid var(--sage); padding: 1.05rem 1.2rem; }
+.signs-tile:nth-child(3n+2) { border-left-color: var(--accent); }
+.signs-tile h3 { font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 600; line-height: 1.35; color: var(--text-dark); margin: 0 0 0.2rem; }
+.signs-tile p { font-size: 0.875rem; font-weight: 300; line-height: 1.55; color: var(--text-mid); margin: 0; }
+.signs-tile p a { color: var(--accent); }
+.signs-tiles-call { font-size: 0.92rem; font-weight: 300; color: var(--text-mid); margin: 1.25rem 0 0; }
+.signs-tiles-btn { display: inline-block; background: var(--accent); color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.85rem; border-radius: 999px; padding: 0.35rem 1rem; margin-left: 0.35rem; }
+.signs-tiles-btn:hover { background: var(--accent-hover); color: var(--white); }
+.signs-tiles-spaced { margin-bottom: 3rem; padding-bottom: 2.25rem; border-bottom: 1px solid #e8e1d6; }
+@media (max-width: 900px) { .signs-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .signs-tiles { grid-template-columns: 1fr; } .signs-tiles-btn { margin: 0.4rem 0 0; } }
+
+/* ===== 404 PAGE ===== */
+.nf-section { background: var(--warm-white); padding: 2.5rem 5% 3rem; }
+.nf-inner { max-width: 1100px; margin: 0 auto; }
+.nf-inner > .service-badge { display: table; margin: 0 0 1.25rem; }
+.nf-grid { grid-template-columns: repeat(3, 1fr); }
+.nf-card { text-decoration: none; display: flex; flex-direction: column; transition: transform .15s ease, box-shadow .15s ease; }
+.nf-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(42,38,32,0.08); }
+.nf-card h3 { color: var(--text-dark); }
+.nf-card p { flex: 1; }
+.nf-more { margin-top: 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); }
+.nf-help { margin-top: 2rem; background: var(--warm-cream); border-radius: 1.25rem; padding: 1.6rem 1.9rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.nf-help h2 { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 1.3rem; color: var(--accent); margin: 0 0 0.35rem; }
+.nf-help p { margin: 0; font-size: 0.92rem; font-weight: 300; color: var(--text-mid); max-width: 56ch; }
+.nf-help-actions { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+.nf-btn { background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.9rem; border-radius: 999px; padding: 0.7rem 1.5rem; }
+.nf-btn:hover { background: var(--accent-hover); color: #fff; }
+.nf-link { color: var(--accent); font-weight: 600; font-size: 0.88rem; }
+.nf-crisis { margin: 1.5rem 0 0; font-size: 0.8rem; color: var(--text-light); }
+@media (max-width: 900px) { .nf-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .nf-grid { grid-template-columns: 1fr; } .nf-help { padding: 1.4rem 1.25rem; } }

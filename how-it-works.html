@@ -13,6 +13,13 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -26,11 +33,12 @@
   <meta property="og:url" content="https://thoughtfulstrides.com.au/how-it-works" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Nigel.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="Nigel Joseph, Trauma Therapist and Counsellor at Thoughtful Strides Narre Warren" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -42,41 +50,49 @@
   "provider": {
     "@type": "ProfessionalService",
     "@id": "https://thoughtfulstrides.com.au/#business",
+    "image": "https://thoughtfulstrides.com.au/images/Nigel.webp",
+    "priceRange": "$150-$200",
     "name": "Thoughtful Strides Counselling and Psychotherapy",
     "url": "https://thoughtfulstrides.com.au/"
   },
-  "description": "A simple four-step process to book a counselling or therapy appointment with Nigel Joseph at Thoughtful Strides in Narre Warren.",
+  "description": "What happens when you start counselling with Nigel Joseph at Thoughtful Strides in Narre Warren, from getting in touch and a free discovery call to your first sessions and ongoing treatment.",
   "hasPart": [
     {
       "@id": "https://thoughtfulstrides.com.au/how-it-works#faq"
     }
   ],
   "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Get in Touch",
-      "text": "Reach out via the contact form, phone (0479 171 121), or email. There is no obligation and everything is confidential."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Free Discovery Call",
-      "text": "A free call to discuss your concerns and goals, and to see whether Thoughtful Strides is the right fit for you. No commitment required."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "First Appointment",
-      "text": "Your first session focuses on understanding your experiences, your current concerns, and what you hope to get from therapy. Sessions are available in person in Narre Warren or via telehealth across Australia."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Ongoing Support",
-      "text": "A personalised treatment plan is developed with you. We work together at a pace that feels right, adapting as you grow and heal."
-    }
-  ]
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Get in Touch",
+        "text": "Reach out via the contact form, call 0479 171 121, or send an email."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Discovery Call",
+        "text": "A free chat so you can talk through your concerns, ask any questions, and see whether I'm the right fit for you. You don't need to commit to anything."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "First Session (Assessment)",
+        "text": "We talk about what brings you here and what you hope to get from counselling, with questionnaires suited to what you are facing. Sessions are in person in Narre Warren or via telehealth across Australia."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Second Session (Assessment)",
+        "text": "We look at your experiences growing up and how they may be affecting you now, then agree on the treatment approach that suits you best."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Treatment",
+        "text": "Treatment follows one of two paths: EMDR, beginning with safety and stabilisation so you feel steady before any memory processing, then two or three EMDR sessions a day or two apart, then weekly sessions until processing is complete and a review of progress; or other approaches such as Schema Therapy, CBT, ACT, the Gottman Method or Emotionally Focused Couples Therapy, with progress reviewed along the way."
+      }
+    ]
 }
 </script>
 
@@ -117,7 +133,7 @@
       "name": "How often will I complete these forms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typically at the start of treatment and again at intervals as therapy progresses, so we can see the trend over time rather than relying on a single snapshot."
+        "text": "At the start of therapy and again at the end, so we can see what has changed rather than relying on a single snapshot."
       }
     }
   ]
@@ -150,19 +166,20 @@
   <nav>
 
     <!-- Final version - comment in before publishing -->
-    <a href="/index" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | EMDR Therapy"></a>
+    <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling">WorkSafe Counselling</a></li>
         </ul>
@@ -170,34 +187,9 @@
       <li><a href="/how-it-works" class="active">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
     <!-- END Final version -->
-
-    <!-- Test version for local drive -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | EMDR Therapy"></a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html" class="active">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
-    <!-- END test version -->
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -211,13 +203,19 @@
     <div class="header-split">
       <div class="header-main">
         <p class="page-header-label">Getting Started</p>
-        <h1>How Counselling <em>Works</em> at Thoughtful Strides</h1>
+        <h1>How Counselling Works <em>in Narre Warren</em></h1>
       </div>
       <aside class="header-call" aria-label="Book a free phone chat">
-        <p class="header-call-title">Talk it through first</p>
+        <div class="header-call-person">
+          <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist" width="56" height="56" decoding="async">
+          <div>
+            <p class="header-call-title">Talk it through first</p>
+            <p class="header-call-name">with Nigel Joseph</p>
+          </div>
+        </div>
         <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
         <ul class="header-call-ticks">
-          <li>No waitlist</li>
+          <li>Monday to Friday, 10am to 8pm</li>
           <li>In person or telehealth</li>
           <li>PACFA registered, 20 years</li>
         </ul>
@@ -228,37 +226,80 @@
   <section class="services-body" style="float:none;">
 
     <!-- INTRO CARD -->
-    <div class="content-intro">
+    <div class="content-intro intro-plain">
       <p class="service-badge">No Guesswork, Just a Clear Process</p>
       <p class="bio-body" style="margin-bottom:0;">Starting therapy can feel like a big step, especially if you don't know what to expect. There is no pressure to have everything figured out before reaching out. Here's exactly what happens, from your first message through to how progress is actually tracked over time.</p>
     </div>
 
     <!-- <p class="bio-body faq-jump"><a href="#faqs">Have a specific question? Jump straight to the FAQs below.</a></p> -->
 
-    <!-- GETTING STARTED STEPS -->
+    <!-- HOW IT WORKS: STEPS -->
     <div class="fee-card-header">
-      <h2>Getting Started</h2>
+      <h2>What Happens, Step by Step</h2>
     </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Get in Touch</h3>
-        <p>Reach out via the <a href="book-now.html">Contact form</a>, call <a href="tel:+61479171121">0479 171 121</a>, or send an email. </p>
+    <div class="journey">
+      <div class="journey-phase journey-phase-before">
+        <p class="journey-label">Before your first session</p>
+        <ol class="journey-steps">
+        <li class="journey-step">
+          <span class="journey-num" aria-hidden="true">1</span>
+          <h3><span class="sr-only">Step 1: </span>Get in Touch</h3>
+          <p>Reach out via the <a href="/book-now">Contact form</a>, call <a href="tel:+61479171121">0479 171 121</a>, or send an email.</p>
+        </li>
+        <li class="journey-step">
+          <span class="journey-num" aria-hidden="true">2</span>
+          <h3><span class="sr-only">Step 2: </span>Discovery Call</h3>
+          <p>A free chat so you can talk through your concerns, ask any questions, and see whether I'm the right fit for you. You don't need to commit to anything.</p>
+        </li>
+        </ol>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Discovery Call</h3>
-        <p>We have a chat so you can talk through your concerns, ask any questions, and see whether I'm the right fit for you. You don't need to commit to anything.</p>
+      <div class="journey-phase journey-phase-sessions">
+        <p class="journey-label">Assessment: sessions 1 and 2</p>
+        <p class="journey-note">The first two sessions are about understanding you, with questionnaires suited to what you're facing.</p>
+        <ol class="journey-steps" start="3">
+        <li class="journey-step">
+          <span class="journey-num" aria-hidden="true">3</span>
+          <h3><span class="sr-only">Step 3: </span>First Session</h3>
+          <p>We talk about what brings you here and what you hope to get from counselling. Sessions are in person in Narre Warren or via telehealth across Australia.</p>
+        </li>
+        <li class="journey-step">
+          <span class="journey-num" aria-hidden="true">4</span>
+          <h3><span class="sr-only">Step 4: </span>Second Session</h3>
+          <p>We look at your experiences growing up and how they may be affecting you now, then agree on the treatment approach that suits you best.</p>
+        </li>
+        </ol>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>First Appointment</h3>
-        <p>Your first session focuses on understanding your experiences, your current concerns, and what you hope to get from therapy. Sessions are available in person in Narre Warren or via telehealth across Australia.</p>
+    </div>
+
+    <!-- TREATMENT: TWO PATHS -->
+    <div class="fee-card-header" id="treatment">
+      <h2>Treatment</h2>
+    </div>
+    <p class="bio-body">Depending on what we agree in the assessment, treatment follows one of two paths. <a href="/my-approach">Read more about my approach</a>.</p>
+    <div class="treat-paths">
+      <div class="treat-card treat-card-emdr" id="emdr-path">
+        <p class="treat-label">Path 1</p>
+        <h3>EMDR</h3>
+        <div class="em-phase">
+          <p class="em-phase-label">First: safety and stabilisation</p>
+          <p>We build ways to feel steady and calm yourself, in sessions and in daily life, before any memory processing begins.</p>
+        </div>
+        <p class="em-then">Then EMDR processing:</p>
+        <ol>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>A focused start: two or three EMDR sessions, a day or two apart</span></li>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Weekly sessions until all the processing is complete</span></li>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>A review of your progress, and support to bring the changes into your everyday life</span></li>
+        </ol>
       </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h3>Ongoing Support</h3>
-        <p>After your first session, we complete an assessment of your experiences growing up and how they may be affecting you and your current concerns. We then talk through how we'll work together towards what you hope to get from therapy.</p>
+      <div class="treat-card treat-card-other">
+        <p class="treat-label">Path 2</p>
+        <h3>Other Treatment Approaches</h3>
+        <p class="treat-sub">Such as Schema Therapy, CBT or ACT, or the Gottman Method and Emotionally Focused Couples Therapy for couples.</p>
+        <ol>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Regular sessions working towards the goals we agreed</span></li>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Your progress reviewed along the way</span></li>
+          <li><span class="treat-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Support to bring the changes into your everyday life</span></li>
+        </ol>
       </div>
     </div>
 
@@ -266,44 +307,45 @@
     <div class="fee-card-header">
       <h2>How We Track Your Progress</h2>
     </div>
-    <p class="bio-body">Therapy shouldn't rely on guesswork about whether it's helping. Alongside our conversations, I use validated screening tools before treatment begins and again as we go, so we can both see the trend over time rather than relying on how any one session felt.</p>
+    <p class="bio-body">Therapy shouldn't rely on guesswork about whether it's helping. Alongside our conversations, I use validated questionnaires at the start and end of therapy, so we can both see what has changed rather than relying on how any one session felt.</p>
 
-    <div class="approach-grid">
-      <div class="approach-card">
-        <strong>DASS-21</strong>
-        <span>Screens for symptoms of depression, anxiety, and stress, used with clients across most areas of practice to establish a baseline and track change.</span>
+    <div class="q-tiers">
+      <p class="q-lead">Completed during the assessment</p>
+      <div class="q-card q-all">
+        <span class="q-who">Every client</span>
+        <h3>DASS-21</h3>
+        <p class="q-full">Depression, Anxiety and Stress Scales</p>
+        <p class="q-count"><b>21</b> questions</p>
+        <p class="q-text">Asks how often you've noticed common signs of depression, anxiety and stress over the past week. Completed by every client at the start, to set a baseline and track change.</p>
       </div>
-      <div class="approach-card">
-        <strong>PCL-5</strong>
-        <span>Screens for symptoms of PTSD, used when <a href="trauma-therapy.html">trauma</a> is part of the treatment picture, to guide and measure progress in trauma-focused work.</span>
-      </div>
-      <div class="approach-card">
-        <strong>Young Schema Questionnaire</strong>
-        <span>Used where Schema Therapy is part of the approach, to identify longstanding patterns and track how they shift over the course of treatment.</span>
+      <p class="q-sub">And, depending on what you're facing:</p>
+      <div class="q-pair">
+        <div class="q-card q-opt">
+          <span class="q-who">If trauma is identified</span>
+          <h3>PCL-5</h3>
+          <p class="q-full">PTSD Checklist</p>
+          <p class="q-count"><b>20</b> questions</p>
+          <p class="q-text">Each question matches one of the 20 symptoms of PTSD, rated by how much it has bothered you over the past month. Used only when <a href="/trauma-therapy">trauma</a> is identified, to guide and measure progress in trauma-focused work.</p>
+        </div>
+        <div class="q-card q-opt">
+          <span class="q-who">If you want deeper change</span>
+          <h3>YSQ-R</h3>
+          <p class="q-full">Young Schema Questionnaire, Revised</p>
+          <p class="q-count"><b>116</b> statements</p>
+          <p class="q-text">You rate how well each statement describes you, which shows 20 deep, longstanding patterns called schemas. Used when you want to go deeper in therapy and change these patterns in yourself, and completed again at the end to see how they've shifted.</p>
+        </div>
       </div>
     </div>
 
-    <div class="info-band">
-      <p class="bio-body" style="margin-bottom:0;">These tools aren't about labelling you. They're a shared reference point, completed at the start of treatment and again at intervals, so both of us can see whether things are genuinely shifting, not just guess.</p>
-    </div>
+    <p class="bio-body q-note">I use these questionnaires as a reference point. Completing them at the start and end of therapy lets us both see clearly how far you've come.</p>
 
-    <!-- MINI CTA -->
-    <div class="cta-mini">
-      <p class="cta-mini-text">If you have questions about the process before reaching out, I'm happy to help.</p>
-      <div class="cta-mini-actions">
-        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-        <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
   </section>
 
   <!-- FAQ -->
   <section class="faq-section" id="faqs">
     <div class="faq-header">
       <p class="section-label">Common Questions</p>
-      <h2 class="section-title">About the Process &amp; Screening Tools</h2>
+      <h2 class="section-title">About the Process and Screening Tools</h2>
     </div>
     <div class="faq-list">
 
@@ -343,7 +385,7 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>Typically at the start of treatment and again at intervals as therapy progresses, so we can see the trend over time rather than relying on a single snapshot.</p>
+          <p>At the start of therapy and again at the end, so we can see what has changed rather than relying on a single snapshot.</p>
         </div>
       </div>
 
@@ -351,12 +393,12 @@
   </section>
 
   <!-- CTA BAND -->
-  <div class="cta-band">
+  <div class="cta-band" role="region" aria-label="Get in touch">
     <h2>Not knowing what to expect can be the hardest part.</h2>
-    <p class="cta-band-line1">Why let uncertainty hold you back, when the process is more straightforward than you think.</p>
+    <p class="cta-band-line1">Why let uncertainty hold you back, when the process is more straightforward than you think?</p>
     <div class="cta-band-actions">
       <span class="cta-band-group"><span class="cta-band-text">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
-      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="book-now.html" class="cta-band-pill">Contact Me</a></span>
+      <span class="cta-band-group"><span class="cta-band-text">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
     </div>
   </div>
 
@@ -366,8 +408,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -375,10 +417,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {

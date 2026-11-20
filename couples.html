@@ -13,6 +13,15 @@
   gtag('config', 'G-4MRK96F7TT');
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NG28N4DF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -23,7 +32,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
   <meta property="og:title" content="Couples Counsellor Narre Warren | Marriage Counselling" />
@@ -33,6 +42,7 @@
   <meta property="og:url" content="https://thoughtfulstrides.com.au/couples" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://thoughtfulstrides.com.au/images/Couples.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:image:alt" content="Couples and marriage counselling in Narre Warren" />
 
 
@@ -92,6 +102,7 @@
     "provider": {
       "@type": "ProfessionalService",
       "@id": "https://thoughtfulstrides.com.au/#business",
+      "priceRange": "$150-$200",
       "name": "Thoughtful Strides Counselling and Psychotherapy",
       "url": "https://thoughtfulstrides.com.au/",
       "telephone": "+61479171121",
@@ -194,7 +205,7 @@
       "name": "How much does couples counselling cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Couples sessions are 60 minutes. Current fees are listed on the Fees page. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. You are welcome to call for a free chat first."
+        "text": "Couples sessions are 60 minutes and cost $200. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the Fees page. You are welcome to call for a free chat first."
       }
     },
     {
@@ -210,7 +221,7 @@
       "name": "Can old trauma affect how we argue as a couple?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often, yes. What looks like a communication problem is sometimes an old trauma response playing out between two people, the argument that escalates too fast, the silence that goes on too long, the feeling of being unseen by the person who's supposed to know you best (van der Kolk, 2014). When either partner feels threatened or emotionally overwhelmed, it's easy to react from old survival patterns rather than a considered response. This is one reason couples counselling and individual trauma work often benefit from happening alongside each other."
+        "text": "Often, yes. What looks like a communication problem can be an old trauma response playing out between two people: the argument that escalates too fast, or the silence that goes on too long (van der Kolk, 2014). This is why couples counselling and individual trauma work often help most alongside each other."
       }
     },
     {
@@ -285,52 +296,6 @@
   ]
 }
 </script>
-<style>
-  /* Page header: two columns, heading and quote left, slim call block right (same as trauma page) */
-  .header-split { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 3rem; align-items: center; }
-  .header-main { min-width: 0; }
-  .page-header-credentials { margin: 0.5rem 0 0.75rem; font-size: 1rem; font-weight: 600; color: var(--text-dark, #2b2420); }
-  .header-quote { margin: 0; font-size: 1rem; font-style: italic; font-weight: 300; line-height: 1.6; color: #5c524b; }
-  .header-quote span { color: var(--accent, #963c00); font-weight: 400; }
-  .header-call { display: flex; flex-direction: column; gap: 0.65rem; padding-left: 1.75rem; border-left: 1px solid #e3d8cc; }
-  .header-call-title { margin: 0; font-size: 0.95rem; font-weight: 600; color: var(--text-dark, #2b2420); }
-  .header-call-btn { display: block; text-align: center; background: var(--accent, #963c00); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 0.7rem 1rem; border-radius: 100px; text-decoration: none; }
-  .header-call-btn:hover { background: #7a3100; color: #fff; }
-  .header-call-btn:focus-visible { outline: 3px solid #6e7350; outline-offset: 3px; }
-  .header-call-ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.2rem; font-size: 0.8125rem; line-height: 1.55; color: #5c524b; }
-  .header-call-ticks li::before { content: "\2713"; color: var(--accent, #963c00); font-weight: 700; margin-right: 0.4rem; }
-  @media (max-width: 850px) {
-    .header-split { grid-template-columns: 1fr; gap: 1.25rem; }
-    .header-call { max-width: 360px; padding-left: 0; border-left: 0; padding-top: 1rem; border-top: 1px solid #e3d8cc; }
-  }
-
-  /* Footer name, address and phone */
-  .footer-nap { margin-top: 0.75rem; font-size: 0.85rem; line-height: 1.6; }
-  .footer-nap a { color: inherit; }
-
-  /* Sticky call button, phones and small tablets only */
-  .mobile-call { display: none; }
-  @media (max-width: 850px) {
-    .mobile-call {
-      display: block;
-      position: fixed;
-      left: 16px;
-      right: 16px;
-      bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-      z-index: 1000;
-      background: var(--accent, #963c00);
-      color: #fff;
-      text-align: center;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 0.85rem 1rem;
-      border-radius: 100px;
-      text-decoration: none;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-    }
-    body { padding-bottom: 84px; }
-  }
-</style>
 </head>
 <body>
 
@@ -338,19 +303,20 @@
   <nav>
 
     <!-- Final version - comment in before publishing -->
-    <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+    <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
     <ul class="nav-links">
       <li><a href="/about">About</a></li>
+      <li><a href="/my-approach">My Approach</a></li>
       <li class="has-dropdown">
         <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
         <ul class="nav-dropdown">
           <li><a href="/couples" class="active">Couples Counselling</a></li>
           <li><a href="/trauma-therapy">Trauma Therapy</a></li>
+          <li><a href="/relationships">Relationship Counselling</a></li>
+          <li><a href="/first-responder-trauma-counselling">First Responders</a></li>
           <li><a href="/anxiety">Anxiety</a></li>
           <li><a href="/depression">Depression</a></li>
-          <li><a href="/anger-management">Anger Management</a></li>
           <li><a href="/grief-and-loss">Grief and Loss</a></li>
-          <li><a href="/relationships">Relationship Counselling</a></li>
           <li><a href="/general-counselling">General Counselling</a></li>
           <li><a href="/worksafe-counselling">WorkSafe Counselling</a></li>
         </ul>
@@ -358,34 +324,9 @@
       <li><a href="/how-it-works">How It Works</a></li>
       <li><a href="/fees">Fees</a></li>
       <li><a href="/book-now" class="nav-cta">Contact Me</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
+      <li><a href="tel:+61479171121" class="nav-phone"><span class="nav-phone-label">Call:&nbsp;</span>0479 171 121</a></li>
     </ul>
     <!-- END Final version -->
-
-    <!-- Test version for local drive -->
-    <!-- <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Couples counselling Narre Warren"></a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li class="has-dropdown">
-        <a href="#" class="services-toggle active">Services <span class="dropdown-arrow">&#9662;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="couples.html" class="active">Couples Counselling</a></li>
-          <li><a href="trauma-therapy.html">Trauma Therapy</a></li>
-          <li><a href="anxiety.html">Anxiety</a></li>
-          <li><a href="depression.html">Depression</a></li>
-          <li><a href="anger-management.html">Anger Management</a></li>
-          <li><a href="grief-and-loss.html">Grief and Loss</a></li>
-          <li><a href="relationships.html">Relationship Counselling</a></li>
-          <li><a href="general-counselling.html">General Counselling</a></li>
-          <li><a href="worksafe-counselling.html">WorkSafe Counselling</a></li>
-        </ul>
-      </li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="fees.html">Fees</a></li>
-      <li><a href="book-now.html" class="nav-cta">Book Now</a></li>
-      <li><a href="tel:+61479171121" class="nav-phone">Call: 0479 171 121</a></li>
-    </ul> -->
-    <!-- END test version -->
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -400,15 +341,21 @@
   <div class="header-split">
     <div class="header-main">
       <p class="page-header-label">Services</p>
-      <h1>Couples, Marriage &amp; Relationship Counselling <em>in Narre Warren</em></h1>
-      <p class="page-header-credentials">Nigel Joseph, Couples Therapist (Gottman Method &amp; EFCT)</p>
+      <h1>Couples, Marriage and Relationship Counselling <em>in Narre Warren</em></h1>
+      <p class="page-header-credentials">Nigel Joseph, Couples Therapist (Gottman Method and EFCT)</p>
       <p class="header-quote">For couples stuck in the same arguments, drifting apart, or <span>rebuilding trust after an affair.</span></p>
     </div>
     <aside class="header-call" aria-label="Book a free phone chat">
-      <p class="header-call-title">Talk it through first</p>
+      <div class="header-call-person">
+        <img src="images/Nigel.webp" alt="Nigel Joseph, Counsellor and Psychotherapist" width="56" height="56" decoding="async">
+        <div>
+          <p class="header-call-title">Talk it through first</p>
+          <p class="header-call-name">with Nigel Joseph</p>
+        </div>
+      </div>
       <a href="tel:+61479171121" class="header-call-btn">Call for a free chat</a>
       <ul class="header-call-ticks">
-        <li>Gottman Method &amp; EFCT</li>
+        <li>Gottman Method and EFCT</li>
         <li>In person or telehealth</li>
         <li>PACFA registered</li>
       </ul>
@@ -421,7 +368,7 @@
   <section class="services-body">
     <div class="intro-row" style="margin-top:19px;">
       <div class="services-image">
-        <a href="/book-now" aria-label="Contact me about couples counselling"><img src="images/Couples.webp" alt="Two people seated side by side with hands clasped, representing couples counselling" fetchpriority="high" decoding="async" style="cursor:pointer;"></a>
+        <a href="/book-now" aria-label="Contact me about couples counselling"><img width="1200" height="800" src="images/Couples.webp" alt="Two people seated side by side with hands clasped, representing couples counselling" fetchpriority="high" decoding="async" style="cursor:pointer;"></a>
       </div>
 
       <!-- INTRO CARD -->
@@ -430,10 +377,31 @@
         <div class="fee-card-header">
           <h2>Not feeling as connected as you used to?</h2>
         </div>
-        <p class="bio-body">In my work with couples, I often hear how it was in the beginning. You were friends, you enjoyed each other's company, you went on dates and did things together, and you made each other a priority. For some couples, a few unhelpful ways of relating were there from the start, but they felt manageable while the relationship was new.</p>
-        <p class="bio-body">As life goes on, family responsibilities, financial pressures, work stress, and health issues can make it harder to keep doing what once came easily. Time together shrinks, and you get caught up in life. When that happens, there's very little emotional connection in the bank to carry you through disagreements, and things can start to feel difficult and painful.</p>
-        <p class="bio-body" style="margin-bottom:0;">As your couples therapist, I offer marriage and relationship counselling as a space to understand what's changed in your relationship and find the best way forward, together.</p>
+        <p class="bio-body">Most couples I see remember how it was in the beginning. You were friends, you made time for each other, and small differences felt manageable.</p>
+        <p class="bio-body">Then life gets busy. Work, money, family and health take up more room, time together shrinks, and there's less connection to fall back on when you disagree. Things start to feel hard.</p>
+        <p class="bio-body" style="margin-bottom:0;">I offer marriage and relationship counselling as a space to understand what's changed and find the best way forward, together.</p>
       </div>
+    </div>
+
+    <!-- WHEN TO REACH OUT (sign tiles) -->
+    <div class="signs-tiles-section">
+      <p class="service-badge">When to Reach Out</p>
+      <div class="fee-card-header">
+        <h2>Signs Couples Counselling Could Help</h2>
+      </div>
+      <p class="bio-body signs-tiles-lead">Every couple goes through hard patches. If some of these feel familiar, it may help to talk it through together.</p>
+      <ul class="signs-tiles">
+        <li class="signs-tile"><h3>Arguing in circles</h3><p>The same fights that never get resolved</p></li>
+        <li class="signs-tile"><h3>Growing apart</h3><p>Feeling more like flatmates than partners</p></li>
+        <li class="signs-tile"><h3>Not feeling heard</h3><p>Talking past each other, or shutting down</p></li>
+        <li class="signs-tile"><h3>Less closeness</h3><p>Less affection, intimacy or desire</p></li>
+        <li class="signs-tile"><h3>After an affair</h3><p>Rebuilding trust after a betrayal</p></li>
+        <li class="signs-tile"><h3>Big life changes</h3><p>A new baby, a move, illness or retirement</p></li>
+        <li class="signs-tile"><h3>Parenting pressure</h3><p>Disagreeing on how to raise your children</p></li>
+        <li class="signs-tile"><h3>Old hurts</h3><p>Past wounds that keep coming up</p></li>
+        <li class="signs-tile"><h3>Unsure about the future</h3><p>Not knowing whether to stay together</p></li>
+      </ul>
+      <p class="signs-tiles-call">Not sure if it applies to you? <a href="tel:+61479171121" class="signs-tiles-btn">Call 0479 171 121</a></p>
     </div>
 
     <!-- STAGE SELECTOR -->
@@ -482,7 +450,7 @@
       <div class="stage-panel" role="tabpanel" id="stage-panel-3" aria-labelledby="stage-tab-3" hidden>
         <div>
           <h3>After an affair</h3>
-          <p>Some couples come to counselling after an affair or another betrayal of trust has come to light. It can feel like the ground has been pulled out from under you. Recovery is possible, and it happens in stages: facing what happened, understanding what was missing, and slowly rebuilding closeness and trust. Many couples come out of it with a stronger, more honest relationship.</p>
+          <p>Some couples come to counselling after an affair or another betrayal of trust has come to light. It can feel like the ground has been pulled out from under you, and it's hard to know whether you can move forward together. <a href="#affair-recovery" style="color:var(--accent); font-weight:600;">How affair recovery works</a>.</p>
         </div>
         <div class="stage-signs">
           <h4>You might notice</h4>
@@ -512,10 +480,11 @@
     </div>
 
     <!-- AFFAIR RECOVERY -->
-    <div class="fee-card-header">
+    <div class="fee-card-header" id="affair-recovery">
       <h2>Affair Recovery and Rebuilding Trust</h2>
     </div>
-    <p class="bio-body">When an affair or another betrayal comes to light, it can feel like the ground has been pulled out from under you. Recovery is possible, and it happens in stages: facing what happened, understanding what was missing, and slowly rebuilding closeness and trust.</p>
+    <p class="bio-body">Recovery after an affair is possible, and it happens in stages. It starts with facing what happened, honestly and at a pace you can both manage. From there, we look at what was missing in the relationship and slowly rebuild closeness and trust.</p>
+    <p class="bio-body">In the first few sessions, the focus is on steadying things. I meet with you together and then each of you separately, so the partner who was hurt has room to be heard, and the partner who had the affair can take responsibility without every conversation turning into attack and defence. We also agree on what openness looks like for now, such as answering questions honestly, so trust has something to rebuild on.</p>
     <p class="bio-body">If the hurt keeps replaying, individual EMDR sessions alongside our couples work can help it lose its intensity. Many couples come out of it with a stronger, more honest relationship.</p>
 
     <!-- HOW IT WORKS -->
@@ -530,7 +499,7 @@
         <div class="read-more-text" style="display:none;">
           <p>This session is about understanding your relationship as a whole, where you started, what's changed, and what's brought you here now.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Getting to Know You Both" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Getting to Know You Both">Read more &darr;</a>
       </div>
       <div class="step">
         <div class="step-num">2</div>
@@ -539,7 +508,7 @@
         <div class="read-more-text" style="display:none;">
           <p>This isn't about taking sides. So much of what shows up in a relationship was shaped long before you met, in how each of you learned to handle emotions, conflict, and closeness. When stress builds, those old patterns surface more easily. Understanding them helps us make sense of what happens between you.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Individual Sessions" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Individual Sessions">Read more &darr;</a>
       </div>
       <div class="step">
         <div class="step-num">3</div>
@@ -548,7 +517,7 @@
         <div class="read-more-text" style="display:none;">
           <p>From here, we keep meeting as a couple, at a pace that suits your relationship, whether that's a focused piece of work or a longer course of therapy.</p>
         </div>
-        <a href="#" class="read-more-toggle" aria-label="Read more about Working Through It Together" style="color:#963c00; font-weight:600; font-size:0.9rem; display:inline-block; margin-top:0.5rem;">Read more &darr;</a>
+        <a href="#" class="read-more-toggle" aria-label="Read more about Working Through It Together">Read more &darr;</a>
       </div>
     </div>
 
@@ -651,29 +620,62 @@
 
       <p class="bio-body" style="margin-bottom:0;">EMDR is done in individual sessions, alongside our couples work. We always talk it through together first, and only use EMDR when it feels right for you both.</p>
       <p class="emdr-safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>If there is fear, control, or violence in the relationship, safety comes first, and EMDR isn't the right starting point.</span></p>
+
+      <div class="emdr-compact" id="is-emdr-safe">
+        <div class="emdr-compact-side">
+          <div class="emdr-compact-stat"><strong>12</strong><span>years of EMDR practice</span></div>
+          <i aria-hidden="true"></i>
+          <div class="emdr-compact-stat"><strong>20</strong><span>years of clinical experience</span></div>
+        </div>
+        <div class="emdr-compact-main">
+          <h2>Is EMDR Safe?</h2>
+          <p>EMDR is well researched, and how it's delivered makes the difference. Most difficulties come from starting memory work before someone feels steady enough, choosing the wrong memories to work on, missing signs of overwhelm, or ending a session without settling things. I take time to prepare you, pace each session to what you can manage, and make sure you leave settled.</p>
+          <a href="/my-approach#emdr-difference">What can go wrong, and how I prevent it &rarr;</a>
+        </div>
+      </div>
     </div>
 
     <!-- ABOUT -->
-    <div class="fee-card-header">
-      <h2>About Your Couples Therapist</h2>
+    <div class="counsellor-band">
+      <img src="images/Nigel.webp" alt="Nigel Joseph, Couples Therapist in Narre Warren" width="104" height="104" loading="lazy" decoding="async">
+      <div class="counsellor-band-text">
+        <h2>About Your Couples Therapist</h2>
+        <p class="counsellor-band-creds">Nigel Joseph &middot; MCoun, MSW &middot; PACFA Registered &middot; Gottman Method and EFCT Trained</p>
+        <p class="bio-body">Most of my clinical work has been as a trauma therapist, and I bring that understanding to couples counselling using the Gottman Method and Emotionally Focused Couples Therapy. When past hurts keep getting in the way, I can also offer individual EMDR sessions alongside your couples work. <a href="/about">More about me</a>.</p>
+      </div>
     </div>
-    <p class="bio-body">I'm Nigel Joseph, a PACFA registered Counsellor and Psychotherapist with postgraduate qualifications in counselling (MCoun) and social work (MSW). I've worked clinically for 20 years, much of it as a trauma therapist, and I bring that experience to my work with couples using the Gottman Method and Emotionally Focused Couples Therapy. <a href="/about">More about me</a>.</p>
 
     <!-- SESSIONS, FEES AND LOCATION -->
     <div class="fee-card-header">
       <h2>Sessions, Fees and Rebates</h2>
     </div>
-    <p class="bio-body">Couples sessions are 60 minutes, in person in Narre Warren or via telehealth Australia-wide.</p>
-    <!-- Optional: add your fee here, for example "Each session costs $___." Showing the price on this page helps visitors from ads decide to call. -->
-    <p class="bio-body">If you have private health extras cover, you may be able to claim a rebate. Current fees and rebate details are on the <a href="/fees">Fees page</a>.</p>
-    <p class="bio-body">You'll find me at Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805, easy to reach from Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
+    <dl class="session-facts">
+      <div class="session-fact">
+        <dt>Sessions</dt>
+        <dd>60 minute couples sessions, in person in Narre Warren or via telehealth Australia-wide</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Hours</dt>
+        <dd>Monday to Friday, 10am to 8pm</dd>
+      </div>
+      <div class="session-fact">
+        <dt>Fee</dt>
+        <dd>$200 per couples session. You may be able to claim a health fund rebate with private extras cover. <a href="/fees">Fees page</a></dd>
+      </div>
+      <div class="session-fact">
+        <dt>Location</dt>
+        <dd>Suite 4, 26-28 Verdun Drive<br>Narre Warren VIC 3805</dd>
+      </div>
+    </dl>
+    <p class="session-areas">Easy to reach from Berwick, Cranbourne, Hallam, Endeavour Hills, Hampton Park and Pakenham.</p>
+    <p class="session-crisis">Counselling is not a crisis service. If you are in crisis or worried about your safety, call Lifeline on <a href="tel:131114">13 11 14</a> at any time, or 000 in an emergency.</p>
     <!-- Optional: add parking details here. -->
 
     <!-- MINI CTA -->
     <div class="cta-mini">
       <p class="cta-mini-text">Whatever is happening in your relationship, you don't have to work through it alone.</p>
       <div class="cta-mini-actions">
-        <span class="cta-band-group"><span class="cta-mini-label">Call for a free chat on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
+        <span class="cta-band-group"><span class="cta-mini-label">Call on</span> <a href="tel:+61479171121" class="cta-band-pill">0479 171 121</a></span>
         <span class="cta-band-group"><span class="cta-mini-label">or</span> <a href="/book-now" class="cta-band-pill">Contact Me</a></span>
       </div>
     </div>
@@ -703,7 +705,7 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>Couples sessions are 60 minutes. Current fees are listed on the <a href="/fees">Fees page</a>. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. You are welcome to call for a free chat first.</p>
+          <p>Couples sessions are 60 minutes and cost $200. If you have private health extras cover, you may be able to claim a rebate, so check with your fund. Full details are on the <a href="/fees">Fees page</a>. You are welcome to call for a free chat first.</p>
         </div>
       </div>
 
@@ -723,7 +725,7 @@
           <span class="faq-icon" aria-hidden="true"></span>
         </button>
         <div class="faq-answer">
-          <p>Often, yes. What looks like a communication problem is sometimes an old trauma response playing out between two people, the argument that escalates too fast, the silence that goes on too long, the feeling of being unseen by the person who's supposed to know you best (van der Kolk, 2014). When either partner feels threatened or emotionally overwhelmed, it's easy to react from old survival patterns rather than a considered response. This is one reason couples counselling and <a href="/trauma-therapy">individual trauma work</a> often benefit from happening alongside each other.</p>
+          <p>Often, yes. What looks like a communication problem can be an old trauma response playing out between two people: the argument that escalates too fast, or the silence that goes on too long (van der Kolk, 2014). This is why couples counselling and <a href="/trauma-therapy">individual trauma work</a> often help most alongside each other.</p>
         </div>
       </div>
 
@@ -791,7 +793,7 @@
   </section>
 
   <!-- CTA BAND -->
-  <div class="cta-band">
+  <div class="cta-band" role="region" aria-label="Get in touch">
     <h2>Your relationship is worth a conversation.</h2>
     <p class="cta-band-line1">Start with a free phone chat.</p>
     <div class="cta-band-actions">
@@ -806,8 +808,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="/" class="nav-logo"><img src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
-        <p>PACFA registered Counsellor &amp; Psychotherapist offering evidence-based Trauma Therapy for individuals &amp; Couples Counselling in Narre Warren and via Telehealth across Australia.</p>
+        <a href="/" class="nav-logo"><img width="1452" height="344" src="images/logo.svg" alt="Thoughtful Strides | Counselling and Psychotherapy"></a>
+        <p>PACFA registered Counsellor and Psychotherapist offering evidence-based Trauma Therapy for individuals and Couples Counselling in Narre Warren and via telehealth across Australia.</p>
         <p class="footer-nap">Thoughtful Strides Counselling and Psychotherapy<br>Suite 4, 26-28 Verdun Drive, Narre Warren VIC 3805<br><a href="tel:+61479171121">0479 171 121</a></p>
       </div>
     </div>
@@ -815,10 +817,9 @@
       <span>&copy; 2026 Thoughtful Strides. All rights reserved.</span>
       <span>PACFA registered | AASW Member</span>
     </div>
+    <a href="tel:+61479171121" class="mobile-call" aria-label="Call 0479 171 121, Thoughtful Strides">Call 0479 171 121</a>
   </footer>
 
-  <!-- Sticky call button (shows on phones only) -->
-  <a href="tel:+61479171121" class="mobile-call" aria-label="Call Thoughtful Strides on 0479 171 121">Call 0479 171 121</a>
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
